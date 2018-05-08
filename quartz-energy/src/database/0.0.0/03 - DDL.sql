@@ -1,0 +1,176 @@
+USE [QuartzEnergy]
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- Regions
+IF OBJECT_ID (N'Regions', N'U') IS NULL 
+BEGIN
+	CREATE TABLE [dbo].[Regions](
+		[Id] INT IDENTITY(1,1) NOT NULL,	
+		[Name] NVARCHAR(50) NOT NULL
+CONSTRAINT [PK_Regions] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)
+)	
+
+	-- Unique constraint for Name
+	ALTER TABLE [dbo].[Regions]
+		ADD CONSTRAINT UQ_Regions_Name
+		UNIQUE([Name])	
+	
+END
+GO
+
+-- States
+IF OBJECT_ID (N'States', N'U') IS NULL 
+BEGIN
+	CREATE TABLE [dbo].[States](
+		[Id] INT IDENTITY(1,1) NOT NULL,	
+		[Code] NVARCHAR(2) NOT NULL,
+		[Name] NVARCHAR(50) NOT NULL
+CONSTRAINT [PK_States] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)
+)	
+
+	-- Unique constraint for Code
+	ALTER TABLE [dbo].[States]
+		ADD CONSTRAINT UQ_States_Code
+		UNIQUE([Code])	
+
+	-- Unique constraint for Name
+	ALTER TABLE [dbo].[States]
+		ADD CONSTRAINT UQ_States_Name
+		UNIQUE([Name])	
+
+END
+GO
+
+-- Companies
+IF OBJECT_ID (N'Companies', N'U') IS NULL 
+BEGIN
+	CREATE TABLE [dbo].[Companies](
+		[Id] INT IDENTITY(1,1) NOT NULL,	
+		[Name] NVARCHAR(50) NOT NULL
+CONSTRAINT [PK_Companies] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)
+)	
+		
+	-- Unique constraint for CompanyName
+	ALTER TABLE [dbo].[Companies]
+		ADD CONSTRAINT UQ_Companies_Name
+		UNIQUE([Name])	
+		
+END
+GO
+
+-- Contacts
+IF OBJECT_ID (N'Contacts', N'U') IS NULL 
+BEGIN
+	CREATE TABLE [dbo].[Contacts](
+		[Id] INT IDENTITY(1,1) NOT NULL,	
+		[CompanyId] INT NOT NULL,
+		[ContactOrder] INT NOT NULL,
+		[FullName] NVARCHAR(50) NOT NULL,
+		[Email] NVARCHAR(255) NOT NULL,
+		[Phone] NVARCHAR(30) NOT NULL,
+		[City] NVARCHAR(50) NOT NULL,
+		[StateId] INT NOT NULL
+CONSTRAINT [PK_Contacts] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)
+)	
+
+ALTER TABLE [dbo].[Contacts] WITH CHECK ADD CONSTRAINT [FK_Contacts_Companies_CompanyId] FOREIGN KEY([CompanyId])
+REFERENCES [dbo].[Companies] ([Id])
+
+ALTER TABLE [dbo].[Contacts] WITH CHECK ADD CONSTRAINT [FK_Contacts_States_StateId] FOREIGN KEY([StateId])
+REFERENCES [dbo].[States] ([Id])
+
+END
+GO
+
+-- Contact Photos
+IF OBJECT_ID (N'ContactPhotos', N'U') IS NULL 
+BEGIN
+	CREATE TABLE [dbo].[ContactPhotos](
+		[Id] INT NOT NULL,	
+		[FileName] NVARCHAR(255) NOT NULL,
+		[MimeType] NVARCHAR(255) NOT NULL,
+		[ContactId] INT NOT NULL,
+CONSTRAINT [PK_ContactPhotos] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)
+)	
+
+ALTER TABLE [dbo].[ContactPhotos] WITH CHECK ADD CONSTRAINT [FK_ContactPhotos_Contacts_ContactId] FOREIGN KEY([ContactId])
+REFERENCES [dbo].[Contacts] ([Id])
+
+END
+GO
+
+-- Wells
+IF OBJECT_ID (N'Wells', N'U') IS NULL 
+BEGIN
+	CREATE TABLE [dbo].[Wells](
+		[Id] INT IDENTITY(1,1) NOT NULL,	
+		[Name] NVARCHAR(50) NOT NULL,
+		[SurfaceLat] FLOAT NOT NULL,
+		[SurfaceLong] FLOAT NOT NULL,
+		[BottomholeLat] FLOAT NOT NULL,
+		[BottomholeLong] FLOAT NOT NULL,
+		[Tvd] NVARCHAR(255) NULL,
+		[Api] NVARCHAR(20) NOT NULL,
+		[RegionId] INT NOT NULL,
+CONSTRAINT [PK_Wells] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)
+)
+
+ALTER TABLE [dbo].[Wells] WITH CHECK ADD CONSTRAINT [FK_Wells_Regions_RegionId] FOREIGN KEY([RegionId])
+REFERENCES [dbo].[Regions] ([Id])
+	
+END
+GO
+
+-- Schedules
+IF OBJECT_ID (N'Schedules', N'U') IS NULL 
+BEGIN
+	CREATE TABLE [dbo].[Schedules](
+		[Id] INT IDENTITY(1,1) NOT NULL,	
+		[WellId] INT NOT NULL,
+		[CompanyId] INT NOT NULL,
+		[FracStartDate] DATETIME NOT NULL,
+		[FracEndDate] DATETIME NOT NULL,
+		[CreatedDate] DATETIME NOT NULL
+CONSTRAINT [PK_Schedules] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)
+)
+
+ALTER TABLE [dbo].[Schedules] WITH CHECK ADD CONSTRAINT [FK_Schedules_Wells_WellId] FOREIGN KEY([WellId])
+REFERENCES [dbo].[Wells] ([Id])
+
+ALTER TABLE [dbo].[Schedules] WITH CHECK ADD CONSTRAINT [FK_Schedules_Companies_CompanyId] FOREIGN KEY([CompanyId])
+REFERENCES [dbo].[Companies] ([Id])
+
+	-- Default value for CreatedDate column
+	ALTER TABLE [dbo].[Schedules]
+		ADD CONSTRAINT DF_Schedules_CreatedDate
+		DEFAULT GETUTCDATE() FOR [CreatedDate] 
+
+END
+GO
