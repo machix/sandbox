@@ -1,4 +1,4 @@
-USE [QuartzEnergy]
+USE [FracSchedule]
 GO
 
 SET ANSI_NULLS ON

@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QuartzEnergy.Common.DataAnnotations\QuartzEnergy.Common.DataAnnotations.csproj" />
+    <ProjectReference Include="..\QuartzEnergy.Common.Services\QuartzEnergy.Common.Services.csproj" />
+    <ProjectReference Include="..\QuartzEnergy.FracSchedule.Domain\QuartzEnergy.FracSchedule.Domain.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.JScript">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7\Microsoft.JScript.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.2.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FracSchedule\" />
+  </ItemGroup>
+</Project>

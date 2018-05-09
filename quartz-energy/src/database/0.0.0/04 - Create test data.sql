@@ -1,4 +1,4 @@
-USE [QuartzEnergy]
+USE [FracSchedule]
 GO
 
 IF NOT EXISTS (SELECT * FROM [Regions])

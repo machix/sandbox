@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\QuartzEnergy.Common.Dal\QuartzEnergy.Common.Dal.csproj" />
+    <ProjectReference Include="..\QuartzEnergy.FracSchedule.Domain\QuartzEnergy.FracSchedule.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

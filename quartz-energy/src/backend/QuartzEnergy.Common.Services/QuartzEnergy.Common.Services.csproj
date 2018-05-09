@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\QuartzEnergy.Common.Dal\QuartzEnergy.Common.Dal.csproj" />
+    <ProjectReference Include="..\QuartzEnergy.Common.DataAnnotations\QuartzEnergy.Common.DataAnnotations.csproj" />
+    <ProjectReference Include="..\QuartzEnergy.Common.Domain\QuartzEnergy.Common.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

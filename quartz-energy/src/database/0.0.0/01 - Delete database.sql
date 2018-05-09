@@ -1,10 +1,10 @@
 USE [master]
 
 -- Delete database
-IF EXISTS (SELECT * FROM [master].[dbo].[sysdatabases] WHERE name = 'QuartzEnergy')
+IF EXISTS (SELECT * FROM [master].[dbo].[sysdatabases] WHERE name = 'FracSchedule')
 BEGIN    
-	ALTER DATABASE [QuartzEnergy] SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
-    DROP DATABASE [QuartzEnergy];    
+	ALTER DATABASE [FracSchedule] SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+    DROP DATABASE [FracSchedule];    
 END
 GO
 
@@ -12,8 +12,8 @@ GO
 IF EXISTS 
     (SELECT [name]
      FROM [sys].[server_principals]
-     WHERE [name] = 'QuartzEnergy')
+     WHERE [name] = 'FracSchedule')
 BEGIN
-	DROP LOGIN [QuartzEnergy]
+	DROP LOGIN [FracSchedule]
 END 
 GO
