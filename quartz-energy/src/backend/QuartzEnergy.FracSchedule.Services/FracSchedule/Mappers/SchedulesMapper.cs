@@ -7,9 +7,9 @@
 
     using QuartzEnergy.Common.Services.Specifications;
     using QuartzEnergy.FracSchedule.Domain.FracSchedule.Entities;
-    using QuartzEnergy.FracSchedule.Services.FracSchedule.Models.Schedules.Enums;
     using QuartzEnergy.FracSchedule.Services.FracSchedule.Models.Schedules.Overviews;
     using QuartzEnergy.FracSchedule.Services.FracSchedule.Specifications;
+    using QuartzEnergy.FracSchedule.Services.FracSchedule.Utils;
 
     internal sealed class SchedulesMapper
     {
@@ -55,11 +55,7 @@
             var entities = await query.ToArrayAsync();
 
             // Map entities to models
-            var overviews = entities.Select(e =>
-                {
-                    var startIn = 0;
-                    var status = ScheduleStatus.Operating;
-                    return new ScheduleOverview(
+            var overviews = entities.Select(e =>new ScheduleOverview(
                         e.Schedule.Id,
                         e.Well.Name,
                         e.Company.Name,
@@ -72,9 +68,8 @@
                         e.Well.BottomholeLat,
                         e.Well.BottomholeLong,
                         e.Well.Tvd,
-                        startIn,
-                        status);
-                });
+                        e.Schedule.FracStartDate.GetStartInDays(),
+                        e.Schedule.FracStartDate.GetScheduleStatus()));
 
             return new ScheduleOverviews(
                 request,

@@ -1,4 +1,4 @@
-﻿namespace QuartzEnergy.FracSchedule.Services.FracSchedule.Services
+﻿namespace QuartzEnergy.FracSchedule.Services.FracSchedule.Services.Schedules
 {
     using QuartzEnergy.Common.Services.Services.Entity.Interfaces;
     using QuartzEnergy.FracSchedule.Services.FracSchedule.Models.Schedules.Entity;

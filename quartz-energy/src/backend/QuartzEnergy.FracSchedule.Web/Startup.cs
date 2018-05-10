@@ -15,6 +15,7 @@ namespace QuartzEnergy.FracSchedule.Web
     using QuartzEnergy.Common.Web.Infrastructure;
     using QuartzEnergy.FracSchedule.Dal.Infrastructure;
     using QuartzEnergy.FracSchedule.Web.Configuration;
+    using QuartzEnergy.FracSchedule.Web.FracSchedule.Infrastructure;
     using QuartzEnergy.FracSchedule.Web.Infrastructure;
 
     public class Startup
@@ -35,18 +36,20 @@ namespace QuartzEnergy.FracSchedule.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            var connectionString = this.configuration.GetConnectionString("Default");
+            var vegaConnectionString = this.configuration.GetConnectionString("Vega");
+            var fracScheduleConnectionString = this.configuration.GetConnectionString("FracSchedule");
             var assemblyName = Assembly.GetExecutingAssembly().GetName().Name;
             var uploadFolder = Path.Combine(this.environment.ContentRootPath, this.appConfiguration.UploadFolder);
 
             services
                 .AddAutoMapper()
-                .AddEntityFramework<VegaSqlServerDbContext>(connectionString)
-                .AddVegaServices(connectionString)
+                .AddEntityFramework<VegaSqlServerDbContext>(vegaConnectionString)
+                .AddVegaServices(vegaConnectionString)
+                .AddFracScheduleServices(fracScheduleConnectionString)
                 .AddMvcWithModelValidation(out IMvcBuilder mvc)
                 .AddCorsEnable()
                 .AddSwagger()
-                .AddAuth(connectionString, assemblyName)
+                .AddAuth(vegaConnectionString, assemblyName)
                 .AddFiles(uploadFolder);
 
             mvc.UseCamelCaseJson()

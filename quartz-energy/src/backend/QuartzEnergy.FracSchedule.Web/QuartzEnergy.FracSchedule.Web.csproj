@@ -5,7 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="FracSchedule\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 

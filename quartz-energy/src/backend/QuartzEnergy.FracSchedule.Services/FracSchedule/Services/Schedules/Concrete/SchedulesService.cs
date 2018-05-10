@@ -1,4 +1,4 @@
-﻿namespace QuartzEnergy.FracSchedule.Services.FracSchedule.Services.Concrete
+﻿namespace QuartzEnergy.FracSchedule.Services.FracSchedule.Services.Schedules.Concrete
 {
     using System.Threading.Tasks;
 

@@ -1,13 +1,18 @@
-﻿namespace QuartzEnergy.FracSchedule.Services.FracSchedule.Models.Schedules.Overviews
+﻿namespace QuartzEnergy.FracSchedule.Web.FracSchedule.Resources.Schedules.Overviews
 {
     using System.Collections.Generic;
 
     using QuartzEnergy.Common.DataAnnotations.Attributes.Data;
     using QuartzEnergy.Common.DataAnnotations.Attributes.Numbers;
-    using QuartzEnergy.Common.Services.Models.Overviews;
-    public sealed class ScheduleOverviewsRequest : OverviewsRequestModel
+    using QuartzEnergy.Common.Web.Resources.Overviews;
+
+    public sealed class ScheduleOverviewsRequestResource : OverviewsRequestResource
     {
-        public ScheduleOverviewsRequest(
+        public ScheduleOverviewsRequestResource()
+        {            
+        }
+
+        public ScheduleOverviewsRequestResource(
             IEnumerable<int> regions, 
             IEnumerable<int> operators, 
             int? startNextDays,
