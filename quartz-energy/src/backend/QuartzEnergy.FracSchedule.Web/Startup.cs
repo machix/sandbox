@@ -48,7 +48,7 @@ namespace QuartzEnergy.FracSchedule.Web
                 .AddVegaServices(vegaConnectionString);
 
             services
-//                .AddAuth(fracScheduleConnectionString, assemblyName)
+                .AddAuth(fracScheduleConnectionString, assemblyName)
                 .AddAutoMapper()
                 .AddEntityFramework<FracScheduleSqlServerDbContext>(fracScheduleConnectionString)
                 .AddFracScheduleServices(fracScheduleConnectionString)
@@ -58,7 +58,7 @@ namespace QuartzEnergy.FracSchedule.Web
                 .AddFiles(uploadFolder);
 
             mvc
-//                .AddAuth()
+                .AddAuth()
                 .UseCamelCaseJson();
         }
 
@@ -71,7 +71,7 @@ namespace QuartzEnergy.FracSchedule.Web
             }
 
             app
-//               .UseAuth()
+               .UseAuth()
                .UseCorsEnable()
                .UseStaticFiles()
                .UseMvcWithDefaultRoute()

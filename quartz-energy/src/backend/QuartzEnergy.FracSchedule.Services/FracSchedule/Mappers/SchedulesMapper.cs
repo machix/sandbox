@@ -38,22 +38,22 @@
                         {
                             Schedule = q1.Schedule,
                             Company = q1.Company,
-                            Well = q1.Well,
-                            RecordsCount = query1.Count()
+                            Well = q1.Well
                         };
 
             var sortBy = new SortFields<ScheduleOverviewQuery>
-                             {
-                                { "wellName", e => e.Well.Name },
-                                { "operator", e => e.Company.Name },
-                                { "fracStartDate", e => e.Schedule.FracStartDate }
-                             };
+            {
+                { "wellName", e => e.Well.Name },
+                { "operator", e => e.Company.Name },
+                { "fracStartDate", e => e.Schedule.FracStartDate }
+            };
             query = query
                 .SortBy(request, sortBy)
                 .GetPage(request);
 
             // Run SQL query
             var entities = await query.ToArrayAsync();
+            var totalCount = await query1.CountAsync();
 
             // Map entities to models
             var overviews = entities.Select(e =>new ScheduleOverview(
@@ -82,7 +82,7 @@
 
             return new ScheduleOverviews(
                 request,
-                entities.Any() ? entities.First().RecordsCount : 0,
+                totalCount,
                 os,
                 summary);
         }
@@ -94,8 +94,6 @@
             public CompanyEntity Company { get; set; }
 
             public WellEntity Well { get; set; }
-
-            public int RecordsCount { get; set; }
         }
     }
 }
