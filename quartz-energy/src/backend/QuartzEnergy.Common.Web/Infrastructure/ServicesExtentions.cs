@@ -1,5 +1,9 @@
 ﻿namespace QuartzEnergy.Common.Web.Infrastructure
 {
+    using System;
+
+    using AutoMapper;
+
     using QuartzEnergy.Common.Dal.Infrastructure;
     using QuartzEnergy.Common.Dal.Infrastructure.Concrete;
     using QuartzEnergy.Common.Web.Mvc;
@@ -71,6 +75,37 @@
                         s.SwaggerDoc("v1", new Info { Title = "API", Version = "v1" });
                     });
             
+            return services;
+        }
+
+        public static IServiceCollection AddUowMapperService<TIService, TService, TISessionFactory>(
+            this IServiceCollection services)
+            where TIService : class 
+            where TService : class, TIService
+            where TISessionFactory: ISessionFactory
+        {
+            var serviceProvider = services.BuildServiceProvider();
+            var uowf = new UnitOfWorkFactory(serviceProvider.GetService<TISessionFactory>());
+            var mapper = serviceProvider.GetService<IMapper>();
+
+            services.AddScoped<TIService, TService>(p => 
+                (TService)Activator.CreateInstance(typeof(TService), uowf, mapper));
+
+            return services;
+        }
+
+        public static IServiceCollection AddUowService<TIService, TService, TISessionFactory>(
+            this IServiceCollection services)
+            where TIService : class 
+            where TService : class, TIService
+            where TISessionFactory: ISessionFactory
+        {
+            var serviceProvider = services.BuildServiceProvider();
+            var uowf = new UnitOfWorkFactory(serviceProvider.GetService<TISessionFactory>());
+
+            services.AddScoped<TIService, TService>(p => 
+                (TService)Activator.CreateInstance(typeof(TService), uowf));
+
             return services;
         }
     }

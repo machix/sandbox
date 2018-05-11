@@ -2,7 +2,7 @@
 {
     using QuartzEnergy.Common.Dal.Infrastructure;
 
-    public class VegaSessionFactory : ISessionFactory
+    public class VegaSessionFactory : IVegaSessionFactory
     {
         private readonly string connectionString;
 

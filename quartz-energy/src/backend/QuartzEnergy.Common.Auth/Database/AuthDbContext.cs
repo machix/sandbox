@@ -6,7 +6,7 @@
 
     public class AuthDbContext : IdentityDbContext<IdentityUser>
     {
-        public AuthDbContext(DbContextOptions options)
+        public AuthDbContext(DbContextOptions<AuthDbContext> options)
             : base(options)
         {            
         }

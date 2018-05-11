@@ -18,6 +18,11 @@
         {            
         }
 
+        public FracScheduleDbContext(DbContextOptions<FracScheduleDbContext> options)
+            : base(options)
+        {            
+        }
+
         public DbSet<RegionEntity> Regions { get; set; }   
 
         public DbSet<StateEntity> States { get; set; }   

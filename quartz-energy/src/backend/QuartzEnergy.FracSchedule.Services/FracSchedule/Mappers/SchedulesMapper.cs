@@ -7,6 +7,7 @@
 
     using QuartzEnergy.Common.Services.Specifications;
     using QuartzEnergy.FracSchedule.Domain.FracSchedule.Entities;
+    using QuartzEnergy.FracSchedule.Services.FracSchedule.Models.Schedules.Enums;
     using QuartzEnergy.FracSchedule.Services.FracSchedule.Models.Schedules.Overviews;
     using QuartzEnergy.FracSchedule.Services.FracSchedule.Specifications;
     using QuartzEnergy.FracSchedule.Services.FracSchedule.Utils;
@@ -71,11 +72,19 @@
                         e.Schedule.FracStartDate.GetStartInDays(),
                         e.Schedule.FracStartDate.GetScheduleStatus()));
 
+            var os = overviews as ScheduleOverview[] ?? overviews.ToArray();
+            var summary = new ScheduleSummary(
+                os.Count(o => o.Status == ScheduleStatus.Operating),
+                os.Count(o => o.Status == ScheduleStatus.Next7Days),
+                os.Count(o => o.Status == ScheduleStatus.Next830Days),
+                os.Count(o => o.Status == ScheduleStatus.Next3160Days),
+                os.Count(o => o.Status == ScheduleStatus.Next60PlusDays));
+
             return new ScheduleOverviews(
                 request,
                 entities.Any() ? entities.First().RecordsCount : 0,
-                overviews,
-                null);
+                os,
+                summary);
         }
 
         private class ScheduleOverviewQuery

@@ -2,7 +2,7 @@
 {
     using Microsoft.Extensions.DependencyInjection;
 
-    using QuartzEnergy.Common.Dal.Infrastructure;
+    using QuartzEnergy.Common.Web.Infrastructure;
     using QuartzEnergy.FracSchedule.Dal.FracSchedule.Infrastructure;
     using QuartzEnergy.FracSchedule.Services.FracSchedule.Services.Companies;
     using QuartzEnergy.FracSchedule.Services.FracSchedule.Services.Companies.Concrete;
@@ -24,10 +24,10 @@
             string connectionString)
         {
 
-            services.AddScoped<ISessionFactory, FracScheduleSessionFactory>(provider => new FracScheduleSessionFactory(connectionString));
-            services.AddScoped<ISchedulesService, SchedulesService>();
-            services.AddScoped<IRegionsListService, RegionsListService>();
-            services.AddScoped<ICompaniesListService, CompaniesListService>();
+            services.AddScoped<IFracScheduleSessionFactory, FracScheduleSessionFactory>(provider => new FracScheduleSessionFactory(connectionString));
+            services.AddUowMapperService<ISchedulesService, SchedulesService, IFracScheduleSessionFactory>();
+            services.AddUowService<IRegionsListService, RegionsListService, IFracScheduleSessionFactory>();
+            services.AddUowService<ICompaniesListService, CompaniesListService, IFracScheduleSessionFactory>();
 
             return services;
         }

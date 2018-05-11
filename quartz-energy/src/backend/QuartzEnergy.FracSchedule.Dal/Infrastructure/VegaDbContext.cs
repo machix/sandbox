@@ -18,6 +18,11 @@
         {            
         }
 
+        public VegaDbContext(DbContextOptions<VegaDbContext> options)
+            : base(options)
+        {            
+        }
+
         public DbSet<MakerEntity> Makers { get; set; }   
 
         public DbSet<ModelEntity> Models { get; set; }   

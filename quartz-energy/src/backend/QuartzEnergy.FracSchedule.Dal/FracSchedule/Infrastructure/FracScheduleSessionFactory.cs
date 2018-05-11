@@ -2,7 +2,7 @@
 {
     using QuartzEnergy.Common.Dal.Infrastructure;
 
-    public class FracScheduleSessionFactory : ISessionFactory
+    public class FracScheduleSessionFactory : IFracScheduleSessionFactory
     {
         private readonly string connectionString;
 

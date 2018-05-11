@@ -9,13 +9,13 @@
     {
         public string Name { get; set; }
 
-        public float SurfaceLat { get; set; }
+        public double SurfaceLat { get; set; }
 
-        public float SurfaceLong { get; set; }
+        public double SurfaceLong { get; set; }
 
-        public float BottomholeLat { get; set; }
+        public double BottomholeLat { get; set; }
 
-        public float BottomholeLong { get; set; }
+        public double BottomholeLong { get; set; }
 
         public string Tvd { get; set; }
 

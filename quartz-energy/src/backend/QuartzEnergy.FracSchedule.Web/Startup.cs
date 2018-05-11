@@ -13,6 +13,7 @@ namespace QuartzEnergy.FracSchedule.Web
     using QuartzEnergy.Common.Auth.Extensions;
     using QuartzEnergy.Common.Files.Extensions;
     using QuartzEnergy.Common.Web.Infrastructure;
+    using QuartzEnergy.FracSchedule.Dal.FracSchedule.Infrastructure;
     using QuartzEnergy.FracSchedule.Dal.Infrastructure;
     using QuartzEnergy.FracSchedule.Web.Configuration;
     using QuartzEnergy.FracSchedule.Web.FracSchedule.Infrastructure;
@@ -41,19 +42,24 @@ namespace QuartzEnergy.FracSchedule.Web
             var assemblyName = Assembly.GetExecutingAssembly().GetName().Name;
             var uploadFolder = Path.Combine(this.environment.ContentRootPath, this.appConfiguration.UploadFolder);
 
+            // Vega
             services
-                .AddAutoMapper()
                 .AddEntityFramework<VegaSqlServerDbContext>(vegaConnectionString)
-                .AddVegaServices(vegaConnectionString)
+                .AddVegaServices(vegaConnectionString);
+
+            services
+//                .AddAuth(fracScheduleConnectionString, assemblyName)
+                .AddAutoMapper()
+                .AddEntityFramework<FracScheduleSqlServerDbContext>(fracScheduleConnectionString)
                 .AddFracScheduleServices(fracScheduleConnectionString)
                 .AddMvcWithModelValidation(out IMvcBuilder mvc)
                 .AddCorsEnable()
                 .AddSwagger()
-                .AddAuth(vegaConnectionString, assemblyName)
                 .AddFiles(uploadFolder);
 
-            mvc.UseCamelCaseJson()
-                .AddAuth();
+            mvc
+//                .AddAuth()
+                .UseCamelCaseJson();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -64,11 +70,12 @@ namespace QuartzEnergy.FracSchedule.Web
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseCorsEnable()
+            app
+//               .UseAuth()
+               .UseCorsEnable()
                .UseStaticFiles()
                .UseMvcWithDefaultRoute()
-               .UseSwaggerPage()
-               .UseAuth();
+               .UseSwaggerPage();
         }
     }
 }

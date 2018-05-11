@@ -16,10 +16,10 @@
             DateTime fracEndDate, 
             int duration, 
             string api, 
-            float surfaceLat, 
-            float surfaceLong, 
-            float bottomholeLat, 
-            float bottomholeLong, 
+            double surfaceLat, 
+            double surfaceLong, 
+            double bottomholeLat, 
+            double bottomholeLong, 
             string tvd, 
             int? startIn,
             ScheduleStatus status)
@@ -61,13 +61,13 @@
         [MaxLength(20)]
         public string Api { get; }
 
-        public float SurfaceLat { get; }
+        public double SurfaceLat { get; }
 
-        public float SurfaceLong { get; }
+        public double SurfaceLong { get; }
 
-        public float BottomholeLat { get; }
+        public double BottomholeLat { get; }
 
-        public float BottomholeLong { get; }
+        public double BottomholeLong { get; }
 
         [Required]
         [MaxLength(255)]

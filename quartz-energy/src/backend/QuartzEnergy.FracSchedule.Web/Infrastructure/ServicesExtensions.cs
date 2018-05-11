@@ -1,6 +1,5 @@
 ﻿namespace QuartzEnergy.FracSchedule.Web.Infrastructure
 {
-    using QuartzEnergy.Common.Dal.Infrastructure;
     using QuartzEnergy.FracSchedule.Dal.Infrastructure;
     using QuartzEnergy.FracSchedule.Services.Vega.Services.Features;
     using QuartzEnergy.FracSchedule.Services.Vega.Services.Features.Concrete;
@@ -15,6 +14,8 @@
 
     using Microsoft.Extensions.DependencyInjection;
 
+    using QuartzEnergy.Common.Web.Infrastructure;
+
     public static class ServicesExtensions
     {
         /// <summary>
@@ -28,13 +29,13 @@
             string connectionString)
         {
 
-            services.AddScoped<ISessionFactory, VegaSessionFactory>(provider => new VegaSessionFactory(connectionString));
-            services.AddScoped<IVehiclesService, VehiclesService>();
-            services.AddScoped<IMakersListService, MakersListService>();
-            services.AddScoped<IModelsListService, ModelsListService>();
-            services.AddScoped<IFeaturesListService, FeaturesListService>();
-            services.AddScoped<IOwnersListService, OwnersListService>();
-            services.AddScoped<IVehiclesStatisticsService, VehiclesStatisticsService>();
+            services.AddScoped<IVegaSessionFactory, VegaSessionFactory>(p => new VegaSessionFactory(connectionString));
+            services.AddUowMapperService<IVehiclesService, VehiclesService, IVegaSessionFactory>();
+            services.AddUowService<IMakersListService, MakersListService, IVegaSessionFactory>();
+            services.AddUowService<IModelsListService, ModelsListService, IVegaSessionFactory>();
+            services.AddUowService<IFeaturesListService, FeaturesListService, IVegaSessionFactory>();
+            services.AddUowService<IOwnersListService, OwnersListService, IVegaSessionFactory>();
+            services.AddUowService<IVehiclesStatisticsService, VehiclesStatisticsService, IVegaSessionFactory>();
 
             return services;
         }
