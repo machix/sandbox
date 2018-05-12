@@ -42,15 +42,12 @@ namespace QuartzEnergy.FracSchedule.Web
             var assemblyName = Assembly.GetExecutingAssembly().GetName().Name;
             var uploadFolder = Path.Combine(this.environment.ContentRootPath, this.appConfiguration.UploadFolder);
 
-            // Vega
-            services
-                .AddEntityFramework<VegaSqlServerDbContext>(vegaConnectionString)
-                .AddVegaServices(vegaConnectionString);
-
             services
                 .AddAuth(fracScheduleConnectionString, assemblyName)
                 .AddAutoMapper()
+                .AddEntityFramework<VegaSqlServerDbContext>(vegaConnectionString)
                 .AddEntityFramework<FracScheduleSqlServerDbContext>(fracScheduleConnectionString)
+                .AddVegaServices(vegaConnectionString)
                 .AddFracScheduleServices(fracScheduleConnectionString)
                 .AddMvcWithModelValidation(out IMvcBuilder mvc)
                 .AddCorsEnable()
