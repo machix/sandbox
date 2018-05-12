@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { VehicleComponent } from './components/vehicles/entity/vehicle.component';
 import { AppCommonModule } from './../common/app-common.module';
@@ -16,7 +17,6 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import { vegaRouting } from './vega.routing';
 import { MatSortModule } from '@angular/material/sort';
 import { HomeComponent } from './components/home/home.component';
 import { VehiclesComponent } from './components/vehicles/overviews/vehicles.component';
@@ -49,11 +49,11 @@ import { VehiclePhotosComponent } from './components/vehicles/entity/vehicle-pho
   ],
   imports: [
     AppCommonModule.forRoot(),
+    RouterModule,
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    vegaRouting,
     BrowserAnimationsModule,
     MatTableModule,
     MatPaginatorModule,

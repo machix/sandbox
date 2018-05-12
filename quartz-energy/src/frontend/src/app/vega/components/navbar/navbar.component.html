@@ -36,6 +36,9 @@
             <li *ngIf="auth.isAuthenticated">
                 <a routerLink="#" (click)="logout()">Logout</a>
             </li>
+            <li *ngIf="auth.isAuthenticated">
+                <a routerLink="/schedules">Frac Schedules</a>
+            </li>            
           </ul>
       </div>
   </div>
