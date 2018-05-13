@@ -19,10 +19,16 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSortModule } from '@angular/material/sort';
 import { ChartsModule } from 'ng2-charts/ng2-charts';
 import { FracScheduleComponent } from './frac-schedule.component';
+import { SchedulesComponent } from './components/schedules/overviews/schedules.component';
+import { ScheduleOverviewComponent } from './components/schedules/overviews/schedule-overview.component';
+import { SchedulesFilterComponent } from './components/schedules/overviews/schedules-filter.component';
 
 @NgModule({
   declarations: [
-  FracScheduleComponent],
+  FracScheduleComponent,
+  SchedulesComponent,
+  ScheduleOverviewComponent,
+  SchedulesFilterComponent],
   imports: [
     AppCommonModule.forRoot(),
     RouterModule,
