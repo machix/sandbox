@@ -23,18 +23,18 @@
         }
 
         [MinIntValue(0)]
-        public int OperatingCount { get; }
+        public int OperatingCount { get; set; }
 
         [MinIntValue(0)]
-        public int Next7DaysCount { get; }
+        public int Next7DaysCount { get; set; }
 
         [MinIntValue(0)]
-        public int Next830DaysCount { get; }
+        public int Next830DaysCount { get; set; }
 
         [MinIntValue(0)]
-        public int Next3160DaysCount { get; }
+        public int Next3160DaysCount { get; set; }
 
         [MinIntValue(0)]
-        public int Next60PlusDaysCount { get; }
+        public int Next60PlusDaysCount { get; set; }
     }
 }

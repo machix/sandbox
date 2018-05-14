@@ -34,7 +34,7 @@
             get
             {
                 var k = key.Trim().ToLower();
-                return this.sortFields.FirstOrDefault(f => f.SortBy.Trim().Trim() == k);
+                return this.sortFields.FirstOrDefault(f => f.SortBy.Trim().ToLower() == k);
             }
         }
 

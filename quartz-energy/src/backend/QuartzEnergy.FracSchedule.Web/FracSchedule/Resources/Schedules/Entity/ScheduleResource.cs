@@ -28,15 +28,15 @@
         }
 
         [IntId]
-        public int WellId { get; }
+        public int WellId { get; set; }
 
         [IntId]
-        public int CompanyId { get; }
+        public int CompanyId { get; set; }
 
-        public DateTime FracStartDate { get; }
+        public DateTime FracStartDate { get; set; }
 
-        public DateTime FracEndDate { get; }
+        public DateTime FracEndDate { get; set; }
 
-        public DateTime CreatedDate { get; }
+        public DateTime CreatedDate { get; set; }
     }
 }

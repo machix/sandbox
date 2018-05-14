@@ -22,13 +22,19 @@ import { FracScheduleComponent } from './frac-schedule.component';
 import { SchedulesComponent } from './components/schedules/overviews/schedules.component';
 import { ScheduleOverviewComponent } from './components/schedules/overviews/schedule-overview.component';
 import { SchedulesFilterComponent } from './components/schedules/overviews/schedules-filter.component';
+import { SchedulesMapComponent } from './components/schedules/overviews/schedules-map/schedules-map.component';
+import { SchedulesListComponent } from './components/schedules/overviews/schedules-list/schedules-list.component';
+import { SchedulesChsrtComponent } from './components/schedules/overviews/schedules-chsrt/schedules-chsrt.component';
 
 @NgModule({
   declarations: [
   FracScheduleComponent,
   SchedulesComponent,
   ScheduleOverviewComponent,
-  SchedulesFilterComponent],
+  SchedulesFilterComponent,
+  SchedulesMapComponent,
+  SchedulesListComponent,
+  SchedulesChsrtComponent],
   imports: [
     AppCommonModule.forRoot(),
     RouterModule,

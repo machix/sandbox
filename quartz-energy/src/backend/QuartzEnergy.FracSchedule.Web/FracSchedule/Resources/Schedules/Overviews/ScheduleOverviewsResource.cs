@@ -21,6 +21,6 @@
             this.Summary = summary;
         }
 
-        public ScheduleSummaryResource Summary { get; }
+        public ScheduleSummaryResource Summary { get; set; }
     }
 }

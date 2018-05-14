@@ -45,40 +45,40 @@
         }
 
         [IntId]
-        public int ScheduleId { get; }
+        public int ScheduleId { get; set; }
 
         [Required]
         [MaxLength(50)]
-        public string WellName { get; }
+        public string WellName { get; set; }
 
         [Required]
         [MaxLength(50)]
-        public string Operator { get; }
+        public string Operator { get; set; }
 
-        public DateTime FracStartDate { get; }
+        public DateTime FracStartDate { get; set; }
 
-        public DateTime FracEndDate { get; }
+        public DateTime FracEndDate { get; set; }
 
-        public int Duration { get; }
+        public int Duration { get; set; }
 
         [Required]
         [MaxLength(20)]
-        public string Api { get; }
+        public string Api { get; set; }
 
-        public double SurfaceLat { get; }
+        public double SurfaceLat { get; set; }
 
-        public double SurfaceLong { get; }
+        public double SurfaceLong { get; set; }
 
-        public double BottomholeLat { get; }
+        public double BottomholeLat { get; set; }
 
-        public double BottomholeLong { get; }
+        public double BottomholeLong { get; set; }
 
         [Required]
         [MaxLength(255)]
-        public string Tvd { get; }
+        public string Tvd { get; set; }
 
-        public int? StartIn { get; }
+        public int? StartIn { get; set; }
 
-        public ScheduleStatus Status { get; }
+        public ScheduleStatus Status { get; set; }
     }
 }

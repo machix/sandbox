@@ -1,3 +1,70 @@
-<p>
-  schedules works!
-</p>
+<h2>Frac Schedules</h2>
+<app-schedules-filter [request]="request" (filter)="onFilter($event)"></app-schedules-filter>
+<mat-card>
+  <mat-card-content>
+      <mat-table #table 
+      [dataSource]="dataSource" 
+      matSort 
+      (matSortChange)="onSortChange($event)">
+      <ng-container matColumnDef="wellName">
+        <mat-header-cell *matHeaderCellDef mat-sort-header="wellName"> Well Name </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.wellName}} </mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="operator">
+        <mat-header-cell *matHeaderCellDef mat-sort-header="operator"> Operator </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.operator}} </mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="fracStartDate">
+        <mat-header-cell *matHeaderCellDef mat-sort-header="fracStartDate"> Frac Start </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.fracStartDate}} </mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="fracEndDate">
+        <mat-header-cell *matHeaderCellDef mat-sort-header="fracEndDate"> Frac End </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.fracEndDate}} </mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="duration">
+        <mat-header-cell *matHeaderCellDef mat-sort-header="duration"> Duration(d) </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.duration}} </mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="api">
+        <mat-header-cell *matHeaderCellDef mat-sort-header="api"> API </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.api}} </mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="surface">
+        <mat-header-cell *matHeaderCellDef mat-sort-header="surface"> Surface Lat, Long </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.surfaceLat}}, {{row.surfaceLong}} </mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="bottomhole">
+        <mat-header-cell *matHeaderCellDef mat-sort-header="bottomhole"> Bottomhole Lat, Long </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.bottomholeLat}}, {{row.BottomholeLong}} </mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="tvd">
+        <mat-header-cell *matHeaderCellDef mat-sort-header="tvd"> TVD </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.tvd}} </mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="startIn">
+        <mat-header-cell *matHeaderCellDef mat-sort-header="startIn"> Start in (d) </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.status}} {{row.startIn}} </mat-cell>
+      </ng-container>      
+      <ng-container matColumnDef="actions">
+        <mat-header-cell *matHeaderCellDef></mat-header-cell>
+        <mat-cell *matCellDef="let row">
+          <button mat-mini-fab color="primary" routerLink="/schedules/{{row.scheduleId}}">Edit</button>
+        </mat-cell>
+      </ng-container>
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+
+    <mat-paginator *ngIf="overviews" 
+                  #paginator
+                  [pageSize]="pageSize"
+                  [pageSizeOptions]="[pageSize, pageSize * 2]"
+                  [length]="overviews.recordsCount"
+                  (page)="onPageChange($event)">
+    </mat-paginator>    
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="primary" routerLink="/schedules/new">New Vehicle</button>
+  </mat-card-actions>
+</mat-card>

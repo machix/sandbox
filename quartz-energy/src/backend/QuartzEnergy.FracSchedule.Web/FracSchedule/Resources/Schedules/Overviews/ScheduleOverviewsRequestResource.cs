@@ -28,12 +28,12 @@
         }
 
         [IntIds]
-        public IEnumerable<int> Regions { get; }
+        public IEnumerable<int> Regions { get; set; }
 
         [IntIds]
-        public IEnumerable<int> Operators { get; }
+        public IEnumerable<int> Operators { get; set; }
 
         [MinIntValue(0)]
-        public int? StartNextDays { get; }
+        public int? StartNextDays { get; set; }
     }
 }
