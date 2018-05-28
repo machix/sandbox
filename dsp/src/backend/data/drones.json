@@ -1,0 +1,6166 @@
+[
+  {
+    "name": "drone0",
+    "status": "idle-busy",
+    "accessories": {
+      "accessorie": {
+        "name": "drone0 accessories"
+      }
+    },
+    "system": "drone system 0",
+    "maxFlightTime": 446.601675532741,
+    "maxBatteryTime": 910.0380475088598,
+    "currentLocation": [
+      0.046674563428854565,
+      6.232063218621471
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 114.53369095893886,
+    "maxSpeed": 936.3017933727192,
+    "maxCargoWeight": 1007.0783993523173,
+    "maxAltitude": 361.07582327403867,
+    "cameraResolution": 1002.0367312610831,
+    "videoResolution": 732.1252582827228,
+    "hasWiFi": false,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 1054,
+    "hasAccelerometer": false,
+    "hasGyroscope": true,
+    "hasRadar": false,
+    "hasGPS": true,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone1",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone1 accessories"
+      }
+    },
+    "system": "drone system 1",
+    "maxFlightTime": 498.0631116933433,
+    "maxBatteryTime": 461.6094990039738,
+    "currentLocation": [
+      4.673472021285365,
+      3.142344737339602
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 364.627214657166,
+    "maxSpeed": 541.4384038741825,
+    "maxCargoWeight": 518.0588933334589,
+    "maxAltitude": 913.1398963330815,
+    "cameraResolution": 894.1880610232022,
+    "videoResolution": 937.2674899225478,
+    "hasWiFi": false,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 544,
+    "hasAccelerometer": false,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": false,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone2",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone2 accessories"
+      }
+    },
+    "system": "drone system 2",
+    "maxFlightTime": 300.9086365904798,
+    "maxBatteryTime": 968.8812025532486,
+    "currentLocation": [
+      4.492537681945485,
+      7.248946575842337
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 1084.7584800483157,
+    "maxSpeed": 1044.4230255594848,
+    "maxCargoWeight": 679.3975935794513,
+    "maxAltitude": 1088.894733569266,
+    "cameraResolution": 582.4223307670803,
+    "videoResolution": 194.3780361364912,
+    "hasWiFi": false,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 938,
+    "hasAccelerometer": true,
+    "hasGyroscope": true,
+    "hasRadar": false,
+    "hasGPS": true,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone3",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone3 accessories"
+      }
+    },
+    "system": "drone system 3",
+    "maxFlightTime": 817.9440591877964,
+    "maxBatteryTime": 612.3322277161149,
+    "currentLocation": [
+      4.980768282730919,
+      6.662323855455757
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 207.72621598118116,
+    "maxSpeed": 1087.4858930922082,
+    "maxCargoWeight": 636.7392698370635,
+    "maxAltitude": 901.0892551314224,
+    "cameraResolution": 560.4142177347596,
+    "videoResolution": 461.16435661340284,
+    "hasWiFi": false,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 489,
+    "hasAccelerometer": false,
+    "hasGyroscope": true,
+    "hasRadar": false,
+    "hasGPS": true,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone4",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone4 accessories"
+      }
+    },
+    "system": "drone system 4",
+    "maxFlightTime": 1083.1400778709722,
+    "maxBatteryTime": 1063.241300067015,
+    "currentLocation": [
+      9.937009859520911,
+      2.2478399479354794
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 593.5680468419055,
+    "maxSpeed": 483.07229008976407,
+    "maxCargoWeight": 693.9661579151257,
+    "maxAltitude": 525.1672142000444,
+    "cameraResolution": 734.3890247277404,
+    "videoResolution": 979.4272619718157,
+    "hasWiFi": true,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 182,
+    "hasAccelerometer": true,
+    "hasGyroscope": true,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone5",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone5 accessories"
+      }
+    },
+    "system": "drone system 5",
+    "maxFlightTime": 868.5497284840673,
+    "maxBatteryTime": 466.0401918447511,
+    "currentLocation": [
+      9.394129021982414,
+      4.5601372544529895
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 277.6610418992324,
+    "maxSpeed": 962.761043525691,
+    "maxCargoWeight": 890.0766890906057,
+    "maxAltitude": 289.64406852773897,
+    "cameraResolution": 858.0114153176016,
+    "videoResolution": 371.161169792163,
+    "hasWiFi": false,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 713,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone6",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone6 accessories"
+      }
+    },
+    "system": "drone system 6",
+    "maxFlightTime": 1001.6763898080316,
+    "maxBatteryTime": 369.4197374943723,
+    "currentLocation": [
+      9.894137256266957,
+      3.335497833658201
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 995.2938295222606,
+    "maxSpeed": 681.9350285330185,
+    "maxCargoWeight": 397.2137082640676,
+    "maxAltitude": 1064.0182557755388,
+    "cameraResolution": 575.6095730116621,
+    "videoResolution": 725.5504919263497,
+    "hasWiFi": false,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 1075,
+    "hasAccelerometer": false,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": false,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone7",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone7 accessories"
+      }
+    },
+    "system": "drone system 7",
+    "maxFlightTime": 178.92967796730366,
+    "maxBatteryTime": 287.8856881073036,
+    "currentLocation": [
+      0.5952524426578965,
+      3.300237099183505
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 410.87311396287464,
+    "maxSpeed": 764.1347951052625,
+    "maxCargoWeight": 345.7397443939859,
+    "maxAltitude": 258.99712861570083,
+    "cameraResolution": 1003.1539361218707,
+    "videoResolution": 295.03716223057154,
+    "hasWiFi": true,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 847,
+    "hasAccelerometer": true,
+    "hasGyroscope": true,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone8",
+    "status": "idle-ready",
+    "accessories": {
+      "accessorie": {
+        "name": "drone8 accessories"
+      }
+    },
+    "system": "drone system 8",
+    "maxFlightTime": 992.3637258632962,
+    "maxBatteryTime": 244.21587817692537,
+    "currentLocation": [
+      7.338569497360599,
+      5.342321317621965
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 593.4242595170089,
+    "maxSpeed": 189.24806977784905,
+    "maxCargoWeight": 326.3893627209053,
+    "maxAltitude": 719.9551215252317,
+    "cameraResolution": 951.0951449188861,
+    "videoResolution": 183.8342805031167,
+    "hasWiFi": false,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 215,
+    "hasAccelerometer": false,
+    "hasGyroscope": false,
+    "hasRadar": false,
+    "hasGPS": false,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone9",
+    "status": "idle-busy",
+    "accessories": {
+      "accessorie": {
+        "name": "drone9 accessories"
+      }
+    },
+    "system": "drone system 9",
+    "maxFlightTime": 112.24927063016068,
+    "maxBatteryTime": 631.3249237871634,
+    "currentLocation": [
+      6.588080975877051,
+      4.874685262506708
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 694.634108594414,
+    "maxSpeed": 758.2651554331982,
+    "maxCargoWeight": 480.69703441122857,
+    "maxAltitude": 1057.2796242617833,
+    "cameraResolution": 641.1573542754255,
+    "videoResolution": 654.8453302454685,
+    "hasWiFi": false,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 602,
+    "hasAccelerometer": false,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": false,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone10",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone10 accessories"
+      }
+    },
+    "system": "drone system 10",
+    "maxFlightTime": 771.5332812316452,
+    "maxBatteryTime": 739.2714125593852,
+    "currentLocation": [
+      9.778441214372188,
+      5.2768554929893625
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 703.5277298915736,
+    "maxSpeed": 845.3238752565617,
+    "maxCargoWeight": 612.2328529277829,
+    "maxAltitude": 235.6231663560723,
+    "cameraResolution": 560.6523394922006,
+    "videoResolution": 736.8871718458848,
+    "hasWiFi": false,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 504,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": false,
+    "hasGPS": true,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone11",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone11 accessories"
+      }
+    },
+    "system": "drone system 11",
+    "maxFlightTime": 868.840983403555,
+    "maxBatteryTime": 169.12005450524327,
+    "currentLocation": [
+      7.416968727468312,
+      6.630215663022632
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 1033.8520995890044,
+    "maxSpeed": 600.6572323158573,
+    "maxCargoWeight": 656.6827061435122,
+    "maxAltitude": 710.7716105744121,
+    "cameraResolution": 690.8355173477024,
+    "videoResolution": 392.59139890011187,
+    "hasWiFi": false,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 529,
+    "hasAccelerometer": true,
+    "hasGyroscope": true,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone12",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone12 accessories"
+      }
+    },
+    "system": "drone system 12",
+    "maxFlightTime": 495.85451936067864,
+    "maxBatteryTime": 210.03489696574985,
+    "currentLocation": [
+      2.4835964898956564,
+      8.199654598428225
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 560.0240372873175,
+    "maxSpeed": 1027.4841492887722,
+    "maxCargoWeight": 423.00402658749493,
+    "maxAltitude": 436.7855476224586,
+    "cameraResolution": 286.752339492078,
+    "videoResolution": 365.35683429377644,
+    "hasWiFi": true,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 391,
+    "hasAccelerometer": true,
+    "hasGyroscope": true,
+    "hasRadar": true,
+    "hasGPS": false,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone13",
+    "status": "idle-busy",
+    "accessories": {
+      "accessorie": {
+        "name": "drone13 accessories"
+      }
+    },
+    "system": "drone system 13",
+    "maxFlightTime": 774.1739834793084,
+    "maxBatteryTime": 784.1751294067835,
+    "currentLocation": [
+      4.028443643619585,
+      5.038924545340409
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 1034.345784076414,
+    "maxSpeed": 604.1529535493747,
+    "maxCargoWeight": 120.52504606797578,
+    "maxAltitude": 1096.079152478085,
+    "cameraResolution": 758.0072886558144,
+    "videoResolution": 146.4417205298535,
+    "hasWiFi": true,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 1042,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": false,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone14",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone14 accessories"
+      }
+    },
+    "system": "drone system 14",
+    "maxFlightTime": 993.9529732103,
+    "maxBatteryTime": 839.1721851104161,
+    "currentLocation": [
+      8.125752245907645,
+      1.7079473000092138
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 713.8901052050196,
+    "maxSpeed": 461.40583994221066,
+    "maxCargoWeight": 360.1699247578111,
+    "maxAltitude": 521.8126524302586,
+    "cameraResolution": 1050.383223325784,
+    "videoResolution": 666.1841470115943,
+    "hasWiFi": true,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 690,
+    "hasAccelerometer": true,
+    "hasGyroscope": true,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone15",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone15 accessories"
+      }
+    },
+    "system": "drone system 15",
+    "maxFlightTime": 946.6396380927322,
+    "maxBatteryTime": 830.4642413290778,
+    "currentLocation": [
+      6.322199401708726,
+      8.98071525768657
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 868.1330903429606,
+    "maxSpeed": 1084.0049741866674,
+    "maxCargoWeight": 961.5634027254191,
+    "maxAltitude": 643.0073035773275,
+    "cameraResolution": 469.92899462820094,
+    "videoResolution": 744.797647207763,
+    "hasWiFi": false,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 420,
+    "hasAccelerometer": true,
+    "hasGyroscope": true,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone16",
+    "status": "idle-ready",
+    "accessories": {
+      "accessorie": {
+        "name": "drone16 accessories"
+      }
+    },
+    "system": "drone system 16",
+    "maxFlightTime": 588.3288511328049,
+    "maxBatteryTime": 981.5049418417614,
+    "currentLocation": [
+      7.824128684159062,
+      9.828252024970174
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 724.4034167602322,
+    "maxSpeed": 520.7650187619128,
+    "maxCargoWeight": 703.4242860913679,
+    "maxAltitude": 1082.1104607730315,
+    "cameraResolution": 993.9619602143118,
+    "videoResolution": 823.1024399976022,
+    "hasWiFi": false,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 328,
+    "hasAccelerometer": false,
+    "hasGyroscope": false,
+    "hasRadar": false,
+    "hasGPS": true,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone17",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone17 accessories"
+      }
+    },
+    "system": "drone system 17",
+    "maxFlightTime": 587.0615834325345,
+    "maxBatteryTime": 833.9319649246631,
+    "currentLocation": [
+      9.496089042373384,
+      7.9339224955401155
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 788.4225338138685,
+    "maxSpeed": 778.292484328169,
+    "maxCargoWeight": 452.87054172563927,
+    "maxAltitude": 353.0897524251232,
+    "cameraResolution": 532.6218797967092,
+    "videoResolution": 580.4570386618095,
+    "hasWiFi": false,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 143,
+    "hasAccelerometer": true,
+    "hasGyroscope": true,
+    "hasRadar": true,
+    "hasGPS": false,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone18",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone18 accessories"
+      }
+    },
+    "system": "drone system 18",
+    "maxFlightTime": 641.0017285903517,
+    "maxBatteryTime": 604.9398521679183,
+    "currentLocation": [
+      8.330837915049703,
+      1.1390244212072598
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 114.93555728788087,
+    "maxSpeed": 630.3322300489739,
+    "maxCargoWeight": 559.6509896819296,
+    "maxAltitude": 271.6963931130098,
+    "cameraResolution": 767.677763886791,
+    "videoResolution": 432.6671628527897,
+    "hasWiFi": true,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 411,
+    "hasAccelerometer": false,
+    "hasGyroscope": true,
+    "hasRadar": false,
+    "hasGPS": false,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone19",
+    "status": "idle-busy",
+    "accessories": {
+      "accessorie": {
+        "name": "drone19 accessories"
+      }
+    },
+    "system": "drone system 19",
+    "maxFlightTime": 1073.4407312992723,
+    "maxBatteryTime": 453.5279206144382,
+    "currentLocation": [
+      9.90375472336543,
+      4.411162396214228
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 598.7857948761474,
+    "maxSpeed": 1018.6143938041354,
+    "maxCargoWeight": 794.3011034860859,
+    "maxAltitude": 1018.5623104788316,
+    "cameraResolution": 1063.4983822080367,
+    "videoResolution": 111.51587441467217,
+    "hasWiFi": false,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 396,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": false,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone20",
+    "status": "idle-ready",
+    "accessories": {
+      "accessorie": {
+        "name": "drone20 accessories"
+      }
+    },
+    "system": "drone system 20",
+    "maxFlightTime": 156.549003260113,
+    "maxBatteryTime": 869.4282374858996,
+    "currentLocation": [
+      8.689214987032585,
+      9.839033944704585
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 175.67954097564768,
+    "maxSpeed": 1017.6908732146411,
+    "maxCargoWeight": 571.0929960720398,
+    "maxAltitude": 464.19615861493713,
+    "cameraResolution": 975.7058387000623,
+    "videoResolution": 127.36502771508341,
+    "hasWiFi": true,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 321,
+    "hasAccelerometer": false,
+    "hasGyroscope": true,
+    "hasRadar": false,
+    "hasGPS": true,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone21",
+    "status": "idle-busy",
+    "accessories": {
+      "accessorie": {
+        "name": "drone21 accessories"
+      }
+    },
+    "system": "drone system 21",
+    "maxFlightTime": 443.68160884861965,
+    "maxBatteryTime": 426.06190684560386,
+    "currentLocation": [
+      5.836297911734814,
+      4.676473012844795
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 119.48926151257213,
+    "maxSpeed": 389.1243647817119,
+    "maxCargoWeight": 261.4611889313628,
+    "maxAltitude": 980.5578933975515,
+    "cameraResolution": 804.3421273232495,
+    "videoResolution": 366.17874964264644,
+    "hasWiFi": true,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 1062,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": false,
+    "hasGPS": false,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone22",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone22 accessories"
+      }
+    },
+    "system": "drone system 22",
+    "maxFlightTime": 740.3259757240068,
+    "maxBatteryTime": 683.8263099256765,
+    "currentLocation": [
+      7.591759019047699,
+      4.846993900572456
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 138.13928960721637,
+    "maxSpeed": 292.2932564048232,
+    "maxCargoWeight": 520.7249991613776,
+    "maxAltitude": 793.3337968887498,
+    "cameraResolution": 734.6489935587554,
+    "videoResolution": 653.7153040861987,
+    "hasWiFi": true,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 126,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone23",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone23 accessories"
+      }
+    },
+    "system": "drone system 23",
+    "maxFlightTime": 664.0349829388227,
+    "maxBatteryTime": 666.5013343791281,
+    "currentLocation": [
+      9.162230708424941,
+      2.197323328662386
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 325.7972511472617,
+    "maxSpeed": 270.5888141920724,
+    "maxCargoWeight": 1008.3756020567919,
+    "maxAltitude": 793.9888972659592,
+    "cameraResolution": 129.40633913238844,
+    "videoResolution": 537.5598561178424,
+    "hasWiFi": true,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 1040,
+    "hasAccelerometer": false,
+    "hasGyroscope": true,
+    "hasRadar": true,
+    "hasGPS": false,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone24",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone24 accessories"
+      }
+    },
+    "system": "drone system 24",
+    "maxFlightTime": 580.9482370809146,
+    "maxBatteryTime": 336.0043348090273,
+    "currentLocation": [
+      1.2321926658360294,
+      5.86939461693901
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 450.19924577003826,
+    "maxSpeed": 432.5010470025109,
+    "maxCargoWeight": 1084.7339380791302,
+    "maxAltitude": 898.7649259946776,
+    "cameraResolution": 865.3667814689064,
+    "videoResolution": 233.84643474436976,
+    "hasWiFi": false,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 879,
+    "hasAccelerometer": false,
+    "hasGyroscope": true,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone25",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone25 accessories"
+      }
+    },
+    "system": "drone system 25",
+    "maxFlightTime": 130.26808881068033,
+    "maxBatteryTime": 699.1751407973103,
+    "currentLocation": [
+      9.246154304939918,
+      7.638840293108641
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 382.022284145967,
+    "maxSpeed": 435.5560001229252,
+    "maxCargoWeight": 158.21406936032614,
+    "maxAltitude": 635.1829319112076,
+    "cameraResolution": 578.7892113685366,
+    "videoResolution": 792.1511600521981,
+    "hasWiFi": true,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 729,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone26",
+    "status": "idle-ready",
+    "accessories": {
+      "accessorie": {
+        "name": "drone26 accessories"
+      }
+    },
+    "system": "drone system 26",
+    "maxFlightTime": 130.91988161965364,
+    "maxBatteryTime": 1038.2451935892436,
+    "currentLocation": [
+      8.52536421409784,
+      5.822181767793115
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 446.3407592346055,
+    "maxSpeed": 415.28577080980136,
+    "maxCargoWeight": 322.9100780811466,
+    "maxAltitude": 171.2026266682526,
+    "cameraResolution": 336.3668240112497,
+    "videoResolution": 1033.9378211312517,
+    "hasWiFi": true,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 399,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone27",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone27 accessories"
+      }
+    },
+    "system": "drone system 27",
+    "maxFlightTime": 1035.4978438937376,
+    "maxBatteryTime": 970.5182038499548,
+    "currentLocation": [
+      2.3311691671231483,
+      3.3705699037698977
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 285.12633443752713,
+    "maxSpeed": 371.1334667502916,
+    "maxCargoWeight": 346.14510301726546,
+    "maxAltitude": 707.1768283061991,
+    "cameraResolution": 333.59929171898574,
+    "videoResolution": 801.0728037181761,
+    "hasWiFi": false,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 743,
+    "hasAccelerometer": false,
+    "hasGyroscope": true,
+    "hasRadar": false,
+    "hasGPS": true,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone28",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone28 accessories"
+      }
+    },
+    "system": "drone system 28",
+    "maxFlightTime": 450.0162872281285,
+    "maxBatteryTime": 397.6789229352825,
+    "currentLocation": [
+      0.9354262605992902,
+      5.517839493574732
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 585.2699465748968,
+    "maxSpeed": 1048.507049317031,
+    "maxCargoWeight": 914.494336541826,
+    "maxAltitude": 1070.4696381645563,
+    "cameraResolution": 387.0423949642755,
+    "videoResolution": 1089.892593618248,
+    "hasWiFi": true,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 554,
+    "hasAccelerometer": true,
+    "hasGyroscope": true,
+    "hasRadar": false,
+    "hasGPS": true,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone29",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone29 accessories"
+      }
+    },
+    "system": "drone system 29",
+    "maxFlightTime": 1064.7915501990774,
+    "maxBatteryTime": 1005.7339924161345,
+    "currentLocation": [
+      4.413143194268381,
+      2.7160945621993826
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 173.95715436669127,
+    "maxSpeed": 148.20183539290812,
+    "maxCargoWeight": 1008.698790227257,
+    "maxAltitude": 941.7606339699579,
+    "cameraResolution": 578.7127450088265,
+    "videoResolution": 902.6735598635148,
+    "hasWiFi": true,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 214,
+    "hasAccelerometer": false,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": false,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone30",
+    "status": "idle-ready",
+    "accessories": {
+      "accessorie": {
+        "name": "drone30 accessories"
+      }
+    },
+    "system": "drone system 30",
+    "maxFlightTime": 424.9076462668099,
+    "maxBatteryTime": 951.0625259423128,
+    "currentLocation": [
+      5.638649471394075,
+      9.349817953007529
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 792.6580644633893,
+    "maxSpeed": 416.6689086433314,
+    "maxCargoWeight": 586.2382565957375,
+    "maxAltitude": 516.553351507422,
+    "cameraResolution": 638.6003995152697,
+    "videoResolution": 732.2037578029202,
+    "hasWiFi": true,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 113,
+    "hasAccelerometer": true,
+    "hasGyroscope": true,
+    "hasRadar": true,
+    "hasGPS": false,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone31",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone31 accessories"
+      }
+    },
+    "system": "drone system 31",
+    "maxFlightTime": 508.4930473840778,
+    "maxBatteryTime": 470.0519964400235,
+    "currentLocation": [
+      2.2002414009417914,
+      6.924023296531017
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 377.15207322980405,
+    "maxSpeed": 412.5130788916204,
+    "maxCargoWeight": 1003.029545885176,
+    "maxAltitude": 338.6489244156811,
+    "cameraResolution": 698.6156723268583,
+    "videoResolution": 170.1297556991616,
+    "hasWiFi": true,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 1042,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": false,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone32",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone32 accessories"
+      }
+    },
+    "system": "drone system 32",
+    "maxFlightTime": 217.7911806417651,
+    "maxBatteryTime": 456.2159815059822,
+    "currentLocation": [
+      8.159054996021863,
+      9.822895237463554
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 910.7079753237127,
+    "maxSpeed": 317.4952725678221,
+    "maxCargoWeight": 656.9717748452854,
+    "maxAltitude": 131.3239494259634,
+    "cameraResolution": 807.0530441303913,
+    "videoResolution": 190.27888093505499,
+    "hasWiFi": true,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 282,
+    "hasAccelerometer": false,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": false,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone33",
+    "status": "idle-ready",
+    "accessories": {
+      "accessorie": {
+        "name": "drone33 accessories"
+      }
+    },
+    "system": "drone system 33",
+    "maxFlightTime": 942.9648065157791,
+    "maxBatteryTime": 575.9519985015768,
+    "currentLocation": [
+      5.082924793654106,
+      3.0044194801370083
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 188.5886208956632,
+    "maxSpeed": 916.1887208991878,
+    "maxCargoWeight": 907.8286733231341,
+    "maxAltitude": 929.4821511394905,
+    "cameraResolution": 686.63050171363,
+    "videoResolution": 1046.4684206289012,
+    "hasWiFi": true,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 358,
+    "hasAccelerometer": false,
+    "hasGyroscope": false,
+    "hasRadar": false,
+    "hasGPS": true,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone34",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone34 accessories"
+      }
+    },
+    "system": "drone system 34",
+    "maxFlightTime": 249.37465977089693,
+    "maxBatteryTime": 347.84782575015197,
+    "currentLocation": [
+      6.424712460087312,
+      5.165136583033442
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 669.4524024240978,
+    "maxSpeed": 1025.7224137211624,
+    "maxCargoWeight": 669.5167401025341,
+    "maxAltitude": 276.19436680843825,
+    "cameraResolution": 636.9170984898635,
+    "videoResolution": 828.9466520418249,
+    "hasWiFi": false,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 815,
+    "hasAccelerometer": false,
+    "hasGyroscope": false,
+    "hasRadar": false,
+    "hasGPS": true,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone35",
+    "status": "idle-ready",
+    "accessories": {
+      "accessorie": {
+        "name": "drone35 accessories"
+      }
+    },
+    "system": "drone system 35",
+    "maxFlightTime": 517.9548023666734,
+    "maxBatteryTime": 276.39841008804734,
+    "currentLocation": [
+      6.009924763172723,
+      3.3090595884558627
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 867.3572947751559,
+    "maxSpeed": 548.2238638471506,
+    "maxCargoWeight": 804.8243349980575,
+    "maxAltitude": 138.68434780136698,
+    "cameraResolution": 118.83798293420313,
+    "videoResolution": 634.30874165701,
+    "hasWiFi": true,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 206,
+    "hasAccelerometer": false,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "_id": "583e6e9df4209e0aa5d94da6",
+    "name": "drone36",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone36 accessories"
+      }
+    },
+    "system": "drone system 36",
+    "maxFlightTime": 1084.6754918105028,
+    "maxBatteryTime": 946.2493516935319,
+    "currentLocation": [
+      9.541670046780471,
+      9.717602552699008
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 630.2975076990722,
+    "maxSpeed": 272.1678592813813,
+    "maxCargoWeight": 115.53408639716447,
+    "maxAltitude": 1067.8727240190447,
+    "cameraResolution": 310.64695933632845,
+    "videoResolution": 782.4920712662989,
+    "hasWiFi": false,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 623,
+    "hasAccelerometer": false,
+    "hasGyroscope": false,
+    "hasRadar": false,
+    "hasGPS": false,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone37",
+    "status": "idle-busy",
+    "accessories": {
+      "accessorie": {
+        "name": "drone37 accessories"
+      }
+    },
+    "system": "drone system 37",
+    "maxFlightTime": 171.4965015493345,
+    "maxBatteryTime": 793.3484581736337,
+    "currentLocation": [
+      9.228063926075007,
+      8.010716830861778
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 1083.2559616523104,
+    "maxSpeed": 683.0444991187538,
+    "maxCargoWeight": 1010.1859545983135,
+    "maxAltitude": 880.5873658388622,
+    "cameraResolution": 676.8887639562053,
+    "videoResolution": 165.05283281139506,
+    "hasWiFi": true,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 712,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone38",
+    "status": "idle-ready",
+    "accessories": {
+      "accessorie": {
+        "name": "drone38 accessories"
+      }
+    },
+    "system": "drone system 38",
+    "maxFlightTime": 432.687499156906,
+    "maxBatteryTime": 625.2201081098375,
+    "currentLocation": [
+      2.1714186702428018,
+      6.438456667150582
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 498.35484723768946,
+    "maxSpeed": 755.743564919863,
+    "maxCargoWeight": 353.97825393130313,
+    "maxAltitude": 306.94158895521974,
+    "cameraResolution": 412.26214266600795,
+    "videoResolution": 782.6152400428771,
+    "hasWiFi": false,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 200,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone39",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone39 accessories"
+      }
+    },
+    "system": "drone system 39",
+    "maxFlightTime": 423.84509052083564,
+    "maxBatteryTime": 336.308242655733,
+    "currentLocation": [
+      3.953172587255822,
+      2.9891954732184556
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 575.6553921104896,
+    "maxSpeed": 864.9199307773303,
+    "maxCargoWeight": 810.3800296977058,
+    "maxAltitude": 827.8089185052421,
+    "cameraResolution": 933.499856092885,
+    "videoResolution": 117.71842219072961,
+    "hasWiFi": false,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 920,
+    "hasAccelerometer": false,
+    "hasGyroscope": false,
+    "hasRadar": false,
+    "hasGPS": false,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone40",
+    "status": "idle-ready",
+    "accessories": {
+      "accessorie": {
+        "name": "drone40 accessories"
+      }
+    },
+    "system": "drone system 40",
+    "maxFlightTime": 119.67304224054156,
+    "maxBatteryTime": 917.3230647411556,
+    "currentLocation": [
+      5.012169531200971,
+      5.338410277312821
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 817.3531201040057,
+    "maxSpeed": 783.5142758602664,
+    "maxCargoWeight": 616.4589337156889,
+    "maxAltitude": 585.3768792881317,
+    "cameraResolution": 854.3448519975125,
+    "videoResolution": 470.0435035295981,
+    "hasWiFi": true,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 133,
+    "hasAccelerometer": false,
+    "hasGyroscope": true,
+    "hasRadar": true,
+    "hasGPS": false,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone41",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone41 accessories"
+      }
+    },
+    "system": "drone system 41",
+    "maxFlightTime": 631.5017745016468,
+    "maxBatteryTime": 483.6140236281693,
+    "currentLocation": [
+      0.15267739046629591,
+      9.653448696985635
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 228.6987338780865,
+    "maxSpeed": 1062.3449069950423,
+    "maxCargoWeight": 394.89200981123463,
+    "maxAltitude": 678.1445224150364,
+    "cameraResolution": 718.4353210327606,
+    "videoResolution": 1047.4819977209186,
+    "hasWiFi": true,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 1003,
+    "hasAccelerometer": false,
+    "hasGyroscope": true,
+    "hasRadar": false,
+    "hasGPS": false,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone42",
+    "status": "idle-busy",
+    "accessories": {
+      "accessorie": {
+        "name": "drone42 accessories"
+      }
+    },
+    "system": "drone system 42",
+    "maxFlightTime": 191.63861107836757,
+    "maxBatteryTime": 910.4298430249171,
+    "currentLocation": [
+      6.947544702997524,
+      9.441874412654185
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 177.350026791573,
+    "maxSpeed": 217.28487685641542,
+    "maxCargoWeight": 896.5054221108556,
+    "maxAltitude": 962.0906697109165,
+    "cameraResolution": 998.5942494388966,
+    "videoResolution": 478.04142910174244,
+    "hasWiFi": true,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 705,
+    "hasAccelerometer": false,
+    "hasGyroscope": true,
+    "hasRadar": false,
+    "hasGPS": false,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone43",
+    "status": "idle-busy",
+    "accessories": {
+      "accessorie": {
+        "name": "drone43 accessories"
+      }
+    },
+    "system": "drone system 43",
+    "maxFlightTime": 198.37557171070088,
+    "maxBatteryTime": 703.5211680276367,
+    "currentLocation": [
+      3.5502375954307097,
+      6.466785476064332
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 1042.1923612384521,
+    "maxSpeed": 370.70719938558693,
+    "maxCargoWeight": 436.04729188450875,
+    "maxAltitude": 317.21497501706085,
+    "cameraResolution": 281.6503316463702,
+    "videoResolution": 637.1253656177544,
+    "hasWiFi": false,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 845,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": false,
+    "hasGPS": true,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone44",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone44 accessories"
+      }
+    },
+    "system": "drone system 44",
+    "maxFlightTime": 756.7272868364739,
+    "maxBatteryTime": 1067.3791145071978,
+    "currentLocation": [
+      9.395639427348616,
+      4.188998271039859
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 128.79699973567185,
+    "maxSpeed": 857.0350260790826,
+    "maxCargoWeight": 178.87114802493312,
+    "maxAltitude": 160.3880087984594,
+    "cameraResolution": 480.1618783827918,
+    "videoResolution": 682.1462231224108,
+    "hasWiFi": true,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 359,
+    "hasAccelerometer": false,
+    "hasGyroscope": true,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone45",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone45 accessories"
+      }
+    },
+    "system": "drone system 45",
+    "maxFlightTime": 757.3411567134926,
+    "maxBatteryTime": 353.6029563544138,
+    "currentLocation": [
+      2.4315593741573283,
+      5.368605206621668
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 133.4509553722886,
+    "maxSpeed": 610.4695501961678,
+    "maxCargoWeight": 332.5730608160685,
+    "maxAltitude": 417.33148126879485,
+    "cameraResolution": 989.0644989224634,
+    "videoResolution": 660.1140256854602,
+    "hasWiFi": true,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 823,
+    "hasAccelerometer": false,
+    "hasGyroscope": true,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone46",
+    "status": "idle-ready",
+    "accessories": {
+      "accessorie": {
+        "name": "drone46 accessories"
+      }
+    },
+    "system": "drone system 46",
+    "maxFlightTime": 175.55180873780597,
+    "maxBatteryTime": 343.2493117092622,
+    "currentLocation": [
+      0.6814117507040707,
+      1.6503985574432578
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 718.2870656830464,
+    "maxSpeed": 996.4746135249926,
+    "maxCargoWeight": 479.3591251563868,
+    "maxAltitude": 268.6687633906987,
+    "cameraResolution": 738.7849865690612,
+    "videoResolution": 644.1403632391455,
+    "hasWiFi": true,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 535,
+    "hasAccelerometer": true,
+    "hasGyroscope": true,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone47",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone47 accessories"
+      }
+    },
+    "system": "drone system 47",
+    "maxFlightTime": 660.0476244137378,
+    "maxBatteryTime": 296.0977540211071,
+    "currentLocation": [
+      3.327563638392681,
+      8.974347997438372
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 795.553911400877,
+    "maxSpeed": 247.68851860025367,
+    "maxCargoWeight": 785.3885949080842,
+    "maxAltitude": 411.5089831425737,
+    "cameraResolution": 1032.8467026473477,
+    "videoResolution": 274.43806659828317,
+    "hasWiFi": true,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 1055,
+    "hasAccelerometer": false,
+    "hasGyroscope": true,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone48",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone48 accessories"
+      }
+    },
+    "system": "drone system 48",
+    "maxFlightTime": 421.4931372655285,
+    "maxBatteryTime": 783.5746146835271,
+    "currentLocation": [
+      2.988392025944049,
+      9.614816011615169
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 470.07076952564574,
+    "maxSpeed": 249.02421946219891,
+    "maxCargoWeight": 827.1245695200743,
+    "maxAltitude": 947.641495650127,
+    "cameraResolution": 361.68013694320825,
+    "videoResolution": 817.0514535071654,
+    "hasWiFi": false,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 548,
+    "hasAccelerometer": false,
+    "hasGyroscope": false,
+    "hasRadar": false,
+    "hasGPS": true,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone49",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone49 accessories"
+      }
+    },
+    "system": "drone system 49",
+    "maxFlightTime": 831.8149202231355,
+    "maxBatteryTime": 881.063627380286,
+    "currentLocation": [
+      0.42865763290165004,
+      9.277788860443117
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 634.1001543720722,
+    "maxSpeed": 428.5228578562547,
+    "maxCargoWeight": 1044.0235504555549,
+    "maxAltitude": 646.2910459833392,
+    "cameraResolution": 246.23732527893506,
+    "videoResolution": 193.113122379773,
+    "hasWiFi": false,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 616,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": false,
+    "hasGPS": true,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone50",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone50 accessories"
+      }
+    },
+    "system": "drone system 50",
+    "maxFlightTime": 956.7606239134102,
+    "maxBatteryTime": 218.926750361791,
+    "currentLocation": [
+      1.8048391759410132,
+      1.1584866793324755
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 592.7643722197819,
+    "maxSpeed": 118.63106730938146,
+    "maxCargoWeight": 777.9683689611322,
+    "maxAltitude": 789.0276788969978,
+    "cameraResolution": 477.6608559099226,
+    "videoResolution": 203.15421949611238,
+    "hasWiFi": false,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 455,
+    "hasAccelerometer": false,
+    "hasGyroscope": false,
+    "hasRadar": false,
+    "hasGPS": true,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone51",
+    "status": "idle-busy",
+    "accessories": {
+      "accessorie": {
+        "name": "drone51 accessories"
+      }
+    },
+    "system": "drone system 51",
+    "maxFlightTime": 778.6231671531626,
+    "maxBatteryTime": 577.5453905916522,
+    "currentLocation": [
+      2.3329192984311664,
+      7.5012326494090225
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 178.87486300879254,
+    "maxSpeed": 490.9106152845054,
+    "maxCargoWeight": 741.8587475291373,
+    "maxAltitude": 575.8031693467633,
+    "cameraResolution": 817.7249346753251,
+    "videoResolution": 1001.4847186638121,
+    "hasWiFi": false,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 609,
+    "hasAccelerometer": false,
+    "hasGyroscope": false,
+    "hasRadar": false,
+    "hasGPS": true,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone52",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone52 accessories"
+      }
+    },
+    "system": "drone system 52",
+    "maxFlightTime": 836.3574907990122,
+    "maxBatteryTime": 310.80312228714206,
+    "currentLocation": [
+      9.380140859177931,
+      3.2165247686296294
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 721.2982854569857,
+    "maxSpeed": 192.20837444791474,
+    "maxCargoWeight": 1016.8581443195166,
+    "maxAltitude": 1046.0816259936446,
+    "cameraResolution": 639.587202355597,
+    "videoResolution": 435.90713078569223,
+    "hasWiFi": true,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 516,
+    "hasAccelerometer": false,
+    "hasGyroscope": true,
+    "hasRadar": true,
+    "hasGPS": false,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone53",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone53 accessories"
+      }
+    },
+    "system": "drone system 53",
+    "maxFlightTime": 738.127575827923,
+    "maxBatteryTime": 586.7089968907433,
+    "currentLocation": [
+      3.5494452404349963,
+      7.57621870124209
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 948.4331352799719,
+    "maxSpeed": 419.203336517017,
+    "maxCargoWeight": 439.47478355926995,
+    "maxAltitude": 346.17454739998766,
+    "cameraResolution": 605.2086078684348,
+    "videoResolution": 721.9878991759044,
+    "hasWiFi": true,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 576,
+    "hasAccelerometer": false,
+    "hasGyroscope": true,
+    "hasRadar": true,
+    "hasGPS": false,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone54",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone54 accessories"
+      }
+    },
+    "system": "drone system 54",
+    "maxFlightTime": 1086.5220291749556,
+    "maxBatteryTime": 291.6901621699152,
+    "currentLocation": [
+      8.790793668956653,
+      7.082638722625116
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 372.5399264652884,
+    "maxSpeed": 620.3981161763998,
+    "maxCargoWeight": 967.2959074833885,
+    "maxAltitude": 985.6124015311606,
+    "cameraResolution": 380.09453403523696,
+    "videoResolution": 333.8744184468691,
+    "hasWiFi": false,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 860,
+    "hasAccelerometer": false,
+    "hasGyroscope": true,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone55",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone55 accessories"
+      }
+    },
+    "system": "drone system 55",
+    "maxFlightTime": 576.3767361885095,
+    "maxBatteryTime": 253.85067093550185,
+    "currentLocation": [
+      9.694065770527507,
+      5.737054191382958
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 688.2491334606941,
+    "maxSpeed": 753.7048116501259,
+    "maxCargoWeight": 981.1037329899605,
+    "maxAltitude": 195.2725228594422,
+    "cameraResolution": 102.07706687807318,
+    "videoResolution": 1095.1205174713527,
+    "hasWiFi": false,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 536,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": false,
+    "hasGPS": true,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone56",
+    "status": "idle-busy",
+    "accessories": {
+      "accessorie": {
+        "name": "drone56 accessories"
+      }
+    },
+    "system": "drone system 56",
+    "maxFlightTime": 419.30414447441933,
+    "maxBatteryTime": 669.3309581708384,
+    "currentLocation": [
+      5.172826357748348,
+      4.322961003125359
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 1084.0112061362302,
+    "maxSpeed": 451.6318613328426,
+    "maxCargoWeight": 747.2979051166066,
+    "maxAltitude": 156.85922264318833,
+    "cameraResolution": 685.5745311232237,
+    "videoResolution": 1096.7952356926203,
+    "hasWiFi": false,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 404,
+    "hasAccelerometer": false,
+    "hasGyroscope": true,
+    "hasRadar": false,
+    "hasGPS": false,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone57",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone57 accessories"
+      }
+    },
+    "system": "drone system 57",
+    "maxFlightTime": 730.2220118137644,
+    "maxBatteryTime": 579.801498295566,
+    "currentLocation": [
+      4.085034646485008,
+      3.6713080666231956
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 1070.8750916813037,
+    "maxSpeed": 799.881237646522,
+    "maxCargoWeight": 937.0430622769019,
+    "maxAltitude": 144.38458575682102,
+    "cameraResolution": 402.54413366511443,
+    "videoResolution": 613.0777054725193,
+    "hasWiFi": true,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 388,
+    "hasAccelerometer": false,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone58",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone58 accessories"
+      }
+    },
+    "system": "drone system 58",
+    "maxFlightTime": 1086.7166806223331,
+    "maxBatteryTime": 922.7581108880196,
+    "currentLocation": [
+      2.89863203613526,
+      0.11609362257444023
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 383.66353003519487,
+    "maxSpeed": 496.1422166278525,
+    "maxCargoWeight": 707.7629911444402,
+    "maxAltitude": 920.8665193940112,
+    "cameraResolution": 1039.4787274285477,
+    "videoResolution": 187.9116094679395,
+    "hasWiFi": false,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 667,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": false,
+    "hasGPS": true,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone59",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone59 accessories"
+      }
+    },
+    "system": "drone system 59",
+    "maxFlightTime": 156.76815839418126,
+    "maxBatteryTime": 109.28493247766338,
+    "currentLocation": [
+      4.743541986628344,
+      2.988851282106144
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 170.09109809805778,
+    "maxSpeed": 912.8613710136583,
+    "maxCargoWeight": 517.217638286284,
+    "maxAltitude": 263.08358891856534,
+    "cameraResolution": 852.9293289827222,
+    "videoResolution": 931.1976513569042,
+    "hasWiFi": false,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 677,
+    "hasAccelerometer": true,
+    "hasGyroscope": true,
+    "hasRadar": false,
+    "hasGPS": true,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone60",
+    "status": "idle-busy",
+    "accessories": {
+      "accessorie": {
+        "name": "drone60 accessories"
+      }
+    },
+    "system": "drone system 60",
+    "maxFlightTime": 829.9960121590559,
+    "maxBatteryTime": 116.82224364239215,
+    "currentLocation": [
+      4.320230322656117,
+      7.477184297451909
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 945.4323538295095,
+    "maxSpeed": 461.1790251312104,
+    "maxCargoWeight": 457.4612017613503,
+    "maxAltitude": 415.40578162463316,
+    "cameraResolution": 339.7017295264219,
+    "videoResolution": 471.4699224787712,
+    "hasWiFi": true,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 567,
+    "hasAccelerometer": false,
+    "hasGyroscope": true,
+    "hasRadar": false,
+    "hasGPS": false,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone61",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone61 accessories"
+      }
+    },
+    "system": "drone system 61",
+    "maxFlightTime": 637.6574547623443,
+    "maxBatteryTime": 546.1915067809612,
+    "currentLocation": [
+      9.897527860778151,
+      3.414747974236547
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 818.6109981800495,
+    "maxSpeed": 926.958634284687,
+    "maxCargoWeight": 564.0466152222566,
+    "maxAltitude": 639.1615512489034,
+    "cameraResolution": 440.6718707140553,
+    "videoResolution": 580.0606597986101,
+    "hasWiFi": false,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 809,
+    "hasAccelerometer": false,
+    "hasGyroscope": true,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone62",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone62 accessories"
+      }
+    },
+    "system": "drone system 62",
+    "maxFlightTime": 244.64790366867985,
+    "maxBatteryTime": 255.89761684625935,
+    "currentLocation": [
+      4.193864928692093,
+      2.7014303212482416
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 572.5217940446094,
+    "maxSpeed": 1007.5669077629302,
+    "maxCargoWeight": 176.26898620634927,
+    "maxAltitude": 574.6639196727813,
+    "cameraResolution": 291.85558326574335,
+    "videoResolution": 560.2118423017328,
+    "hasWiFi": false,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 686,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": false,
+    "hasGPS": false,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone63",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone63 accessories"
+      }
+    },
+    "system": "drone system 63",
+    "maxFlightTime": 839.9573693871953,
+    "maxBatteryTime": 613.6610412365051,
+    "currentLocation": [
+      5.823303531625134,
+      3.242805783266056
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 173.5178223843913,
+    "maxSpeed": 127.3090356042589,
+    "maxCargoWeight": 389.64049602189345,
+    "maxAltitude": 169.80080295896852,
+    "cameraResolution": 982.3956989963613,
+    "videoResolution": 497.1851269558706,
+    "hasWiFi": true,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 309,
+    "hasAccelerometer": false,
+    "hasGyroscope": true,
+    "hasRadar": false,
+    "hasGPS": true,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone64",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone64 accessories"
+      }
+    },
+    "system": "drone system 64",
+    "maxFlightTime": 876.1716280006597,
+    "maxBatteryTime": 474.7085993823285,
+    "currentLocation": [
+      5.4855022495050605,
+      9.625629266810261
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 154.5985077972946,
+    "maxSpeed": 338.85932129366313,
+    "maxCargoWeight": 652.3767592905959,
+    "maxAltitude": 583.2547509507665,
+    "cameraResolution": 1032.0430765555311,
+    "videoResolution": 416.5658911361207,
+    "hasWiFi": false,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 509,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": false,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone65",
+    "status": "idle-ready",
+    "accessories": {
+      "accessorie": {
+        "name": "drone65 accessories"
+      }
+    },
+    "system": "drone system 65",
+    "maxFlightTime": 962.4853434029371,
+    "maxBatteryTime": 120.85726254872333,
+    "currentLocation": [
+      2.4972878342522797,
+      5.883599677554789
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 634.0841561103813,
+    "maxSpeed": 737.6172991655744,
+    "maxCargoWeight": 427.85758741163164,
+    "maxAltitude": 188.1076255752542,
+    "cameraResolution": 102.02878659403227,
+    "videoResolution": 921.3220942051189,
+    "hasWiFi": false,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 183,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": false,
+    "hasGPS": true,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone66",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone66 accessories"
+      }
+    },
+    "system": "drone system 66",
+    "maxFlightTime": 452.80656324793694,
+    "maxBatteryTime": 339.2810377043373,
+    "currentLocation": [
+      4.936724720491621,
+      9.754087014953827
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 406.12080821810264,
+    "maxSpeed": 105.8296250951646,
+    "maxCargoWeight": 800.0632262875166,
+    "maxAltitude": 999.9004663442289,
+    "cameraResolution": 390.05203595115313,
+    "videoResolution": 785.17742675711,
+    "hasWiFi": true,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 1061,
+    "hasAccelerometer": true,
+    "hasGyroscope": true,
+    "hasRadar": false,
+    "hasGPS": true,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone67",
+    "status": "idle-busy",
+    "accessories": {
+      "accessorie": {
+        "name": "drone67 accessories"
+      }
+    },
+    "system": "drone system 67",
+    "maxFlightTime": 558.8504838504173,
+    "maxBatteryTime": 234.6937071419696,
+    "currentLocation": [
+      8.637679030731753,
+      0.1826844292176033
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 444.3116035697544,
+    "maxSpeed": 250.7404871996889,
+    "maxCargoWeight": 556.7885289079745,
+    "maxAltitude": 341.87720361396026,
+    "cameraResolution": 324.03997813809815,
+    "videoResolution": 553.4825687156156,
+    "hasWiFi": false,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 923,
+    "hasAccelerometer": false,
+    "hasGyroscope": false,
+    "hasRadar": false,
+    "hasGPS": false,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone68",
+    "status": "idle-ready",
+    "accessories": {
+      "accessorie": {
+        "name": "drone68 accessories"
+      }
+    },
+    "system": "drone system 68",
+    "maxFlightTime": 702.4334051585656,
+    "maxBatteryTime": 933.3851930506664,
+    "currentLocation": [
+      0.33513851209637124,
+      0.6394244078997269
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 911.4263007445701,
+    "maxSpeed": 131.82795008417781,
+    "maxCargoWeight": 685.0373073855237,
+    "maxAltitude": 728.6386335403589,
+    "cameraResolution": 580.6676586933979,
+    "videoResolution": 531.5237372523151,
+    "hasWiFi": false,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 371,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone69",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone69 accessories"
+      }
+    },
+    "system": "drone system 69",
+    "maxFlightTime": 616.9394041121378,
+    "maxBatteryTime": 713.2560808912344,
+    "currentLocation": [
+      3.6404290551307716,
+      9.069370746520455
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 924.8326238041326,
+    "maxSpeed": 935.2431368254045,
+    "maxCargoWeight": 996.0251683342133,
+    "maxAltitude": 392.99584619596476,
+    "cameraResolution": 970.7348688009306,
+    "videoResolution": 529.1183270762286,
+    "hasWiFi": false,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 268,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": false,
+    "hasGPS": true,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone70",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone70 accessories"
+      }
+    },
+    "system": "drone system 70",
+    "maxFlightTime": 993.3046315712256,
+    "maxBatteryTime": 339.8185446671621,
+    "currentLocation": [
+      7.5985850093154355,
+      0.17126140921237099
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 613.1145652189855,
+    "maxSpeed": 301.00185851487447,
+    "maxCargoWeight": 279.2270553017528,
+    "maxAltitude": 811.6750801470912,
+    "cameraResolution": 757.3651885776493,
+    "videoResolution": 331.81632379259986,
+    "hasWiFi": true,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 664,
+    "hasAccelerometer": false,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone71",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone71 accessories"
+      }
+    },
+    "system": "drone system 71",
+    "maxFlightTime": 720.4949912038697,
+    "maxBatteryTime": 753.621451906514,
+    "currentLocation": [
+      3.9945868889589176,
+      5.956123907496407
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 580.6509283861667,
+    "maxSpeed": 800.4019539389461,
+    "maxCargoWeight": 386.7964587784331,
+    "maxAltitude": 979.8041539687554,
+    "cameraResolution": 244.3035220178397,
+    "videoResolution": 560.466020599898,
+    "hasWiFi": true,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 153,
+    "hasAccelerometer": true,
+    "hasGyroscope": true,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone72",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone72 accessories"
+      }
+    },
+    "system": "drone system 72",
+    "maxFlightTime": 495.7559344397919,
+    "maxBatteryTime": 521.2006824634442,
+    "currentLocation": [
+      7.558207822922112,
+      1.0747739464019346
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 705.4819272765785,
+    "maxSpeed": 949.5939361648727,
+    "maxCargoWeight": 418.03209395929645,
+    "maxAltitude": 912.5744224157168,
+    "cameraResolution": 288.7700782571522,
+    "videoResolution": 306.0805734881823,
+    "hasWiFi": false,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 185,
+    "hasAccelerometer": false,
+    "hasGyroscope": true,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone73",
+    "status": "idle-busy",
+    "accessories": {
+      "accessorie": {
+        "name": "drone73 accessories"
+      }
+    },
+    "system": "drone system 73",
+    "maxFlightTime": 701.2693497800701,
+    "maxBatteryTime": 400.4779062228444,
+    "currentLocation": [
+      0.4865880630481678,
+      9.043897341188696
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 247.9812220901371,
+    "maxSpeed": 1093.1027515034905,
+    "maxCargoWeight": 963.8095798336159,
+    "maxAltitude": 206.2828005368657,
+    "cameraResolution": 203.00622897592015,
+    "videoResolution": 279.0753975008279,
+    "hasWiFi": true,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 1086,
+    "hasAccelerometer": false,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": false,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone74",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone74 accessories"
+      }
+    },
+    "system": "drone system 74",
+    "maxFlightTime": 486.3572447271526,
+    "maxBatteryTime": 269.8225736810988,
+    "currentLocation": [
+      1.4509670504068573,
+      1.541208204617155
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 1018.5646259937066,
+    "maxSpeed": 246.93624864512776,
+    "maxCargoWeight": 868.5134956211226,
+    "maxAltitude": 1057.1411826201372,
+    "cameraResolution": 922.5889943245044,
+    "videoResolution": 533.6389976556552,
+    "hasWiFi": true,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 1091,
+    "hasAccelerometer": false,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone75",
+    "status": "idle-ready",
+    "accessories": {
+      "accessorie": {
+        "name": "drone75 accessories"
+      }
+    },
+    "system": "drone system 75",
+    "maxFlightTime": 279.3500638530885,
+    "maxBatteryTime": 526.1427699988885,
+    "currentLocation": [
+      8.941649643382883,
+      1.3795916425364951
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 383.10611752748247,
+    "maxSpeed": 809.8900780445709,
+    "maxCargoWeight": 846.4356649452097,
+    "maxAltitude": 819.136335129527,
+    "cameraResolution": 815.3020809690895,
+    "videoResolution": 146.49236849304515,
+    "hasWiFi": true,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 343,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone76",
+    "status": "idle-ready",
+    "accessories": {
+      "accessorie": {
+        "name": "drone76 accessories"
+      }
+    },
+    "system": "drone system 76",
+    "maxFlightTime": 486.2233667839421,
+    "maxBatteryTime": 338.44780285898605,
+    "currentLocation": [
+      1.5066810628044536,
+      1.6263976797600188
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 374.79636154438737,
+    "maxSpeed": 675.5901951629005,
+    "maxCargoWeight": 769.7351182237838,
+    "maxAltitude": 382.5943146703593,
+    "cameraResolution": 901.0418786715296,
+    "videoResolution": 575.6739269749388,
+    "hasWiFi": false,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 790,
+    "hasAccelerometer": false,
+    "hasGyroscope": false,
+    "hasRadar": false,
+    "hasGPS": false,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone77",
+    "status": "idle-busy",
+    "accessories": {
+      "accessorie": {
+        "name": "drone77 accessories"
+      }
+    },
+    "system": "drone system 77",
+    "maxFlightTime": 722.1495682674703,
+    "maxBatteryTime": 651.8220067179358,
+    "currentLocation": [
+      7.164970295922426,
+      5.280301123373938
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 497.0966078825666,
+    "maxSpeed": 561.2732979094844,
+    "maxCargoWeight": 153.861383018168,
+    "maxAltitude": 149.5172071195844,
+    "cameraResolution": 500.35038161028825,
+    "videoResolution": 488.097381358115,
+    "hasWiFi": true,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 1069,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": false,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone78",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone78 accessories"
+      }
+    },
+    "system": "drone system 78",
+    "maxFlightTime": 515.4224698611604,
+    "maxBatteryTime": 631.2458555640504,
+    "currentLocation": [
+      8.28478299811053,
+      1.8976426047317596
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 1014.8701300296711,
+    "maxSpeed": 214.9026988072335,
+    "maxCargoWeight": 787.1721731483171,
+    "maxAltitude": 142.736683134468,
+    "cameraResolution": 899.8957006849836,
+    "videoResolution": 423.6040538968037,
+    "hasWiFi": false,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 524,
+    "hasAccelerometer": false,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": false,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone79",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone79 accessories"
+      }
+    },
+    "system": "drone system 79",
+    "maxFlightTime": 135.84813959251298,
+    "maxBatteryTime": 322.146055867976,
+    "currentLocation": [
+      7.381560142995493,
+      7.191565992868028
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 685.0915959519155,
+    "maxSpeed": 602.0913119506561,
+    "maxCargoWeight": 665.080448398775,
+    "maxAltitude": 200.42512120096768,
+    "cameraResolution": 559.9640554421054,
+    "videoResolution": 752.9963301828578,
+    "hasWiFi": false,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 513,
+    "hasAccelerometer": false,
+    "hasGyroscope": true,
+    "hasRadar": false,
+    "hasGPS": false,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone80",
+    "status": "idle-ready",
+    "accessories": {
+      "accessorie": {
+        "name": "drone80 accessories"
+      }
+    },
+    "system": "drone system 80",
+    "maxFlightTime": 657.631442624778,
+    "maxBatteryTime": 940.5079258375856,
+    "currentLocation": [
+      0.574037753600154,
+      2.898615668217275
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 1024.8963674398037,
+    "maxSpeed": 661.069831523908,
+    "maxCargoWeight": 556.242226351999,
+    "maxAltitude": 104.1283424228562,
+    "cameraResolution": 950.0620997454793,
+    "videoResolution": 610.8637402978651,
+    "hasWiFi": false,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 993,
+    "hasAccelerometer": true,
+    "hasGyroscope": true,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone81",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone81 accessories"
+      }
+    },
+    "system": "drone system 81",
+    "maxFlightTime": 939.119006790227,
+    "maxBatteryTime": 151.59532268905664,
+    "currentLocation": [
+      7.796596977383221,
+      4.45701923663016
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 523.8633592477419,
+    "maxSpeed": 659.1130918807896,
+    "maxCargoWeight": 723.8985649503226,
+    "maxAltitude": 400.94024752768723,
+    "cameraResolution": 770.0844814727274,
+    "videoResolution": 902.4579829407841,
+    "hasWiFi": true,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 909,
+    "hasAccelerometer": false,
+    "hasGyroscope": false,
+    "hasRadar": false,
+    "hasGPS": false,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone82",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone82 accessories"
+      }
+    },
+    "system": "drone system 82",
+    "maxFlightTime": 345.4749117342194,
+    "maxBatteryTime": 131.85274727806654,
+    "currentLocation": [
+      1.6753430829224758,
+      9.94759542810829
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 125.85049181705257,
+    "maxSpeed": 787.6578216887534,
+    "maxCargoWeight": 650.0499145972235,
+    "maxAltitude": 613.2929855062598,
+    "cameraResolution": 817.5853538713408,
+    "videoResolution": 900.5684745668202,
+    "hasWiFi": false,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 725,
+    "hasAccelerometer": true,
+    "hasGyroscope": true,
+    "hasRadar": false,
+    "hasGPS": true,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone83",
+    "status": "idle-busy",
+    "accessories": {
+      "accessorie": {
+        "name": "drone83 accessories"
+      }
+    },
+    "system": "drone system 83",
+    "maxFlightTime": 283.7742933840856,
+    "maxBatteryTime": 882.0251300223766,
+    "currentLocation": [
+      1.008635181828903,
+      5.307445217309583
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 546.4558721503058,
+    "maxSpeed": 240.30051230930306,
+    "maxCargoWeight": 134.63588176751608,
+    "maxAltitude": 879.6939730742565,
+    "cameraResolution": 346.73538345162945,
+    "videoResolution": 558.1141494113851,
+    "hasWiFi": false,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 218,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone84",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone84 accessories"
+      }
+    },
+    "system": "drone system 84",
+    "maxFlightTime": 120.04828731193254,
+    "maxBatteryTime": 441.5364216580978,
+    "currentLocation": [
+      0.0439187138129804,
+      8.943552249092637
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 416.7717605924891,
+    "maxSpeed": 527.2530862404398,
+    "maxCargoWeight": 441.3421125535858,
+    "maxAltitude": 315.43816598880784,
+    "cameraResolution": 454.66819497953315,
+    "videoResolution": 251.72266666030376,
+    "hasWiFi": true,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 757,
+    "hasAccelerometer": true,
+    "hasGyroscope": true,
+    "hasRadar": true,
+    "hasGPS": false,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone85",
+    "status": "idle-ready",
+    "accessories": {
+      "accessorie": {
+        "name": "drone85 accessories"
+      }
+    },
+    "system": "drone system 85",
+    "maxFlightTime": 1057.5229624993904,
+    "maxBatteryTime": 233.94455628316314,
+    "currentLocation": [
+      2.859754990408714,
+      0.7150697061407763
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 699.2267276330008,
+    "maxSpeed": 412.9279038415145,
+    "maxCargoWeight": 375.98864855447846,
+    "maxAltitude": 106.595139715035,
+    "cameraResolution": 576.208595723808,
+    "videoResolution": 705.2669114564002,
+    "hasWiFi": false,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 292,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": false,
+    "hasGPS": false,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone86",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone86 accessories"
+      }
+    },
+    "system": "drone system 86",
+    "maxFlightTime": 731.7777859062472,
+    "maxBatteryTime": 961.4404888589157,
+    "currentLocation": [
+      2.7698469145655147,
+      1.8062492415099074
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 1024.2289149590963,
+    "maxSpeed": 682.2912089846086,
+    "maxCargoWeight": 437.0081719335694,
+    "maxAltitude": 187.24574161103192,
+    "cameraResolution": 621.0428576694668,
+    "videoResolution": 209.37026858256283,
+    "hasWiFi": true,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 722,
+    "hasAccelerometer": false,
+    "hasGyroscope": true,
+    "hasRadar": false,
+    "hasGPS": false,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone87",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone87 accessories"
+      }
+    },
+    "system": "drone system 87",
+    "maxFlightTime": 292.47132691562865,
+    "maxBatteryTime": 1071.472250665037,
+    "currentLocation": [
+      4.914682778005939,
+      6.576517546193745
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 1083.0769684090328,
+    "maxSpeed": 1091.704825180947,
+    "maxCargoWeight": 664.4517465370153,
+    "maxAltitude": 590.9109988901241,
+    "cameraResolution": 380.3816369272194,
+    "videoResolution": 1083.3636496446838,
+    "hasWiFi": false,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 369,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": false,
+    "hasGPS": false,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone88",
+    "status": "idle-ready",
+    "accessories": {
+      "accessorie": {
+        "name": "drone88 accessories"
+      }
+    },
+    "system": "drone system 88",
+    "maxFlightTime": 1035.3568010006966,
+    "maxBatteryTime": 225.47866902280336,
+    "currentLocation": [
+      1.514470615078174,
+      9.380653973749062
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 438.0098017471218,
+    "maxSpeed": 371.37205928653896,
+    "maxCargoWeight": 951.0086454467476,
+    "maxAltitude": 445.80959872212367,
+    "cameraResolution": 905.6425685638274,
+    "videoResolution": 224.65616803654922,
+    "hasWiFi": true,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 461,
+    "hasAccelerometer": false,
+    "hasGyroscope": false,
+    "hasRadar": false,
+    "hasGPS": false,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone89",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone89 accessories"
+      }
+    },
+    "system": "drone system 89",
+    "maxFlightTime": 340.13312976552163,
+    "maxBatteryTime": 187.5298083692042,
+    "currentLocation": [
+      9.51584347998174,
+      0.25077571216692185
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 847.6537733204756,
+    "maxSpeed": 434.7876137394028,
+    "maxCargoWeight": 649.9735284989049,
+    "maxAltitude": 982.8830963733376,
+    "cameraResolution": 831.4328299586392,
+    "videoResolution": 214.4351024985737,
+    "hasWiFi": true,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 295,
+    "hasAccelerometer": false,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": false,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone90",
+    "status": "idle-ready",
+    "accessories": {
+      "accessorie": {
+        "name": "drone90 accessories"
+      }
+    },
+    "system": "drone system 90",
+    "maxFlightTime": 811.3388810913,
+    "maxBatteryTime": 757.6667605557784,
+    "currentLocation": [
+      2.639276315675392,
+      8.012652780057119
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 291.96892042062586,
+    "maxSpeed": 777.2022830500506,
+    "maxCargoWeight": 661.8507943957225,
+    "maxAltitude": 972.2202828352933,
+    "cameraResolution": 403.8537487248538,
+    "videoResolution": 690.3967794599727,
+    "hasWiFi": false,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 1063,
+    "hasAccelerometer": false,
+    "hasGyroscope": true,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone91",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone91 accessories"
+      }
+    },
+    "system": "drone system 91",
+    "maxFlightTime": 213.31464115698208,
+    "maxBatteryTime": 727.2996159740856,
+    "currentLocation": [
+      4.468192232163323,
+      6.602291801281945
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 573.3617497310381,
+    "maxSpeed": 813.7747962971184,
+    "maxCargoWeight": 358.10360833721126,
+    "maxAltitude": 331.17921434402035,
+    "cameraResolution": 755.3931005118374,
+    "videoResolution": 950.4351556829525,
+    "hasWiFi": true,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 164,
+    "hasAccelerometer": true,
+    "hasGyroscope": true,
+    "hasRadar": true,
+    "hasGPS": false,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone92",
+    "status": "idle-ready",
+    "accessories": {
+      "accessorie": {
+        "name": "drone92 accessories"
+      }
+    },
+    "system": "drone system 92",
+    "maxFlightTime": 808.5609913349489,
+    "maxBatteryTime": 1032.4687083166361,
+    "currentLocation": [
+      8.379523027236377,
+      6.403580599555722
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 138.00007564929797,
+    "maxSpeed": 204.44902539832145,
+    "maxCargoWeight": 101.47352047072968,
+    "maxAltitude": 917.4978387691064,
+    "cameraResolution": 199.32019520539458,
+    "videoResolution": 957.7586031031669,
+    "hasWiFi": false,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 527,
+    "hasAccelerometer": true,
+    "hasGyroscope": true,
+    "hasRadar": true,
+    "hasGPS": false,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone93",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone93 accessories"
+      }
+    },
+    "system": "drone system 93",
+    "maxFlightTime": 510.9241240479422,
+    "maxBatteryTime": 477.7649763103228,
+    "currentLocation": [
+      8.4696530150505,
+      3.428885799408805
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 180.4315842160921,
+    "maxSpeed": 1087.346012502137,
+    "maxCargoWeight": 216.06178305916637,
+    "maxAltitude": 743.9732885180307,
+    "cameraResolution": 682.8652618942008,
+    "videoResolution": 692.3114651797943,
+    "hasWiFi": true,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 1000,
+    "hasAccelerometer": false,
+    "hasGyroscope": false,
+    "hasRadar": false,
+    "hasGPS": false,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone94",
+    "status": "idle-ready",
+    "accessories": {
+      "accessorie": {
+        "name": "drone94 accessories"
+      }
+    },
+    "system": "drone system 94",
+    "maxFlightTime": 432.9345419458374,
+    "maxBatteryTime": 818.2653063685691,
+    "currentLocation": [
+      5.004664614120218,
+      9.053861930515046
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 784.7790591729765,
+    "maxSpeed": 143.19471078698322,
+    "maxCargoWeight": 510.77255649410336,
+    "maxAltitude": 546.0246792794262,
+    "cameraResolution": 487.79518538175364,
+    "videoResolution": 900.7687187017159,
+    "hasWiFi": false,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 151,
+    "hasAccelerometer": true,
+    "hasGyroscope": true,
+    "hasRadar": true,
+    "hasGPS": false,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone95",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone95 accessories"
+      }
+    },
+    "system": "drone system 95",
+    "maxFlightTime": 470.6847239869642,
+    "maxBatteryTime": 727.0223674388828,
+    "currentLocation": [
+      8.714152138367792,
+      3.4458466422073553
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 994.5394217239184,
+    "maxSpeed": 786.7480884679153,
+    "maxCargoWeight": 445.4690682450188,
+    "maxAltitude": 422.90299719575665,
+    "cameraResolution": 393.05354604555276,
+    "videoResolution": 448.41062341863926,
+    "hasWiFi": false,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 932,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone96",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone96 accessories"
+      }
+    },
+    "system": "drone system 96",
+    "maxFlightTime": 745.7121491570823,
+    "maxBatteryTime": 325.4392586907892,
+    "currentLocation": [
+      6.490510603331765,
+      4.2050790586372955
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 672.71428657203,
+    "maxSpeed": 112.48482600345314,
+    "maxCargoWeight": 254.86768583772647,
+    "maxAltitude": 493.93511729633326,
+    "cameraResolution": 866.600553624985,
+    "videoResolution": 876.5992460053757,
+    "hasWiFi": false,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 980,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": false,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone97",
+    "status": "idle-busy",
+    "accessories": {
+      "accessorie": {
+        "name": "drone97 accessories"
+      }
+    },
+    "system": "drone system 97",
+    "maxFlightTime": 717.86765589066,
+    "maxBatteryTime": 812.6659375812718,
+    "currentLocation": [
+      6.718230227327576,
+      5.876315706264563
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 132.35274148815193,
+    "maxSpeed": 250.7065135743093,
+    "maxCargoWeight": 640.199195458422,
+    "maxAltitude": 767.102784193252,
+    "cameraResolution": 1021.5456591699005,
+    "videoResolution": 839.463747436659,
+    "hasWiFi": true,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 789,
+    "hasAccelerometer": true,
+    "hasGyroscope": true,
+    "hasRadar": true,
+    "hasGPS": false,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone98",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone98 accessories"
+      }
+    },
+    "system": "drone system 98",
+    "maxFlightTime": 254.50103111376401,
+    "maxBatteryTime": 899.8012207754194,
+    "currentLocation": [
+      2.7012150072723062,
+      7.388921069818542
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 993.2257230087823,
+    "maxSpeed": 238.24265410199476,
+    "maxCargoWeight": 545.0531382548528,
+    "maxAltitude": 846.8114718590014,
+    "cameraResolution": 173.50697880588575,
+    "videoResolution": 526.30508440895,
+    "hasWiFi": false,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 650,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": false,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone99",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone99 accessories"
+      }
+    },
+    "system": "drone system 99",
+    "maxFlightTime": 394.8225757871701,
+    "maxBatteryTime": 876.0967719146672,
+    "currentLocation": [
+      1.7947288843039133,
+      3.6030960563920167
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 862.0237409826502,
+    "maxSpeed": 658.6860356945463,
+    "maxCargoWeight": 259.8849740321622,
+    "maxAltitude": 531.1716341267629,
+    "cameraResolution": 937.8055154976456,
+    "videoResolution": 1022.459305063069,
+    "hasWiFi": true,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 790,
+    "hasAccelerometer": true,
+    "hasGyroscope": true,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone100",
+    "status": "idle-ready",
+    "accessories": {
+      "accessorie": {
+        "name": "drone100 accessories"
+      }
+    },
+    "system": "drone system 100",
+    "maxFlightTime": 511.333787198624,
+    "maxBatteryTime": 938.9568600871853,
+    "currentLocation": [
+      4.9417427941219305,
+      4.557483445035702
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 336.86299333593945,
+    "maxSpeed": 824.8774742297351,
+    "maxCargoWeight": 424.2581062412855,
+    "maxAltitude": 839.9039453620544,
+    "cameraResolution": 1090.3428433548713,
+    "videoResolution": 377.5233935092467,
+    "hasWiFi": false,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 749,
+    "hasAccelerometer": false,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone101",
+    "status": "idle-busy",
+    "accessories": {
+      "accessorie": {
+        "name": "drone101 accessories"
+      }
+    },
+    "system": "drone system 101",
+    "maxFlightTime": 403.07509867017734,
+    "maxBatteryTime": 532.2904125584448,
+    "currentLocation": [
+      3.4276212185693766,
+      6.0955413453552065
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 978.0363841781289,
+    "maxSpeed": 662.6920291401523,
+    "maxCargoWeight": 490.10534208084846,
+    "maxAltitude": 902.5068006888913,
+    "cameraResolution": 238.58160804576647,
+    "videoResolution": 616.5386502744616,
+    "hasWiFi": true,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 575,
+    "hasAccelerometer": true,
+    "hasGyroscope": true,
+    "hasRadar": false,
+    "hasGPS": false,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone102",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone102 accessories"
+      }
+    },
+    "system": "drone system 102",
+    "maxFlightTime": 364.38481245988265,
+    "maxBatteryTime": 676.0802824285743,
+    "currentLocation": [
+      3.364145618622496,
+      0.5115189359076799
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 227.44845960994854,
+    "maxSpeed": 931.2124158259471,
+    "maxCargoWeight": 834.7837704462141,
+    "maxAltitude": 867.7333502504937,
+    "cameraResolution": 435.1302959168758,
+    "videoResolution": 527.5339079022183,
+    "hasWiFi": true,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 585,
+    "hasAccelerometer": false,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": false,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone103",
+    "status": "idle-ready",
+    "accessories": {
+      "accessorie": {
+        "name": "drone103 accessories"
+      }
+    },
+    "system": "drone system 103",
+    "maxFlightTime": 131.5379945112071,
+    "maxBatteryTime": 127.11851262491827,
+    "currentLocation": [
+      0.7940756174040997,
+      2.7483709259382594
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 744.024284594568,
+    "maxSpeed": 981.7556989918974,
+    "maxCargoWeight": 1086.5312888502901,
+    "maxAltitude": 1014.7033933522415,
+    "cameraResolution": 588.8340897020316,
+    "videoResolution": 819.6193663986423,
+    "hasWiFi": false,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 723,
+    "hasAccelerometer": false,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone104",
+    "status": "idle-ready",
+    "accessories": {
+      "accessorie": {
+        "name": "drone104 accessories"
+      }
+    },
+    "system": "drone system 104",
+    "maxFlightTime": 202.7060199947358,
+    "maxBatteryTime": 516.2493874244191,
+    "currentLocation": [
+      7.657051863268274,
+      7.202263026150657
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 355.6299870183145,
+    "maxSpeed": 163.76665440308636,
+    "maxCargoWeight": 191.05445035470126,
+    "maxAltitude": 948.2696088107577,
+    "cameraResolution": 355.22929330213094,
+    "videoResolution": 537.4638730709314,
+    "hasWiFi": true,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 656,
+    "hasAccelerometer": false,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": false,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone105",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone105 accessories"
+      }
+    },
+    "system": "drone system 105",
+    "maxFlightTime": 766.3720119186096,
+    "maxBatteryTime": 625.5339042502399,
+    "currentLocation": [
+      0.27885294738609456,
+      3.7425471720665393
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 483.19618761023276,
+    "maxSpeed": 583.6871310455601,
+    "maxCargoWeight": 268.9941815403066,
+    "maxAltitude": 1039.0537452536282,
+    "cameraResolution": 238.86003342130792,
+    "videoResolution": 765.332142952904,
+    "hasWiFi": false,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 115,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": false,
+    "hasGPS": false,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone106",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone106 accessories"
+      }
+    },
+    "system": "drone system 106",
+    "maxFlightTime": 553.4591074039072,
+    "maxBatteryTime": 405.92781693356443,
+    "currentLocation": [
+      0.4546292672133623,
+      3.288089673982475
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 332.3313300702108,
+    "maxSpeed": 873.6728061402505,
+    "maxCargoWeight": 541.735747488595,
+    "maxAltitude": 1065.5259608959184,
+    "cameraResolution": 976.2529729334933,
+    "videoResolution": 913.692578286514,
+    "hasWiFi": true,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 805,
+    "hasAccelerometer": true,
+    "hasGyroscope": true,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone107",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone107 accessories"
+      }
+    },
+    "system": "drone system 107",
+    "maxFlightTime": 1026.8428865824822,
+    "maxBatteryTime": 552.7372214980496,
+    "currentLocation": [
+      3.054648978678791,
+      1.8080758201380487
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 393.91270451947827,
+    "maxSpeed": 126.11065285914216,
+    "maxCargoWeight": 1025.0160131941518,
+    "maxAltitude": 346.7519547294039,
+    "cameraResolution": 957.8585941240566,
+    "videoResolution": 623.0415237315011,
+    "hasWiFi": false,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 734,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": false,
+    "hasGPS": true,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone108",
+    "status": "idle-busy",
+    "accessories": {
+      "accessorie": {
+        "name": "drone108 accessories"
+      }
+    },
+    "system": "drone system 108",
+    "maxFlightTime": 627.4027039091733,
+    "maxBatteryTime": 1002.7356746135739,
+    "currentLocation": [
+      3.9523339301327187,
+      3.548922399213228
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 1042.487627342579,
+    "maxSpeed": 1026.8283237593996,
+    "maxCargoWeight": 361.38462638992246,
+    "maxAltitude": 813.3654518826198,
+    "cameraResolution": 1082.5156374988287,
+    "videoResolution": 682.1164473148748,
+    "hasWiFi": true,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 995,
+    "hasAccelerometer": false,
+    "hasGyroscope": true,
+    "hasRadar": false,
+    "hasGPS": false,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone109",
+    "status": "idle-ready",
+    "accessories": {
+      "accessorie": {
+        "name": "drone109 accessories"
+      }
+    },
+    "system": "drone system 109",
+    "maxFlightTime": 850.9602264542627,
+    "maxBatteryTime": 440.88610614013936,
+    "currentLocation": [
+      8.893433281747736,
+      1.5530401010026362
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 587.8639340769362,
+    "maxSpeed": 1066.2301318568814,
+    "maxCargoWeight": 323.83007121514,
+    "maxAltitude": 779.4840279750998,
+    "cameraResolution": 542.3917601078067,
+    "videoResolution": 415.803207877682,
+    "hasWiFi": false,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 921,
+    "hasAccelerometer": false,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": false,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone110",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone110 accessories"
+      }
+    },
+    "system": "drone system 110",
+    "maxFlightTime": 432.84022643326284,
+    "maxBatteryTime": 803.107515037973,
+    "currentLocation": [
+      9.681399275169333,
+      8.582932339720928
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 631.7059851943067,
+    "maxSpeed": 712.847792760771,
+    "maxCargoWeight": 392.38268286976756,
+    "maxAltitude": 1008.5896262521569,
+    "cameraResolution": 743.3427391422517,
+    "videoResolution": 261.3293226364791,
+    "hasWiFi": false,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 932,
+    "hasAccelerometer": false,
+    "hasGyroscope": true,
+    "hasRadar": false,
+    "hasGPS": false,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone111",
+    "status": "idle-busy",
+    "accessories": {
+      "accessorie": {
+        "name": "drone111 accessories"
+      }
+    },
+    "system": "drone system 111",
+    "maxFlightTime": 569.6519583610584,
+    "maxBatteryTime": 575.5935113432213,
+    "currentLocation": [
+      5.0841373044475136,
+      6.848558633207413
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 898.3782992744007,
+    "maxSpeed": 467.00564559491846,
+    "maxCargoWeight": 452.51292071648544,
+    "maxAltitude": 583.526287150811,
+    "cameraResolution": 610.5485470047108,
+    "videoResolution": 522.601657427554,
+    "hasWiFi": false,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 1046,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": false,
+    "hasGPS": true,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone112",
+    "status": "idle-busy",
+    "accessories": {
+      "accessorie": {
+        "name": "drone112 accessories"
+      }
+    },
+    "system": "drone system 112",
+    "maxFlightTime": 747.3339316497872,
+    "maxBatteryTime": 604.1731352260248,
+    "currentLocation": [
+      7.937113125923528,
+      4.077720504477944
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 1001.2030169983154,
+    "maxSpeed": 892.8365530816228,
+    "maxCargoWeight": 733.9994979647563,
+    "maxAltitude": 565.6761441419887,
+    "cameraResolution": 678.1956031638649,
+    "videoResolution": 679.6153166022082,
+    "hasWiFi": true,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 395,
+    "hasAccelerometer": false,
+    "hasGyroscope": true,
+    "hasRadar": false,
+    "hasGPS": true,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone113",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone113 accessories"
+      }
+    },
+    "system": "drone system 113",
+    "maxFlightTime": 872.400394947048,
+    "maxBatteryTime": 296.7782865964398,
+    "currentLocation": [
+      7.7662840844832015,
+      8.853308157233517
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 706.2754887983766,
+    "maxSpeed": 1032.1669864944492,
+    "maxCargoWeight": 910.7050186576814,
+    "maxAltitude": 173.7741387198534,
+    "cameraResolution": 1097.9959905783269,
+    "videoResolution": 299.6359499965952,
+    "hasWiFi": true,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 354,
+    "hasAccelerometer": false,
+    "hasGyroscope": true,
+    "hasRadar": true,
+    "hasGPS": false,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "_id": "5869c24aae805032fc33ec57",
+    "name": "drone114",
+    "status": "idle-ready",
+    "accessories": {
+      "accessorie": {
+        "name": "drone114 accessories"
+      }
+    },
+    "system": "drone system 114",
+    "maxFlightTime": 1072.8964905315172,
+    "maxBatteryTime": 340.2259821302031,
+    "currentLocation": [
+      3.427159585096482,
+      7.705038345628177
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 257.3917505444675,
+    "maxSpeed": 756.9203320972656,
+    "maxCargoWeight": 468.8537059873112,
+    "maxAltitude": 870.3299746304974,
+    "cameraResolution": 534.8669534306546,
+    "videoResolution": 820.5088234481236,
+    "hasWiFi": false,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 270,
+    "hasAccelerometer": true,
+    "hasGyroscope": true,
+    "hasRadar": false,
+    "hasGPS": false,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone115",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone115 accessories"
+      }
+    },
+    "system": "drone system 115",
+    "maxFlightTime": 1093.231655553739,
+    "maxBatteryTime": 784.3750414401688,
+    "currentLocation": [
+      2.0751541906384663,
+      5.689393667203455
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 219.06121140160676,
+    "maxSpeed": 394.5285186308215,
+    "maxCargoWeight": 523.0070392957521,
+    "maxAltitude": 683.035401775828,
+    "cameraResolution": 152.025904289724,
+    "videoResolution": 431.2119107012532,
+    "hasWiFi": false,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 803,
+    "hasAccelerometer": true,
+    "hasGyroscope": true,
+    "hasRadar": false,
+    "hasGPS": false,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone116",
+    "status": "idle-busy",
+    "accessories": {
+      "accessorie": {
+        "name": "drone116 accessories"
+      }
+    },
+    "system": "drone system 116",
+    "maxFlightTime": 130.4317391646962,
+    "maxBatteryTime": 894.9767619140487,
+    "currentLocation": [
+      3.94816087822061,
+      9.452692674077781
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 279.8911167955422,
+    "maxSpeed": 262.2671105662714,
+    "maxCargoWeight": 506.15551428374744,
+    "maxAltitude": 100.85654613675202,
+    "cameraResolution": 1067.7738704443032,
+    "videoResolution": 985.6716369444681,
+    "hasWiFi": true,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 166,
+    "hasAccelerometer": false,
+    "hasGyroscope": false,
+    "hasRadar": false,
+    "hasGPS": true,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone117",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone117 accessories"
+      }
+    },
+    "system": "drone system 117",
+    "maxFlightTime": 483.6674543279359,
+    "maxBatteryTime": 538.9081696190225,
+    "currentLocation": [
+      0.10779282712062077,
+      7.988447854123779
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 1056.4021703548449,
+    "maxSpeed": 602.2107080095441,
+    "maxCargoWeight": 284.64533866871835,
+    "maxAltitude": 1049.7176852751509,
+    "cameraResolution": 1093.6150152188407,
+    "videoResolution": 666.2252269178065,
+    "hasWiFi": true,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 630,
+    "hasAccelerometer": false,
+    "hasGyroscope": true,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone118",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone118 accessories"
+      }
+    },
+    "system": "drone system 118",
+    "maxFlightTime": 830.2594026220677,
+    "maxBatteryTime": 1074.3252643253973,
+    "currentLocation": [
+      2.7801011733948577,
+      7.309144013421987
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 1045.7713105249218,
+    "maxSpeed": 993.2995330018852,
+    "maxCargoWeight": 733.3696497568528,
+    "maxAltitude": 1095.2146709097033,
+    "cameraResolution": 699.5346001906034,
+    "videoResolution": 666.6909155537156,
+    "hasWiFi": true,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 570,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": false,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone119",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone119 accessories"
+      }
+    },
+    "system": "drone system 119",
+    "maxFlightTime": 193.94606532713334,
+    "maxBatteryTime": 428.5305788189281,
+    "currentLocation": [
+      8.655361980070273,
+      3.7008395167942676
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 1010.3268791846806,
+    "maxSpeed": 365.33172012674754,
+    "maxCargoWeight": 409.26146199204464,
+    "maxAltitude": 208.0776529971823,
+    "cameraResolution": 214.7638342290931,
+    "videoResolution": 565.4914994152592,
+    "hasWiFi": true,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 1096,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone120",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone120 accessories"
+      }
+    },
+    "system": "drone system 120",
+    "maxFlightTime": 201.6388073718211,
+    "maxBatteryTime": 715.2489984220504,
+    "currentLocation": [
+      4.544374706187558,
+      9.94132724050688
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 161.78974910524283,
+    "maxSpeed": 500.62958886694264,
+    "maxCargoWeight": 136.0997391188418,
+    "maxAltitude": 610.7445863409386,
+    "cameraResolution": 330.9719629347622,
+    "videoResolution": 1057.7211425603593,
+    "hasWiFi": true,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 616,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone121",
+    "status": "idle-busy",
+    "accessories": {
+      "accessorie": {
+        "name": "drone121 accessories"
+      }
+    },
+    "system": "drone system 121",
+    "maxFlightTime": 173.40311821160304,
+    "maxBatteryTime": 114.87578608440265,
+    "currentLocation": [
+      6.679834467839438,
+      2.975509019212128
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 938.7146742976745,
+    "maxSpeed": 1035.8478879301324,
+    "maxCargoWeight": 574.0810228975481,
+    "maxAltitude": 515.1853454695347,
+    "cameraResolution": 107.17783507795167,
+    "videoResolution": 948.7660578687784,
+    "hasWiFi": false,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 454,
+    "hasAccelerometer": false,
+    "hasGyroscope": true,
+    "hasRadar": false,
+    "hasGPS": true,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone122",
+    "status": "idle-busy",
+    "accessories": {
+      "accessorie": {
+        "name": "drone122 accessories"
+      }
+    },
+    "system": "drone system 122",
+    "maxFlightTime": 893.4342956320232,
+    "maxBatteryTime": 771.5586571420504,
+    "currentLocation": [
+      1.2993278799866403,
+      6.212987671864189
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 137.1379845910309,
+    "maxSpeed": 1066.6934777145912,
+    "maxCargoWeight": 749.1396820781024,
+    "maxAltitude": 799.8412268608705,
+    "cameraResolution": 550.340880525848,
+    "videoResolution": 1011.9394814645008,
+    "hasWiFi": false,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 337,
+    "hasAccelerometer": false,
+    "hasGyroscope": false,
+    "hasRadar": false,
+    "hasGPS": true,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone123",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone123 accessories"
+      }
+    },
+    "system": "drone system 123",
+    "maxFlightTime": 897.8364726608804,
+    "maxBatteryTime": 955.0737820484125,
+    "currentLocation": [
+      8.790314127541306,
+      5.321782215284161
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 298.8956618109132,
+    "maxSpeed": 987.7199410835217,
+    "maxCargoWeight": 246.96649604065294,
+    "maxAltitude": 1052.0623159125535,
+    "cameraResolution": 333.3416141277409,
+    "videoResolution": 676.3115624491082,
+    "hasWiFi": false,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 469,
+    "hasAccelerometer": true,
+    "hasGyroscope": true,
+    "hasRadar": true,
+    "hasGPS": false,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone124",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone124 accessories"
+      }
+    },
+    "system": "drone system 124",
+    "maxFlightTime": 949.4838689910407,
+    "maxBatteryTime": 766.5913890579893,
+    "currentLocation": [
+      5.306042627306738,
+      0.03496144479607777
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 361.1482387327981,
+    "maxSpeed": 989.1328707791737,
+    "maxCargoWeight": 1083.959393566142,
+    "maxAltitude": 642.7243141783769,
+    "cameraResolution": 926.9237986829941,
+    "videoResolution": 814.1456979537539,
+    "hasWiFi": false,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 195,
+    "hasAccelerometer": true,
+    "hasGyroscope": true,
+    "hasRadar": false,
+    "hasGPS": true,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone125",
+    "status": "idle-ready",
+    "accessories": {
+      "accessorie": {
+        "name": "drone125 accessories"
+      }
+    },
+    "system": "drone system 125",
+    "maxFlightTime": 741.5602950327253,
+    "maxBatteryTime": 684.315393280716,
+    "currentLocation": [
+      9.926430063698861,
+      4.367436126520749
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 432.297438308526,
+    "maxSpeed": 457.9836815844868,
+    "maxCargoWeight": 406.9357242849651,
+    "maxAltitude": 399.8214201998044,
+    "cameraResolution": 1030.5932426715121,
+    "videoResolution": 1024.3970611986865,
+    "hasWiFi": false,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 168,
+    "hasAccelerometer": false,
+    "hasGyroscope": true,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone126",
+    "status": "idle-ready",
+    "accessories": {
+      "accessorie": {
+        "name": "drone126 accessories"
+      }
+    },
+    "system": "drone system 126",
+    "maxFlightTime": 711.2266329227754,
+    "maxBatteryTime": 333.7026564634988,
+    "currentLocation": [
+      1.2248796199400092,
+      6.915074519425389
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 964.3649805810126,
+    "maxSpeed": 1023.0310345495653,
+    "maxCargoWeight": 684.1129399854077,
+    "maxAltitude": 559.0219647980707,
+    "cameraResolution": 274.3759889436802,
+    "videoResolution": 376.42042044289997,
+    "hasWiFi": true,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 432,
+    "hasAccelerometer": true,
+    "hasGyroscope": true,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone127",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone127 accessories"
+      }
+    },
+    "system": "drone system 127",
+    "maxFlightTime": 278.0574232519092,
+    "maxBatteryTime": 751.9421997037798,
+    "currentLocation": [
+      7.4747462743500765,
+      7.007372825588454
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 816.4197200337463,
+    "maxSpeed": 489.0962358717405,
+    "maxCargoWeight": 867.1767425605786,
+    "maxAltitude": 880.7306249729229,
+    "cameraResolution": 927.941856396325,
+    "videoResolution": 393.520687049591,
+    "hasWiFi": false,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 592,
+    "hasAccelerometer": false,
+    "hasGyroscope": false,
+    "hasRadar": false,
+    "hasGPS": false,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone128",
+    "status": "idle-busy",
+    "accessories": {
+      "accessorie": {
+        "name": "drone128 accessories"
+      }
+    },
+    "system": "drone system 128",
+    "maxFlightTime": 704.4764140199472,
+    "maxBatteryTime": 494.15899329705417,
+    "currentLocation": [
+      1.0335847175926505,
+      1.1214380273851976
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 1023.5132600723013,
+    "maxSpeed": 656.619694586042,
+    "maxCargoWeight": 1031.0477156989236,
+    "maxAltitude": 985.6325718629108,
+    "cameraResolution": 810.5081384057102,
+    "videoResolution": 658.662623545968,
+    "hasWiFi": true,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 561,
+    "hasAccelerometer": false,
+    "hasGyroscope": false,
+    "hasRadar": false,
+    "hasGPS": true,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone129",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone129 accessories"
+      }
+    },
+    "system": "drone system 129",
+    "maxFlightTime": 653.3056414612864,
+    "maxBatteryTime": 680.6316367220394,
+    "currentLocation": [
+      7.600059836407079,
+      5.793475617156125
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 1008.4185559380865,
+    "maxSpeed": 195.6523909846261,
+    "maxCargoWeight": 1065.4509040025716,
+    "maxAltitude": 463.36678372772326,
+    "cameraResolution": 117.07179893874434,
+    "videoResolution": 569.7907212004172,
+    "hasWiFi": false,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 1071,
+    "hasAccelerometer": false,
+    "hasGyroscope": true,
+    "hasRadar": false,
+    "hasGPS": false,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone130",
+    "status": "idle-ready",
+    "accessories": {
+      "accessorie": {
+        "name": "drone130 accessories"
+      }
+    },
+    "system": "drone system 130",
+    "maxFlightTime": 259.4968635012308,
+    "maxBatteryTime": 574.0235774946999,
+    "currentLocation": [
+      8.734720295935354,
+      8.9011365169473
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 867.1883046639451,
+    "maxSpeed": 579.2222577383938,
+    "maxCargoWeight": 618.1799744344087,
+    "maxAltitude": 354.8245482817224,
+    "cameraResolution": 1069.2153055817062,
+    "videoResolution": 207.9449178823084,
+    "hasWiFi": true,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 108,
+    "hasAccelerometer": false,
+    "hasGyroscope": true,
+    "hasRadar": true,
+    "hasGPS": false,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone131",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone131 accessories"
+      }
+    },
+    "system": "drone system 131",
+    "maxFlightTime": 270.1593084923545,
+    "maxBatteryTime": 501.8162191402661,
+    "currentLocation": [
+      5.06925259007849,
+      2.8678140737205426
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 1079.966683600153,
+    "maxSpeed": 903.9491538436565,
+    "maxCargoWeight": 882.0633603467551,
+    "maxAltitude": 788.622228154852,
+    "cameraResolution": 1014.603472412826,
+    "videoResolution": 872.2377101570603,
+    "hasWiFi": true,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 511,
+    "hasAccelerometer": false,
+    "hasGyroscope": true,
+    "hasRadar": true,
+    "hasGPS": false,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone132",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone132 accessories"
+      }
+    },
+    "system": "drone system 132",
+    "maxFlightTime": 453.333525074071,
+    "maxBatteryTime": 389.95015398023537,
+    "currentLocation": [
+      7.391820045691972,
+      9.83041462333733
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 740.4765867072513,
+    "maxSpeed": 280.719034130737,
+    "maxCargoWeight": 976.3385762944508,
+    "maxAltitude": 284.10045126639596,
+    "cameraResolution": 186.99117308154047,
+    "videoResolution": 100.13866587155675,
+    "hasWiFi": true,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 343,
+    "hasAccelerometer": false,
+    "hasGyroscope": true,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone133",
+    "status": "idle-ready",
+    "accessories": {
+      "accessorie": {
+        "name": "drone133 accessories"
+      }
+    },
+    "system": "drone system 133",
+    "maxFlightTime": 859.9745198543994,
+    "maxBatteryTime": 621.1516735841903,
+    "currentLocation": [
+      7.3372435395968445,
+      4.350592825743133
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 584.9785968344684,
+    "maxSpeed": 670.5416953220299,
+    "maxCargoWeight": 436.8568137027923,
+    "maxAltitude": 148.2826592824739,
+    "cameraResolution": 747.9759151210136,
+    "videoResolution": 637.7199445181926,
+    "hasWiFi": true,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 522,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": false,
+    "hasGPS": false,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone134",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone134 accessories"
+      }
+    },
+    "system": "drone system 134",
+    "maxFlightTime": 848.045093591343,
+    "maxBatteryTime": 756.4162444171803,
+    "currentLocation": [
+      3.0286449705809115,
+      2.0393044579139574
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 1013.8090384762296,
+    "maxSpeed": 277.34781754137475,
+    "maxCargoWeight": 454.59733467141905,
+    "maxAltitude": 240.52296739425452,
+    "cameraResolution": 808.4095540092475,
+    "videoResolution": 1016.7037692684153,
+    "hasWiFi": false,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 495,
+    "hasAccelerometer": false,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": false,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone135",
+    "status": "idle-ready",
+    "accessories": {
+      "accessorie": {
+        "name": "drone135 accessories"
+      }
+    },
+    "system": "drone system 135",
+    "maxFlightTime": 728.9073017395943,
+    "maxBatteryTime": 405.43789978530265,
+    "currentLocation": [
+      0.732642990507848,
+      8.664252911574714
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 648.2139475632968,
+    "maxSpeed": 342.85161456543494,
+    "maxCargoWeight": 140.47818199387865,
+    "maxAltitude": 300.7825842563982,
+    "cameraResolution": 527.4771504780792,
+    "videoResolution": 607.2355690695183,
+    "hasWiFi": true,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 872,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone136",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone136 accessories"
+      }
+    },
+    "system": "drone system 136",
+    "maxFlightTime": 219.5211179309701,
+    "maxBatteryTime": 931.8594311853849,
+    "currentLocation": [
+      0.20833203027431857,
+      5.139270735983743
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 269.8669900496375,
+    "maxSpeed": 476.24757611139194,
+    "maxCargoWeight": 589.7644169591647,
+    "maxAltitude": 1003.3459669678576,
+    "cameraResolution": 636.3253496737606,
+    "videoResolution": 532.9315652588166,
+    "hasWiFi": false,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 181,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone137",
+    "status": "idle-busy",
+    "accessories": {
+      "accessorie": {
+        "name": "drone137 accessories"
+      }
+    },
+    "system": "drone system 137",
+    "maxFlightTime": 948.4428274625691,
+    "maxBatteryTime": 557.2867826319982,
+    "currentLocation": [
+      7.960679144477756,
+      1.4167920502002218
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 518.7164408021051,
+    "maxSpeed": 718.2993576008693,
+    "maxCargoWeight": 626.0719307568362,
+    "maxAltitude": 790.2607891424832,
+    "cameraResolution": 320.91657873709903,
+    "videoResolution": 300.1506593100453,
+    "hasWiFi": true,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 387,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": false,
+    "hasGPS": true,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone138",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone138 accessories"
+      }
+    },
+    "system": "drone system 138",
+    "maxFlightTime": 191.85989538626282,
+    "maxBatteryTime": 481.8075138550341,
+    "currentLocation": [
+      1.4227391685226087,
+      4.402879131538615
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 145.12867893388494,
+    "maxSpeed": 652.1595184358907,
+    "maxCargoWeight": 810.7064636040515,
+    "maxAltitude": 1000.466826827578,
+    "cameraResolution": 884.7119060104022,
+    "videoResolution": 112.64227707783138,
+    "hasWiFi": false,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 666,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone139",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone139 accessories"
+      }
+    },
+    "system": "drone system 139",
+    "maxFlightTime": 400.6150251212478,
+    "maxBatteryTime": 397.30453516023306,
+    "currentLocation": [
+      3.32072836464123,
+      5.447927140148323
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 643.7508121944501,
+    "maxSpeed": 995.9336379773539,
+    "maxCargoWeight": 947.3452919239835,
+    "maxAltitude": 469.9206490958851,
+    "cameraResolution": 662.5745034203364,
+    "videoResolution": 441.35588742551425,
+    "hasWiFi": false,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 380,
+    "hasAccelerometer": false,
+    "hasGyroscope": true,
+    "hasRadar": false,
+    "hasGPS": true,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone140",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone140 accessories"
+      }
+    },
+    "system": "drone system 140",
+    "maxFlightTime": 745.7641659257538,
+    "maxBatteryTime": 284.92440615397345,
+    "currentLocation": [
+      4.91577498705565,
+      6.458323756650007
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 905.9036713772441,
+    "maxSpeed": 180.88991321041237,
+    "maxCargoWeight": 861.6236851270548,
+    "maxAltitude": 256.505169399902,
+    "cameraResolution": 1099.623844890336,
+    "videoResolution": 656.4072482745215,
+    "hasWiFi": true,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 958,
+    "hasAccelerometer": false,
+    "hasGyroscope": true,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone141",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone141 accessories"
+      }
+    },
+    "system": "drone system 141",
+    "maxFlightTime": 489.239511659133,
+    "maxBatteryTime": 204.89820332375288,
+    "currentLocation": [
+      5.825917578068431,
+      3.7713408797835735
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 787.9279400803999,
+    "maxSpeed": 591.7971986958933,
+    "maxCargoWeight": 180.2291299185427,
+    "maxAltitude": 467.27705672555766,
+    "cameraResolution": 986.4469093705984,
+    "videoResolution": 816.0474395653633,
+    "hasWiFi": false,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 589,
+    "hasAccelerometer": true,
+    "hasGyroscope": true,
+    "hasRadar": false,
+    "hasGPS": false,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone142",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone142 accessories"
+      }
+    },
+    "system": "drone system 142",
+    "maxFlightTime": 620.8834459910379,
+    "maxBatteryTime": 206.3719749916243,
+    "currentLocation": [
+      4.750421240548047,
+      4.6242655413199945
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 850.5053017915691,
+    "maxSpeed": 796.3319808127935,
+    "maxCargoWeight": 232.40017898442136,
+    "maxAltitude": 915.6203484361504,
+    "cameraResolution": 944.454609749268,
+    "videoResolution": 994.0957652762604,
+    "hasWiFi": true,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 502,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone143",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone143 accessories"
+      }
+    },
+    "system": "drone system 143",
+    "maxFlightTime": 997.3344634146483,
+    "maxBatteryTime": 564.2193246977995,
+    "currentLocation": [
+      0.33055720489838736,
+      0.3806334393654587
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 263.8789763631943,
+    "maxSpeed": 1028.2548209251033,
+    "maxCargoWeight": 907.8997167969861,
+    "maxAltitude": 552.5563038111527,
+    "cameraResolution": 925.236181055994,
+    "videoResolution": 564.9145637537899,
+    "hasWiFi": true,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 658,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": false,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone144",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone144 accessories"
+      }
+    },
+    "system": "drone system 144",
+    "maxFlightTime": 493.84568569009934,
+    "maxBatteryTime": 120.29944960575293,
+    "currentLocation": [
+      0.30561376653571726,
+      7.015445453162929
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 535.3371967389079,
+    "maxSpeed": 414.86959430197214,
+    "maxCargoWeight": 342.3881631099625,
+    "maxAltitude": 824.5840807737811,
+    "cameraResolution": 675.8849494111455,
+    "videoResolution": 1090.1050192190987,
+    "hasWiFi": true,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 653,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": false,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone145",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone145 accessories"
+      }
+    },
+    "system": "drone system 145",
+    "maxFlightTime": 922.3131680083255,
+    "maxBatteryTime": 954.6592505443207,
+    "currentLocation": [
+      1.0092355952164067,
+      3.436225853521324
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 1045.8051596665205,
+    "maxSpeed": 396.725219170868,
+    "maxCargoWeight": 162.44364714202067,
+    "maxAltitude": 558.2788674123385,
+    "cameraResolution": 729.6922836406802,
+    "videoResolution": 160.75094632015123,
+    "hasWiFi": false,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 391,
+    "hasAccelerometer": false,
+    "hasGyroscope": true,
+    "hasRadar": true,
+    "hasGPS": false,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone146",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone146 accessories"
+      }
+    },
+    "system": "drone system 146",
+    "maxFlightTime": 785.333284752375,
+    "maxBatteryTime": 648.7937090190702,
+    "currentLocation": [
+      2.074110106152376,
+      7.175431186928272
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 215.01475432990583,
+    "maxSpeed": 728.7047959662484,
+    "maxCargoWeight": 765.9340956634557,
+    "maxAltitude": 630.5441013961992,
+    "cameraResolution": 753.824960746915,
+    "videoResolution": 519.5596380765655,
+    "hasWiFi": true,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 400,
+    "hasAccelerometer": false,
+    "hasGyroscope": true,
+    "hasRadar": false,
+    "hasGPS": true,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone147",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone147 accessories"
+      }
+    },
+    "system": "drone system 147",
+    "maxFlightTime": 377.2975719193338,
+    "maxBatteryTime": 773.8553804312266,
+    "currentLocation": [
+      2.432946665297786,
+      8.932466719103003
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 695.8170327083867,
+    "maxSpeed": 422.9274456433724,
+    "maxCargoWeight": 362.79025174396355,
+    "maxAltitude": 1050.4685742983384,
+    "cameraResolution": 675.6801436729886,
+    "videoResolution": 921.1983516818655,
+    "hasWiFi": true,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 450,
+    "hasAccelerometer": false,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": false,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone148",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone148 accessories"
+      }
+    },
+    "system": "drone system 148",
+    "maxFlightTime": 366.05227001770794,
+    "maxBatteryTime": 388.42044830611303,
+    "currentLocation": [
+      2.8207126321668663,
+      6.530176286353077
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 585.5582841397284,
+    "maxSpeed": 759.2276903252188,
+    "maxCargoWeight": 1029.8321911689022,
+    "maxAltitude": 726.070056410577,
+    "cameraResolution": 718.1375747264361,
+    "videoResolution": 528.850688311036,
+    "hasWiFi": true,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 370,
+    "hasAccelerometer": true,
+    "hasGyroscope": true,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone149",
+    "status": "idle-busy",
+    "accessories": {
+      "accessorie": {
+        "name": "drone149 accessories"
+      }
+    },
+    "system": "drone system 149",
+    "maxFlightTime": 300.68086953362126,
+    "maxBatteryTime": 1070.7249567768683,
+    "currentLocation": [
+      0.6071003014064136,
+      0.5181872386542175
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 550.1407925158662,
+    "maxSpeed": 642.242545777279,
+    "maxCargoWeight": 944.9784840436889,
+    "maxAltitude": 777.2101367105445,
+    "cameraResolution": 1099.7750195801445,
+    "videoResolution": 232.325791532399,
+    "hasWiFi": true,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 910,
+    "hasAccelerometer": false,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone150",
+    "status": "idle-ready",
+    "accessories": {
+      "accessorie": {
+        "name": "drone150 accessories"
+      }
+    },
+    "system": "drone system 150",
+    "maxFlightTime": 508.2441063837525,
+    "maxBatteryTime": 828.7107180204631,
+    "currentLocation": [
+      2.5960715873878937,
+      1.5889887756153809
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 340.7540411952356,
+    "maxSpeed": 309.4532621497325,
+    "maxCargoWeight": 637.4288645744348,
+    "maxAltitude": 577.5345180319989,
+    "cameraResolution": 878.1626391754979,
+    "videoResolution": 323.5608162230891,
+    "hasWiFi": true,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 692,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": false,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone151",
+    "status": "idle-busy",
+    "accessories": {
+      "accessorie": {
+        "name": "drone151 accessories"
+      }
+    },
+    "system": "drone system 151",
+    "maxFlightTime": 1073.8675833193397,
+    "maxBatteryTime": 389.07145000638025,
+    "currentLocation": [
+      1.752053893482035,
+      0.32871503157755555
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 1039.474968058059,
+    "maxSpeed": 700.4517725835045,
+    "maxCargoWeight": 461.20972577475305,
+    "maxAltitude": 811.8212056580411,
+    "cameraResolution": 621.0182059426425,
+    "videoResolution": 228.76387980940908,
+    "hasWiFi": false,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 648,
+    "hasAccelerometer": false,
+    "hasGyroscope": true,
+    "hasRadar": false,
+    "hasGPS": true,
+    "hasObstacleSensors": true,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone152",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone152 accessories"
+      }
+    },
+    "system": "drone system 152",
+    "maxFlightTime": 444.3688992908347,
+    "maxBatteryTime": 522.3807365205498,
+    "currentLocation": [
+      8.523913349649753,
+      2.2328628948900753
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 187.51946797039167,
+    "maxSpeed": 190.0571231701912,
+    "maxCargoWeight": 850.3742901737802,
+    "maxAltitude": 1073.0255251370058,
+    "cameraResolution": 422.4348824366101,
+    "videoResolution": 216.0758976407106,
+    "hasWiFi": true,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 426,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone153",
+    "status": "idle-busy",
+    "accessories": {
+      "accessorie": {
+        "name": "drone153 accessories"
+      }
+    },
+    "system": "drone system 153",
+    "maxFlightTime": 1055.5480328604003,
+    "maxBatteryTime": 155.7825518733297,
+    "currentLocation": [
+      4.757720994530978,
+      8.392624458828362
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 1096.0357877131953,
+    "maxSpeed": 423.8836618338652,
+    "maxCargoWeight": 258.99198360101275,
+    "maxAltitude": 596.4487459466602,
+    "cameraResolution": 1018.442423205448,
+    "videoResolution": 364.856023749046,
+    "hasWiFi": false,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 617,
+    "hasAccelerometer": false,
+    "hasGyroscope": true,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone154",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone154 accessories"
+      }
+    },
+    "system": "drone system 154",
+    "maxFlightTime": 244.8739394622689,
+    "maxBatteryTime": 976.2121031311218,
+    "currentLocation": [
+      0.6550177246778621,
+      4.18952556655775
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 180.66781378355637,
+    "maxSpeed": 892.2358798726099,
+    "maxCargoWeight": 791.6924674659464,
+    "maxAltitude": 264.3066690112713,
+    "cameraResolution": 502.2418174996778,
+    "videoResolution": 1090.5344552022034,
+    "hasWiFi": false,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 298,
+    "hasAccelerometer": true,
+    "hasGyroscope": true,
+    "hasRadar": true,
+    "hasGPS": false,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone155",
+    "status": "in-motion",
+    "accessories": {
+      "accessorie": {
+        "name": "drone155 accessories"
+      }
+    },
+    "system": "drone system 155",
+    "maxFlightTime": 618.8771968661414,
+    "maxBatteryTime": 230.70551984838508,
+    "currentLocation": [
+      4.622934971644018,
+      9.104726842682002
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 1016.9155849047519,
+    "maxSpeed": 941.6871224852545,
+    "maxCargoWeight": 626.5448599274978,
+    "maxAltitude": 484.0315714797704,
+    "cameraResolution": 908.4263578520565,
+    "videoResolution": 284.23637932066293,
+    "hasWiFi": true,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 815,
+    "hasAccelerometer": true,
+    "hasGyroscope": false,
+    "hasRadar": false,
+    "hasGPS": false,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": true,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone156",
+    "status": "idle-ready",
+    "accessories": {
+      "accessorie": {
+        "name": "drone156 accessories"
+      }
+    },
+    "system": "drone system 156",
+    "maxFlightTime": 166.10969539311463,
+    "maxBatteryTime": 719.2090802835517,
+    "currentLocation": [
+      5.592893375591464,
+      5.5440611993793665
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 527.8888717544748,
+    "maxSpeed": 658.4484969756354,
+    "maxCargoWeight": 781.9195230061406,
+    "maxAltitude": 696.1992157549549,
+    "cameraResolution": 920.1901784022017,
+    "videoResolution": 861.0335752480821,
+    "hasWiFi": false,
+    "hasBluetooth": true,
+    "engineType": "engine",
+    "numberOfRotors": 506,
+    "hasAccelerometer": true,
+    "hasGyroscope": true,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  },
+  {
+    "name": "drone157",
+    "status": "idle-ready",
+    "accessories": {
+      "accessorie": {
+        "name": "drone157 accessories"
+      }
+    },
+    "system": "drone system 157",
+    "maxFlightTime": 136.3057052635034,
+    "maxBatteryTime": 462.1174572128878,
+    "currentLocation": [
+      5.335306226152481,
+      1.2495005911410084
+    ],
+    "imageUrl": "/assets/drone_image_01.jpg",
+    "thumbnailUrl": "/assets/drone_thumb_01.jpg",
+    "type": "type2",
+    "specificationContent": "xx",
+    "specificationImageUrl": "/assets/drone_specification_01.jpg",
+    "specificationPDFUrl": "/assets/drone_specification_01.pdf",
+    "minSpeed": 1010.8981971700197,
+    "maxSpeed": 935.7533215300379,
+    "maxCargoWeight": 209.40804326448995,
+    "maxAltitude": 537.1280193335588,
+    "cameraResolution": 931.6735612054493,
+    "videoResolution": 709.2335923293364,
+    "hasWiFi": false,
+    "hasBluetooth": false,
+    "engineType": "engine",
+    "numberOfRotors": 1034,
+    "hasAccelerometer": false,
+    "hasGyroscope": false,
+    "hasRadar": true,
+    "hasGPS": true,
+    "hasObstacleSensors": false,
+    "hasUltraSonicAltimeter": false,
+    "description": "description and so on"
+  }
+]

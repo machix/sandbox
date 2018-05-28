@@ -1,0 +1,31 @@
+{
+  "extends": "eslint-config-topcoder/react",
+  "env": {
+    "browser": true,
+    "mocha": true
+  },
+  "globals": {
+    "expect": true,
+    "__DEV__": true,
+    "__PROD__": true,
+    "google": true,
+  },
+  "rules": {
+    "import/no-unresolved": [2, { ignore: ['^components/', '^containers/', '^services/', '^layouts/', '^store/', '^api/', '^routes/', '^Const'] }],
+
+    // temporary for in-progress features
+    "no-alert": 0,
+
+    // disable for unit tests
+    "no-unused-expressions": 0,
+
+    // relax rules
+    "no-magic-numbers": 0,
+    "max-len": 0,
+    "react/jsx-no-bind": 0,
+    "import/order": 0,
+    "import/imports-first": 0,
+    "no-restricted-syntax": 0,
+    "linebreak-style": ["error", "windows"]
+  }
+}

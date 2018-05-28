@@ -1,0 +1,43 @@
+.button {
+  min-width: 115px;
+  color: white;
+  border: none;
+  font-weight: bold;
+
+  &[disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
+
+.color-gray {
+  background: #4c4c4c;
+}
+
+.color-blue {
+  background: #315b95;
+}
+
+.size-normal {
+  padding: 13px 10px;
+}
+
+.size-medium {
+  height: 38px;
+  padding: 0 10px;
+}
+
+.size-xs {
+  height: 20px;
+  padding: 0 5px;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.color-black {
+  background: #4c4c4c;
+}
+
+.color-silver {
+  background: #67879a;
+}

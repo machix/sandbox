@@ -1,0 +1,25 @@
+.core-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  :global{
+    /* breadcrumbs */
+    .breadcrumb-container {
+        background-color: #FFFFFF;
+        width: 100%;
+        padding: 12px 0 0 30px;
+        color: #525051;
+        font-size: 12px;
+        min-height: 42px;
+        border-bottom: 1px solid #D4D4D4;
+    }
+
+    /* tabs */
+
+  }
+}
+
+.content {
+  flex: 1 0 auto;
+  background: #f3f3f3;
+}
