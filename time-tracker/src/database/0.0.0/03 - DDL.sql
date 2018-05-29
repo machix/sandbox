@@ -7,6 +7,129 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
+-- Time reportings
+IF OBJECT_ID (N'TimeReportings', N'U') IS NULL 
+BEGIN
+	CREATE TABLE [dbo].[TimeReportings](
+		[Id] INT IDENTITY(1,1) NOT NULL,	
+		[Name] NVARCHAR(50) NOT NULL
+CONSTRAINT [PK_TimeReportings] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)
+)	
+END
+GO
+
+-- AFEs
+IF OBJECT_ID (N'Afes', N'U') IS NULL 
+BEGIN
+	CREATE TABLE [dbo].[Afes](
+		[Id] INT IDENTITY(1,1) NOT NULL,	
+		[Name] NVARCHAR(20) NOT NULL
+CONSTRAINT [PK_Afes] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)
+)	
+END
+GO
+
+-- Projects
+IF OBJECT_ID (N'Projects', N'U') IS NULL 
+BEGIN
+	CREATE TABLE [dbo].[Projects](
+		[Id] INT IDENTITY(1,1) NOT NULL,	
+		[Comments] NVARCHAR(MAX) NOT NULL,
+		[TimeReportingId] INT NOT NULL,
+		[AfeId] INT NOT NULL,
+		[LogTime] DATETIME NULL,
+		[ManualEntryStart] DATETIME NULL,
+		[ManualEntryEnd] DATETIME NULL,
+CONSTRAINT [PK_Projects] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)
+)	
+
+ALTER TABLE [dbo].[Projects] WITH CHECK ADD CONSTRAINT [FK_Projects_TimeReportings_TimeReportingId] FOREIGN KEY([TimeReportingId])
+REFERENCES [dbo].[TimeReportings] ([Id])
+
+ALTER TABLE [dbo].[Projects] WITH CHECK ADD CONSTRAINT [FK_Projects_Afes_AfeId] FOREIGN KEY([AfeId])
+REFERENCES [dbo].[Afes] ([Id])
+
+END
+GO
+
+-- Users
+IF OBJECT_ID (N'Users', N'U') IS NULL 
+BEGIN
+	CREATE TABLE [dbo].[Users](
+		[Id] INT IDENTITY(1,1) NOT NULL,	
+		[Name] NVARCHAR(50) NOT NULL,
+		[LastLoginDate] DATETIME NULL
+CONSTRAINT [PK_Users] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)
+)	
+
+END
+GO
+
+-- User Photos
+IF OBJECT_ID (N'UserPhotos', N'U') IS NULL 
+BEGIN
+	CREATE TABLE [dbo].[UserPhotos](
+		[Id] INT NOT NULL,	
+		[FileName] NVARCHAR(255) NOT NULL,
+		[MimeType] NVARCHAR(255) NOT NULL,
+		[UserId] INT NOT NULL,
+CONSTRAINT [PK_UserPhotos] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)
+)	
+
+ALTER TABLE [dbo].[UserPhotos] WITH CHECK ADD CONSTRAINT [FK_UuserPhotos_Users_UserId] FOREIGN KEY([UserId])
+REFERENCES [dbo].[Users] ([Id])
+
+END
+GO
+
+-- User settings
+IF OBJECT_ID (N'UserSettings', N'U') IS NULL 
+BEGIN
+	CREATE TABLE [dbo].[UserSettings](
+		[Id] INT IDENTITY(1,1) NOT NULL,			
+		[UserId] INT NOT NULL,
+		[CostCenterId] NVARCHAR(20) NULL,
+		[DateFormat] NVARCHAR(20) NOT NULL,
+		[Is12HourFormat] BIT NOT NULL
+CONSTRAINT [PK_UserSettings] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)
+)	
+
+ALTER TABLE [dbo].[UserSettings] WITH CHECK ADD CONSTRAINT [FK_UserSettings_Users_UserId] FOREIGN KEY([UserId])
+REFERENCES [dbo].[Users] ([Id])
+
+	-- Default value for DateFormat column
+	ALTER TABLE [dbo].[UserSettings]
+		ADD CONSTRAINT DF_UserSettings_DateFormat
+		DEFAULT N'dd-mm-yyyy' FOR [DateFormat] 
+
+	-- Default value for Is24HourFormat column
+	ALTER TABLE [dbo].[UserSettings]
+		ADD CONSTRAINT DF_UserSettings_Is12HourFormat
+		DEFAULT 0 FOR [Is12HourFormat] 
+
+END
+GO
+
+
+
 /*
 
 -- Makers
