@@ -1,0 +1,125 @@
+﻿<UserControl
+    x:Class="ETTTimeTracker.Controls.TaskWidgetControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:ETTTimeTracker.Controls"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:models="clr-namespace:ETTTimeTracker.Models"
+    d:DesignHeight="540"
+    d:DesignWidth="960"
+    mc:Ignorable="d">
+    <UserControl.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+        <Style x:Key="TaskListBoxStyle" TargetType="{x:Type ListBox}">
+            <Setter Property="Background" Value="White" />
+            <Setter Property="BorderBrush" Value="Transparent" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="Foreground" Value="#787878" />
+            <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Disabled" />
+            <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto" />
+            <Setter Property="ScrollViewer.CanContentScroll" Value="true" />
+            <Setter Property="ScrollViewer.PanningMode" Value="VerticalOnly" />
+            <Setter Property="Stylus.IsFlicksEnabled" Value="True" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+            <Setter Property="ItemContainerStyle" Value="{StaticResource CustomListBoxItemStyle}" />
+            <Setter Property="ItemTemplate">
+                <Setter.Value>
+                    <DataTemplate DataType="{x:Type models:JobTask}">
+                        <Grid Height="60">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="200" />
+                                <ColumnDefinition Width="50" />
+                                <ColumnDefinition Width="100" />
+                            </Grid.ColumnDefinitions>
+                            <Button
+                                Grid.Column="0"
+                                Margin="10,3"
+                                Click="OnShowTaskDetails"
+                                Style="{StaticResource BlankButtonStyle}"
+                                Tag="{Binding}" />
+                            <TextBlock
+                                Grid.Column="0"
+                                Margin="10,0"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                FontSize="14"
+                                Foreground="#474747"
+                                IsHitTestVisible="False"
+                                Text="{Binding Name}" />
+                            <TextBlock
+                                Grid.Column="1"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                FontSize="14"
+                                Foreground="#474747"
+                                Text="{Binding AutoLoggedTimeString}" />
+                            <CheckBox
+                                Grid.Column="3"
+                                Checked="OnTimerStart"
+                                IsChecked="{Binding IsTimerActive, Mode=OneWay}"
+                                Style="{StaticResource MiniPlayerSwitchStyle}"
+                                Tag="{Binding}"
+                                Unchecked="OnTimerPause" />
+                        </Grid>
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ListBox}">
+                        <Border
+                            x:Name="Bd"
+                            Padding="1"
+                            Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            SnapsToDevicePixels="true">
+                            <ScrollViewer Padding="{TemplateBinding Padding}" Focusable="false">
+                                <ItemsPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+                            </ScrollViewer>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter TargetName="Bd" Property="Background" Value="{StaticResource ListBox.Disabled.Background}" />
+                                <Setter TargetName="Bd" Property="BorderBrush" Value="{StaticResource ListBox.Disabled.Border}" />
+                            </Trigger>
+                            <MultiTrigger>
+                                <MultiTrigger.Conditions>
+                                    <Condition Property="IsGrouping" Value="true" />
+                                    <Condition Property="VirtualizingPanel.IsVirtualizingWhenGrouping" Value="false" />
+                                </MultiTrigger.Conditions>
+                                <Setter Property="ScrollViewer.CanContentScroll" Value="false" />
+                            </MultiTrigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+        <ListBox
+            x:Name="TaskList"
+            ItemsSource="{Binding Tasks}"
+            SelectedItem="{Binding ActiveTask, Mode=TwoWay}"
+            Style="{StaticResource TaskListBoxStyle}" />
+        <Popup
+            x:Name="MiniTaskDetailsPopup"
+            AllowsTransparency="True"
+            HorizontalOffset="0"
+            IsOpen="False"
+            Placement="Right"
+            PlacementTarget="{Binding ElementName=RootWindow}"
+            PopupAnimation="Slide"
+            StaysOpen="True"
+            VerticalOffset="-80">
+            <local:TaskDetailsMiniControl
+                x:Name="MiniTaskDetails"
+                Width="500"
+                Height="600"
+                Close="OnMiniTaskDetailsClose" />
+        </Popup>
+    </Grid>
+</UserControl>

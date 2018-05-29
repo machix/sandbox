@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CD0F541B-1088-4103-93AE-08B61EF870D1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ett.Common.Services</RootNamespace>
+    <AssemblyName>Ett.Common.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=6.2.2.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.6.2.2\lib\net45\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Mappers\ModelsListMapper.cs" />
+    <Compile Include="Models\Business\BusinessModel.cs" />
+    <Compile Include="Models\Business\GuidIdBusinessModel.cs" />
+    <Compile Include="Models\Business\IntIdBusinessModel.cs" />
+    <Compile Include="Models\Business\LongIdBusinessModel.cs" />
+    <Compile Include="Models\Interfaces\IPagable.cs" />
+    <Compile Include="Models\Interfaces\ISortable.cs" />
+    <Compile Include="Models\Lists\EmptyListRequest.cs" />
+    <Compile Include="Models\Lists\ModelItem.cs" />
+    <Compile Include="Models\Lists\ModelsList.cs" />
+    <Compile Include="Models\Lists\NoRequestModelsList.cs" />
+    <Compile Include="Models\Overviews\OverviewsModel.cs" />
+    <Compile Include="Models\Overviews\OverviewsRequestModel.cs" />
+    <Compile Include="Models\Statistics\EmptyStatisticsRequest.cs" />
+    <Compile Include="Models\Statistics\IntStatistics.cs" />
+    <Compile Include="Models\Statistics\IntStatisticsItem.cs" />
+    <Compile Include="Models\Statistics\NoRequestIntStatistics.cs" />
+    <Compile Include="Models\Statistics\NoRequestStatistics.cs" />
+    <Compile Include="Models\Statistics\Statistics.cs" />
+    <Compile Include="Models\Statistics\StatisticsItem.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\Common\UnitOfWorkService.cs" />
+    <Compile Include="Services\Entity\EntityService.cs" />
+    <Compile Include="Services\Entity\GuidIdEntityService.cs" />
+    <Compile Include="Services\Entity\Interfaces\IEntityService.cs" />
+    <Compile Include="Services\Entity\Interfaces\IGuidIdEntityService.cs" />
+    <Compile Include="Services\Entity\Interfaces\IIntIdEntityService.cs" />
+    <Compile Include="Services\Entity\Interfaces\ILongIdEntityService.cs" />
+    <Compile Include="Services\Entity\IntIdEntityService.cs" />
+    <Compile Include="Services\Entity\LongIdEntityService.cs" />
+    <Compile Include="Services\Lists\GuidIdModelsListService.cs" />
+    <Compile Include="Services\Lists\GuidIdNoRequestListService.cs" />
+    <Compile Include="Services\Lists\Interfaces\IModelsListService.cs" />
+    <Compile Include="Services\Lists\Interfaces\INoRequestListService.cs" />
+    <Compile Include="Services\Lists\IntIdModelsListService.cs" />
+    <Compile Include="Services\Lists\IntIdNoRequestListService.cs" />
+    <Compile Include="Services\Lists\LongIdModelsListService.cs" />
+    <Compile Include="Services\Lists\LongIdNoRequestListService.cs" />
+    <Compile Include="Services\Lists\ModelsListService.cs" />
+    <Compile Include="Services\Lists\NoRequestListService.cs" />
+    <Compile Include="Services\Lists\PersonsListService.cs" />
+    <Compile Include="Services\Statistics\Interfaces\INoRequestStatisticsService.cs" />
+    <Compile Include="Services\Statistics\Interfaces\IStatisticsService.cs" />
+    <Compile Include="Services\Statistics\NoRequestStatisticsService.cs" />
+    <Compile Include="Services\Statistics\StatisticsService.cs" />
+    <Compile Include="Specifications\EntitySpecifications.cs" />
+    <Compile Include="Specifications\OverviewSpecifications.cs" />
+    <Compile Include="Specifications\SortField.cs" />
+    <Compile Include="Specifications\SortFields.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ett.Common.Dal\Ett.Common.Dal.csproj">
+      <Project>{33b4cf82-a19b-41e0-afa8-30eb7e49baf5}</Project>
+      <Name>Ett.Common.Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ett.Common.DataAnnotations\Ett.Common.DataAnnotations.csproj">
+      <Project>{7cd95d92-3860-40f5-8e4b-d5e1efc49a25}</Project>
+      <Name>Ett.Common.DataAnnotations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ett.Common.Domain\Ett.Common.Domain.csproj">
+      <Project>{7ff31002-ce5b-4b02-ad5e-a74727008b80}</Project>
+      <Name>Ett.Common.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

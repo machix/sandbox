@@ -1,0 +1,359 @@
+﻿<UserControl
+    x:Class="ETTTimeTracker.Controls.DashboardControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:chartingToolkit="clr-namespace:System.Windows.Controls.DataVisualization.Charting;assembly=System.Windows.Controls.DataVisualization.Toolkit"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:ETTTimeTracker.Controls"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:models="clr-namespace:ETTTimeTracker.Models"
+    x:Name="Dashboard"
+    d:DesignHeight="850"
+    d:DesignWidth="1000"
+    mc:Ignorable="d">
+    <UserControl.Resources>
+        <BooleanToVisibilityConverter x:Key="VisibilityConverter" />
+    </UserControl.Resources>
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="15" />
+            <RowDefinition Height="250" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Rectangle
+            Grid.Row="1"
+            Margin="10,0"
+            Fill="#EFEFEF" />
+        <chartingToolkit:Chart
+            Name="ColumnChart1"
+            Title="Total Logged Time"
+            Grid.Row="1"
+            Margin="20,0"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            HorizontalContentAlignment="Stretch"
+            Visibility="{Binding ElementName=TimelineBtn, Path=IsChecked, Converter={StaticResource VisibilityConverter}}">
+            <chartingToolkit:ColumnSeries
+                DependentValuePath="Value"
+                IndependentValuePath="Key"
+                IsSelectionEnabled="True"
+                ItemsSource="{Binding}" />
+        </chartingToolkit:Chart>
+        <Grid
+            Grid.Row="1"
+            Margin="50,100,50,20"
+            HorizontalAlignment="Center"
+            Visibility="{Binding ElementName=StatisticsBtn, Path=IsChecked, Converter={StaticResource VisibilityConverter}}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="250" />
+                <ColumnDefinition Width="140" />
+                <ColumnDefinition Width="140" />
+                <ColumnDefinition Width="140" />
+                <ColumnDefinition Width="140" />
+                <ColumnDefinition Width="140" />
+            </Grid.ColumnDefinitions>
+            <Border
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Margin="4,8"
+                Background="White"
+                BorderBrush="{StaticResource DefaultOutlineBrush}"
+                BorderThickness="1"
+                CornerRadius="4" />
+            <Border
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                Margin="4,8"
+                Background="White"
+                BorderBrush="{StaticResource DefaultOutlineBrush}"
+                BorderThickness="1"
+                CornerRadius="4" />
+            <Border
+                Grid.Column="4"
+                Grid.ColumnSpan="2"
+                Margin="4,8"
+                Background="White"
+                BorderBrush="{StaticResource DefaultOutlineBrush}"
+                BorderThickness="1"
+                CornerRadius="4" />
+            <Border
+                Grid.Column="1"
+                Margin="0,20"
+                HorizontalAlignment="Left"
+                BorderBrush="{StaticResource DefaultOutlineBrush}"
+                BorderThickness="1,0,0,0" />
+            <Border
+                Grid.Column="3"
+                Margin="0,20"
+                HorizontalAlignment="Left"
+                BorderBrush="{StaticResource DefaultOutlineBrush}"
+                BorderThickness="1,0,0,0" />
+            <Border
+                Grid.Column="5"
+                Margin="0,20"
+                HorizontalAlignment="Left"
+                BorderBrush="{StaticResource DefaultOutlineBrush}"
+                BorderThickness="1,0,0,0" />
+
+            <StackPanel Orientation="Horizontal">
+                <Grid Margin="5,0" HorizontalAlignment="Center">
+                    <Image
+                        Width="100"
+                        Height="100"
+                        Source="/Assets/Icons/Radial.png" />
+                    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <TextBlock
+                            HorizontalAlignment="Center"
+                            FontSize="12"
+                            Text="Total Time" />
+                        <TextBlock
+                            HorizontalAlignment="Center"
+                            FontSize="16"
+                            Text="34h 26m" />
+                    </StackPanel>
+                </Grid>
+                <StackPanel
+                    Margin="10,0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+                    <StackPanel Orientation="Horizontal">
+                        <Ellipse
+                            Width="10"
+                            Height="10"
+                            Margin="10,5"
+                            Fill="ForestGreen"
+                            Opacity="0.3" />
+                        <TextBlock FontSize="14" Text="Logged Time" />
+                    </StackPanel>
+                    <TextBlock
+                        Margin="0,10"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        FontSize="24"
+                        Text="04:34:08" />
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel
+                Grid.Column="1"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center">
+                <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                    <Ellipse
+                        Width="10"
+                        Height="10"
+                        Margin="10,5"
+                        Fill="ForestGreen"
+                        Opacity="0.8" />
+                    <TextBlock FontSize="14" Text="Manual Entry" />
+                </StackPanel>
+                <TextBlock
+                    Margin="0,10"
+                    HorizontalAlignment="Center"
+                    FontSize="24"
+                    Text="07:14:57" />
+            </StackPanel>
+
+            <StackPanel
+                Grid.Column="2"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center">
+                <TextBlock
+                    HorizontalAlignment="Center"
+                    FontSize="14"
+                    Opacity="0.7"
+                    Text="Total Projects" />
+                <TextBlock
+                    Margin="0,10"
+                    HorizontalAlignment="Center"
+                    FontSize="24"
+                    Text="100" />
+            </StackPanel>
+
+            <StackPanel
+                Grid.Column="3"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center">
+                <TextBlock
+                    HorizontalAlignment="Center"
+                    FontSize="14"
+                    Opacity="0.7"
+                    Text="Total Tasks" />
+                <TextBlock
+                    Margin="0,10"
+                    HorizontalAlignment="Center"
+                    FontSize="24"
+                    Text="215" />
+            </StackPanel>
+
+            <StackPanel
+                Grid.Column="4"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center">
+                <TextBlock
+                    HorizontalAlignment="Center"
+                    FontSize="14"
+                    Opacity="0.7"
+                    Text="Today's Projects" />
+                <TextBlock
+                    Margin="0,10"
+                    HorizontalAlignment="Center"
+                    FontSize="24"
+                    Text="04" />
+            </StackPanel>
+
+            <StackPanel
+                Grid.Column="5"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center">
+                <TextBlock
+                    HorizontalAlignment="Center"
+                    FontSize="14"
+                    Opacity="0.7"
+                    Text="Today's Tasks" />
+                <TextBlock
+                    Margin="0,10"
+                    HorizontalAlignment="Center"
+                    FontSize="24"
+                    Text="05" />
+            </StackPanel>
+        </Grid>
+        <Rectangle
+            Grid.Row="3"
+            Margin="10,0"
+            Fill="{StaticResource DefaultPaneBrush}"
+            RadiusX="2"
+            RadiusY="2" />
+
+        <StackPanel
+            Grid.Row="1"
+            Grid.Column="0"
+            Height="40"
+            Margin="50,10"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Orientation="Horizontal">
+            <TextBlock
+                Margin="10"
+                VerticalAlignment="Center"
+                FontSize="16"
+                Foreground="{StaticResource DefaultBlueBrush}"
+                Text="Visualization:" />
+            <RadioButton
+                x:Name="TimelineBtn"
+                Content="Timeline"
+                FontSize="14"
+                IsChecked="True"
+                Style="{StaticResource LeftRadioButtonStyle}" />
+            <RadioButton
+                x:Name="StatisticsBtn"
+                Content="Statistics"
+                FontSize="14"
+                Style="{StaticResource RightRadioButtonStyle}" />
+        </StackPanel>
+
+        <StackPanel
+            Grid.Row="1"
+            Height="40"
+            Margin="50,10"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Top"
+            Orientation="Horizontal">
+            <TextBlock
+                Margin="10,0"
+                VerticalAlignment="Center"
+                FontSize="16"
+                Foreground="{StaticResource DefaultBlueBrush}"
+                Text="{Binding ElementName=Dashboard, Path=CurrentDateString}" />
+            <Button Click="OnPrevDate" Style="{StaticResource LeftImageButtonStyle}">
+                <Image
+                    Width="20"
+                    Height="20"
+                    Source="/Assets/Icons/Prev.png" />
+            </Button>
+            <Button Click="OnNextDate" Style="{StaticResource RightImageButtonStyle}">
+                <Image
+                    Width="20"
+                    Height="20"
+                    Source="/Assets/Icons/Next.png" />
+            </Button>
+        </StackPanel>
+
+        <Grid Grid.Row="3" Margin="20,5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="120" />
+                <ColumnDefinition Width="50" />
+                <ColumnDefinition Width="50" />
+            </Grid.ColumnDefinitions>
+
+            <StackPanel VerticalAlignment="Center">
+                <TextBlock
+                    FontSize="20"
+                    Foreground="{StaticResource DefaultOutlineBrush}"
+                    Text="Today's Timesheet: May 15" />
+                <TextBlock
+                    FontSize="20"
+                    Foreground="{StaticResource DefaultBlueBrush}"
+                    Text="00:00:00" />
+            </StackPanel>
+
+
+            <ComboBox
+                Grid.Column="2"
+                Height="30"
+                FontSize="14">
+                <ComboBoxItem IsSelected="True">Most Tracked</ComboBoxItem>
+                <ComboBoxItem>Least Tracked</ComboBoxItem>
+                <ComboBoxItem>Newest First</ComboBoxItem>
+                <ComboBoxItem>Oldest First</ComboBoxItem>
+            </ComboBox>
+            <Button
+                x:Name="FilterButton"
+                Grid.Column="3"
+                Width="40"
+                Height="40"
+                Click="OnShowFilters"
+                Style="{StaticResource ImageButtonStyle}">
+                <Image
+                    Width="22"
+                    Height="22"
+                    Source="/Assets/Icons/Filter.png" />
+            </Button>
+            <Popup
+                x:Name="FiltersPopup"
+                AllowsTransparency="True"
+                HorizontalOffset="0"
+                IsOpen="False"
+                Placement="Left"
+                PlacementTarget="{Binding ElementName=FilterButton}"
+                PopupAnimation="Slide"
+                StaysOpen="True"
+                VerticalOffset="40">
+                <local:FilterControl
+                    x:Name="Filters"
+                    Width="1120"
+                    Height="220"
+                    Close="OnFilterPopupClose" />
+            </Popup>
+            <Button
+                Grid.Column="4"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Foreground="{StaticResource DefaultOutlineBrush}"
+                Style="{StaticResource EllipsisButtonStyle}"
+                Tag="{Binding}"
+                ToolTip="Copy Hours" />
+        </Grid>
+
+        <local:TaskListControl
+            x:Name="TaskList"
+            Grid.Row="5"
+            Margin="6,0" />
+    </Grid>
+
+</UserControl>

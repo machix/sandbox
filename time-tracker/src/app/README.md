@@ -1,0 +1,1 @@
+This project requires Visual Studio 2015 or higher (preferably VS 2017) and dot net 4.6.2 framework.

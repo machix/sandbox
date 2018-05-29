@@ -1,0 +1,195 @@
+﻿<UserControl
+    x:Class="ETTTimeTracker.Controls.TimeSheetControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:ETTTimeTracker.Controls"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="850"
+    d:DesignWidth="1000"
+    mc:Ignorable="d">
+    <UserControl.Resources>
+        <BooleanToVisibilityConverter x:Key="VisibilityConverter" />
+    </UserControl.Resources>
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <TextBlock
+            Margin="10,0"
+            VerticalAlignment="Center"
+            Style="{StaticResource Header1TextStyle}"
+            Text="Timesheet" />
+        <Rectangle
+            Grid.Row="1"
+            Margin="10,0"
+            Fill="{StaticResource DefaultPaneBrush}" />
+
+        <Grid Grid.Row="1" Margin="20,5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition />
+                <ColumnDefinition Width="120" />
+                <ColumnDefinition Width="50" />
+            </Grid.ColumnDefinitions>
+
+            <StackPanel
+                Grid.Column="0"
+                Margin="10"
+                Orientation="Horizontal">
+                <RadioButton
+                    x:Name="DayViewBtn"
+                    Content="Day"
+                    IsChecked="True"
+                    Style="{StaticResource LeftRadioButtonStyle}" />
+                <RadioButton
+                    x:Name="WeekViewBtn"
+                    Content="Week"
+                    Style="{StaticResource RightRadioButtonStyle}" />
+            </StackPanel>
+            <StackPanel
+                Grid.Column="1"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Orientation="Horizontal">
+                <Button
+                    BorderBrush="{StaticResource DefaultOutlineBrush}"
+                    Click="OnPrevDate"
+                    Style="{StaticResource ImageButtonStyle}">
+                    <Image
+                        Width="16"
+                        Height="16"
+                        Source="/Assets/Icons/Prev.png" />
+                </Button>
+                <DatePicker
+                    x:Name="dateDisplay"
+                    Width="120"
+                    Height="30" />
+                <Button
+                    BorderBrush="{StaticResource DefaultOutlineBrush}"
+                    Click="OnNextDate"
+                    Style="{StaticResource ImageButtonStyle}">
+                    <Image
+                        Width="16"
+                        Height="16"
+                        Source="/Assets/Icons/Next.png" />
+                </Button>
+            </StackPanel>
+            <TextBlock
+                Grid.Column="2"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="18"
+                Foreground="{StaticResource DefaultBlueBrush}"
+                Text="00:00:00" />
+            <Grid Grid.Column="3" Margin="10,10">
+                <TextBox x:Name="ProjectSearchBox" />
+                <TextBlock
+                    Margin="4,0"
+                    VerticalAlignment="Center"
+                    FontSize="14"
+                    Foreground="DarkGray"
+                    IsHitTestVisible="False"
+                    Text="Search by Project / CostCenter / AFE"
+                    TextWrapping="Wrap">
+                    <TextBlock.Style>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="Visibility" Value="Collapsed" />
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding Text, ElementName=ProjectSearchBox}" Value="">
+                                    <Setter Property="Visibility" Value="Visible" />
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </TextBlock.Style>
+                </TextBlock>
+            </Grid>
+            <ComboBox
+                Grid.Column="4"
+                Height="30"
+                FontSize="14">
+                <ComboBoxItem IsSelected="True">Most Tracked</ComboBoxItem>
+                <ComboBoxItem>Least Tracked</ComboBoxItem>
+                <ComboBoxItem>Newest First</ComboBoxItem>
+                <ComboBoxItem>Oldest First</ComboBoxItem>
+            </ComboBox>
+            <Button
+                x:Name="FilterButton"
+                Grid.Column="5"
+                Width="40"
+                Height="40"
+                Click="OnShowFilters"
+                Style="{StaticResource ImageButtonStyle}">
+                <Image
+                    Width="22"
+                    Height="22"
+                    Source="/Assets/Icons/Filter.png" />
+            </Button>
+            <Popup
+                x:Name="FiltersPopup"
+                AllowsTransparency="True"
+                HorizontalOffset="0"
+                IsOpen="False"
+                Placement="Left"
+                PlacementTarget="{Binding ElementName=FilterButton}"
+                PopupAnimation="Slide"
+                StaysOpen="True"
+                VerticalOffset="40">
+                <local:FilterControl
+                    x:Name="Filters"
+                    Width="1120"
+                    Height="220"
+                    Close="OnFilterPopupClose" />
+            </Popup>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <TextBlock
+                Margin="20,0"
+                VerticalAlignment="Center"
+                FontSize="24"
+                Foreground="{StaticResource DefaultOutlineBrush}"
+                Text="May 17, 2018 (4)"
+                Visibility="{Binding ElementName=DayViewBtn, Path=IsChecked, Converter={StaticResource VisibilityConverter}}" />
+            <TextBlock
+                Margin="20,0"
+                VerticalAlignment="Center"
+                FontSize="24"
+                Foreground="{StaticResource DefaultOutlineBrush}"
+                Text="May 13, 2018 - May 19, 2018 (8)"
+                Visibility="{Binding ElementName=WeekViewBtn, Path=IsChecked, Converter={StaticResource VisibilityConverter}}" />
+            <Button
+                Grid.Column="2"
+                Width="150"
+                Height="44"
+                Margin="10,0,20,0"
+                Click="OnAddNewProject"
+                Content="+ Add New Project"
+                FontSize="14"
+                IsDefault="True"
+                Style="{DynamicResource CustomButtonStyle}" />
+        </Grid>
+
+        <local:TaskListControl
+            x:Name="TaskList"
+            Grid.Row="3"
+            Margin="6,0"
+            Visibility="{Binding ElementName=DayViewBtn, Path=IsChecked, Converter={StaticResource VisibilityConverter}}" />
+
+        <local:WeeklyTaskView
+            x:Name="WeeklyTaskList"
+            Grid.Row="3"
+            Margin="6,0"
+            Visibility="{Binding ElementName=WeekViewBtn, Path=IsChecked, Converter={StaticResource VisibilityConverter}}" />
+    </Grid>
+</UserControl>
+
