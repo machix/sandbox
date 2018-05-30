@@ -34,6 +34,7 @@
       <HintPath>..\packages\AutoMapper.6.2.2\lib\net45\AutoMapper.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
@@ -45,11 +46,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TimeTracker\Models\Projects\Entity\Project.cs" />
+    <Compile Include="TimeTracker\Models\Projects\Overviews\ProjectOverview.cs" />
+    <Compile Include="TimeTracker\Models\Projects\Overviews\ProjectOverviews.cs" />
+    <Compile Include="TimeTracker\Models\Projects\Overviews\ProjectOverviewsRequest.cs" />
+    <Compile Include="TimeTracker\Services\Projects\Concrete\ProjectsService.cs" />
+    <Compile Include="TimeTracker\Services\Projects\IProjectsService.cs" />
+    <Compile Include="TimeTracker\Specifications\ProjectSpecifications.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Ett.Common.Dal\Ett.Common.Dal.csproj">
+      <Project>{33b4cf82-a19b-41e0-afa8-30eb7e49baf5}</Project>
+      <Name>Ett.Common.Dal</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Ett.Common.DataAnnotations\Ett.Common.DataAnnotations.csproj">
       <Project>{7cd95d92-3860-40f5-8e4b-d5e1efc49a25}</Project>
       <Name>Ett.Common.DataAnnotations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ett.Common.Domain\Ett.Common.Domain.csproj">
+      <Project>{7ff31002-ce5b-4b02-ad5e-a74727008b80}</Project>
+      <Name>Ett.Common.Domain</Name>
     </ProjectReference>
     <ProjectReference Include="..\Ett.Common.Services\Ett.Common.Services.csproj">
       <Project>{cd0f541b-1088-4103-93ae-08b61ef870d1}</Project>
@@ -62,6 +78,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="TimeTracker\Infrastructure\" />
+    <Folder Include="TimeTracker\Mappers\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

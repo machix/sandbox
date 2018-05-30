@@ -47,12 +47,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EntityConfigurations\AfeConfiguration.cs" />
+    <Compile Include="EntityConfigurations\ProjectConfiguration.cs" />
+    <Compile Include="EntityConfigurations\TimeReportingConfiguration.cs" />
+    <Compile Include="EntityConfigurations\UserConfiguration.cs" />
+    <Compile Include="EntityConfigurations\UserPhotoConfiguration.cs" />
+    <Compile Include="EntityConfigurations\UserSettingsConfiguration.cs" />
+    <Compile Include="Infrastructure\TimeTrackerDbContext.cs" />
+    <Compile Include="Infrastructure\TimeTrackerSessionFactory.cs" />
+    <Compile Include="Infrastructure\TimeTrackerSqlServerDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Ett.Common.Dal\Ett.Common.Dal.csproj">
       <Project>{33b4cf82-a19b-41e0-afa8-30eb7e49baf5}</Project>
       <Name>Ett.Common.Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ett.Common.Domain\Ett.Common.Domain.csproj">
+      <Project>{7FF31002-CE5B-4B02-AD5E-A74727008B80}</Project>
+      <Name>Ett.Common.Domain</Name>
     </ProjectReference>
     <ProjectReference Include="..\Ett.TimeTracker.Domain\Ett.TimeTracker.Domain.csproj">
       <Project>{465ac400-8af7-47c0-82de-fb14feec5688}</Project>
@@ -63,5 +76,6 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

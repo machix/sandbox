@@ -40,10 +40,12 @@ IF OBJECT_ID (N'Projects', N'U') IS NULL
 BEGIN
 	CREATE TABLE [dbo].[Projects](
 		[Id] INT IDENTITY(1,1) NOT NULL,	
-		[Comments] NVARCHAR(MAX) NOT NULL,
+		[Date] DATETIME NOT NULL,
+		[Comments] NVARCHAR(MAX) NULL,
 		[TimeReportingId] INT NOT NULL,
 		[AfeId] INT NOT NULL,
 		[LogTime] DATETIME NULL,
+		[IsManualEntry] BIT NOT NULL,
 		[ManualEntryStart] DATETIME NULL,
 		[ManualEntryEnd] DATETIME NULL,
 CONSTRAINT [PK_Projects] PRIMARY KEY CLUSTERED 
@@ -58,6 +60,17 @@ REFERENCES [dbo].[TimeReportings] ([Id])
 ALTER TABLE [dbo].[Projects] WITH CHECK ADD CONSTRAINT [FK_Projects_Afes_AfeId] FOREIGN KEY([AfeId])
 REFERENCES [dbo].[Afes] ([Id])
 
+	-- Default value for Date column
+	ALTER TABLE [dbo].[Projects]
+		ADD CONSTRAINT DF_Projects_Date
+		DEFAULT GETDATE() FOR [Date] 
+
+
+	-- Default value for IsManualEntry column
+	ALTER TABLE [dbo].[Projects]
+		ADD CONSTRAINT DF_Projects_IsManualEntry
+		DEFAULT 0 FOR [IsManualEntry] 
+
 END
 GO
 
@@ -67,6 +80,8 @@ BEGIN
 	CREATE TABLE [dbo].[Users](
 		[Id] INT IDENTITY(1,1) NOT NULL,	
 		[Name] NVARCHAR(50) NOT NULL,
+		[Email] NVARCHAR(256) NOT NULL,
+		[Password] NVARCHAR(MAX) NOT NULL,
 		[LastLoginDate] DATETIME NULL
 CONSTRAINT [PK_Users] PRIMARY KEY CLUSTERED 
 (
@@ -83,7 +98,7 @@ BEGIN
 	CREATE TABLE [dbo].[UserPhotos](
 		[Id] INT NOT NULL,	
 		[FileName] NVARCHAR(255) NOT NULL,
-		[MimeType] NVARCHAR(255) NOT NULL,
+		[MimeType] NVARCHAR(20) NOT NULL,
 		[UserId] INT NOT NULL,
 CONSTRAINT [PK_UserPhotos] PRIMARY KEY CLUSTERED 
 (
@@ -105,7 +120,22 @@ BEGIN
 		[UserId] INT NOT NULL,
 		[CostCenterId] NVARCHAR(20) NULL,
 		[DateFormat] NVARCHAR(20) NOT NULL,
-		[Is12HourFormat] BIT NOT NULL
+		[Is12HourFormat] BIT NOT NULL,
+		[MaximumWorkingHours] TINYINT NULL,
+		[LoggingReminder] BIT NOT NULL,
+		[MaxWorkingTimeReminder] BIT NOT NULL,
+		[IdleReminder] BIT NOT NULL,
+		[IdleTime] SMALLINT NULL,
+		[ReminderTime] SMALLINT NULL,
+		[MonReminder] BIT NOT NULL,
+		[TuesReminder] BIT NOT NULL,
+		[WedReminder] BIT NOT NULL,
+		[ThursReminder] BIT NOT NULL,
+		[FriReminder] BIT NOT NULL,
+		[SatReminder] BIT NOT NULL,
+		[SunReminder] BIT NOT NULL,		
+		[EmailTimeEntryUpdates] BIT NOT NULL,		
+		[EmailWeeklyReports] BIT NOT NULL		
 CONSTRAINT [PK_UserSettings] PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC
@@ -118,151 +148,72 @@ REFERENCES [dbo].[Users] ([Id])
 	-- Default value for DateFormat column
 	ALTER TABLE [dbo].[UserSettings]
 		ADD CONSTRAINT DF_UserSettings_DateFormat
-		DEFAULT N'dd-mm-yyyy' FOR [DateFormat] 
+		DEFAULT N'dd/mm/yyyy' FOR [DateFormat] 
 
 	-- Default value for Is24HourFormat column
 	ALTER TABLE [dbo].[UserSettings]
 		ADD CONSTRAINT DF_UserSettings_Is12HourFormat
-		DEFAULT 0 FOR [Is12HourFormat] 
+		DEFAULT 1 FOR [Is12HourFormat] 
 
+	-- Default value for LoggingReminder column
+	ALTER TABLE [dbo].[UserSettings]
+		ADD CONSTRAINT DF_UserSettings_LoggingReminder
+		DEFAULT 1 FOR [LoggingReminder] 
+
+	-- Default value for MaxWorkingTimeReminder column
+	ALTER TABLE [dbo].[UserSettings]
+		ADD CONSTRAINT DF_UserSettings_MaxWorkingTimeReminder
+		DEFAULT 1 FOR [MaxWorkingTimeReminder] 
+
+	-- Default value for IdleReminder column
+	ALTER TABLE [dbo].[UserSettings]
+		ADD CONSTRAINT DF_UserSettings_IdleReminder
+		DEFAULT 1 FOR [IdleReminder] 
+
+	-- Default value for MonReminder column
+	ALTER TABLE [dbo].[UserSettings]
+		ADD CONSTRAINT DF_UserSettings_MonReminder
+		DEFAULT 0 FOR [MonReminder] 
+
+	-- Default value for TuesReminder column
+	ALTER TABLE [dbo].[UserSettings]
+		ADD CONSTRAINT DF_UserSettings_TuesReminder
+		DEFAULT 0 FOR [TuesReminder] 
+
+	-- Default value for WedReminder column
+	ALTER TABLE [dbo].[UserSettings]
+		ADD CONSTRAINT DF_UserSettings_WedReminder
+		DEFAULT 0 FOR [WedReminder] 
+
+	-- Default value for ThursReminder column
+	ALTER TABLE [dbo].[UserSettings]
+		ADD CONSTRAINT DF_UserSettings_ThursReminder
+		DEFAULT 0 FOR [ThursReminder] 
+
+	-- Default value for FriReminder column
+	ALTER TABLE [dbo].[UserSettings]
+		ADD CONSTRAINT DF_UserSettings_FriReminder
+		DEFAULT 0 FOR [FriReminder] 
+
+	-- Default value for SatReminder column
+	ALTER TABLE [dbo].[UserSettings]
+		ADD CONSTRAINT DF_UserSettings_SatReminder
+		DEFAULT 0 FOR [SatReminder] 
+
+	-- Default value for SunReminder column
+	ALTER TABLE [dbo].[UserSettings]
+		ADD CONSTRAINT DF_UserSettings_SunReminder
+		DEFAULT 1 FOR [SunReminder] 
+		
+	-- Default value for EmailTimeEntryUpdates column
+	ALTER TABLE [dbo].[UserSettings]
+		ADD CONSTRAINT DF_UserSettings_EmailTimeEntryUpdates
+		DEFAULT 1 FOR [EmailTimeEntryUpdates] 
+		
+	-- Default value for EmailWeeklyReports column
+	ALTER TABLE [dbo].[UserSettings]
+		ADD CONSTRAINT DF_UserSettings_EmailWeeklyReports
+		DEFAULT 1 FOR [EmailWeeklyReports] 
+		
 END
 GO
-
-
-
-/*
-
--- Makers
-IF OBJECT_ID (N'Makers', N'U') IS NULL 
-BEGIN
-	CREATE TABLE [dbo].[Makers](
-		[Id] INT IDENTITY(1,1) NOT NULL,	
-		[Name] NVARCHAR(50) NOT NULL
-CONSTRAINT [PK_Makers] PRIMARY KEY CLUSTERED 
-(
-	[Id] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)
-)	
-END
-GO
-
--- Models
-IF OBJECT_ID (N'Models', N'U') IS NULL 
-BEGIN
-	CREATE TABLE [dbo].[Models](
-		[Id] INT IDENTITY(1,1) NOT NULL,	
-		[Name] NVARCHAR(50) NOT NULL,
-		[MakerId] INT NOT NULL
-CONSTRAINT [PK_Models] PRIMARY KEY CLUSTERED 
-(
-	[Id] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)
-)	
-
-ALTER TABLE [dbo].[Models] WITH CHECK ADD CONSTRAINT [FK_Models_Makers_MakerId] FOREIGN KEY([MakerId])
-REFERENCES [dbo].[Makers] ([Id])
-
-END
-GO
-
--- Features
-IF OBJECT_ID (N'Features', N'U') IS NULL 
-BEGIN
-	CREATE TABLE [dbo].[Features](
-		[Id] INT IDENTITY(1,1) NOT NULL,	
-		[Name] NVARCHAR(50) NOT NULL
-CONSTRAINT [PK_Features] PRIMARY KEY CLUSTERED 
-(
-	[Id] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)
-)	
-
-END
-GO
-
--- Models-Features relations
-IF OBJECT_ID (N'ModelsFeatures', N'U') IS NULL 
-BEGIN
-	CREATE TABLE [dbo].[ModelsFeatures](
-		[ModelId] INT NOT NULL,
-		[FeatureId] INT NOT NULL,
-CONSTRAINT [PK_ModelsFeatures] PRIMARY KEY CLUSTERED 
-(
-	[ModelId] ASC,
-	[FeatureId] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
-) ON [PRIMARY]
-
-ALTER TABLE [dbo].[ModelsFeatures] WITH CHECK ADD CONSTRAINT [FK_ModelsFeatures_Models_ModelId] FOREIGN KEY([ModelId])
-REFERENCES [dbo].[Models] ([Id])
-
-ALTER TABLE [dbo].[ModelsFeatures] WITH CHECK ADD CONSTRAINT [FK_ModelsFeatures_Features_FeatureId] FOREIGN KEY([FeatureId])
-REFERENCES [dbo].[Features] ([Id])
-
-END
-GO
-
--- Owners
-IF OBJECT_ID (N'Owners', N'U') IS NULL 
-BEGIN
-	CREATE TABLE [dbo].[Owners](
-		[Id] INT IDENTITY(1,1) NOT NULL,	
-		[FirstName] NVARCHAR(20) NOT NULL,
-		[LastName] NVARCHAR(20) NOT NULL,
-		[Phone] NVARCHAR(30) NOT NULL,
-		[Email] NVARCHAR(255) NOT NULL
-CONSTRAINT [PK_Owners] PRIMARY KEY CLUSTERED 
-(
-	[Id] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)
-)	
-
-END
-GO
-
--- Vehicles
-IF OBJECT_ID (N'Vehicles', N'U') IS NULL 
-BEGIN
-	CREATE TABLE [dbo].[Vehicles](
-		[Id] INT IDENTITY(1,1) NOT NULL,	
-		[ModelId] INT NOT NULL,
-		[OwnerId] INT NOT NULL,
-		[IsRegistered] BIT NOT NULL DEFAULT 0,
-		[Description] NVARCHAR(MAX) NULL
-CONSTRAINT [PK_Vehicles] PRIMARY KEY CLUSTERED 
-(
-	[Id] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)
-)	
-
-ALTER TABLE [dbo].[Vehicles] WITH CHECK ADD CONSTRAINT [FK_Vehicles_Models_ModelId] FOREIGN KEY([ModelId])
-REFERENCES [dbo].[Models] ([Id])
-
-ALTER TABLE [dbo].[Vehicles] WITH CHECK ADD CONSTRAINT [FK_Vehicles_Owners_OwnerId] FOREIGN KEY([OwnerId])
-REFERENCES [dbo].[Owners] ([Id])
-
-END
-GO
-
--- Photos
-IF OBJECT_ID (N'Photos', N'U') IS NULL 
-BEGIN
-	CREATE TABLE [dbo].[Photos](
-		[Id] UNIQUEIDENTIFIER NOT NULL,	
-		[FileName] NVARCHAR(255) NOT NULL,
-		[OriginalFileName] NVARCHAR(255) NOT NULL,
-		[MimeType] NVARCHAR(255) NOT NULL,
-		[VehicleId] INT NOT NULL,
-CONSTRAINT [PK_Photos] PRIMARY KEY NONCLUSTERED 
-(
-	[Id] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)
-)	
-
-ALTER TABLE [dbo].[Photos] WITH CHECK ADD CONSTRAINT [FK_Photos_Vehicles_VehicleId] FOREIGN KEY([VehicleId])
-REFERENCES [dbo].[Vehicles] ([Id])
-
-END
-GO
-
-*/

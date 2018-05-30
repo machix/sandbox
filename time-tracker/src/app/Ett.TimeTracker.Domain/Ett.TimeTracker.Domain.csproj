@@ -40,6 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\AfeEntity.cs" />
+    <Compile Include="Entities\ProjectEntity.cs" />
+    <Compile Include="Entities\TimeReportingEntity.cs" />
+    <Compile Include="Entities\UserEntity.cs" />
+    <Compile Include="Entities\UserPhotoEntity.cs" />
+    <Compile Include="Entities\UserSettingsEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
