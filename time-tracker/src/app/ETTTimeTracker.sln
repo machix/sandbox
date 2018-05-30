@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ett.TimeTracker.Workflow", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ett.Common.Web", "Ett.Common.Web\Ett.Common.Web.csproj", "{380739F8-BCC9-4DC6-A836-370954C441AB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ett.Common.IoC.Ninject", "Ett.Common.IoC.Ninject\Ett.Common.IoC.Ninject.csproj", "{D5A808C4-3D55-478B-B930-8F6D487EBA1D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{380739F8-BCC9-4DC6-A836-370954C441AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{380739F8-BCC9-4DC6-A836-370954C441AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{380739F8-BCC9-4DC6-A836-370954C441AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5A808C4-3D55-478B-B930-8F6D487EBA1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5A808C4-3D55-478B-B930-8F6D487EBA1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5A808C4-3D55-478B-B930-8F6D487EBA1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5A808C4-3D55-478B-B930-8F6D487EBA1D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

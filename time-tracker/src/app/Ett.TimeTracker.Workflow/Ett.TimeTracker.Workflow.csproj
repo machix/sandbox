@@ -33,23 +33,55 @@
     <Reference Include="AutoMapper, Version=6.2.2.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
       <HintPath>..\packages\AutoMapper.6.2.2\lib\net45\AutoMapper.dll</HintPath>
     </Reference>
+    <Reference Include="Ninject, Version=3.3.4.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.3.4\lib\net45\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="Redux, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Redux.NET.2.0.0\lib\netstandard1.1\Redux.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Reactive, Version=4.0.0.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Reactive.4.0.0\lib\net46\System.Reactive.dll</HintPath>
+    </Reference>
     <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="thunk.NET, Version=0.1.5833.25725, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\redux.NET-thunk.0.1.0\lib\portable-net45+netcore45\thunk.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configuration\Concrete\WorkflowConfiguration.cs" />
+    <Compile Include="Configuration\IWorkflowConfiguration.cs" />
+    <Compile Include="Infrastructure\DependencyInjectionUtils.cs" />
+    <Compile Include="Infrastructure\WorkflowNinjectModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Ett.Common.Dal\Ett.Common.Dal.csproj">
+      <Project>{33b4cf82-a19b-41e0-afa8-30eb7e49baf5}</Project>
+      <Name>Ett.Common.Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ett.Common.IoC.Ninject\Ett.Common.IoC.Ninject.csproj">
+      <Project>{d5a808c4-3d55-478b-b930-8f6d487eba1d}</Project>
+      <Name>Ett.Common.IoC.Ninject</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Ett.Common.Mapping\Ett.Common.Mapping.csproj">
       <Project>{f286728f-73cf-4aa2-9a89-2c86b2473d34}</Project>
       <Name>Ett.Common.Mapping</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ett.Common.Services\Ett.Common.Services.csproj">
+      <Project>{CD0F541B-1088-4103-93AE-08B61EF870D1}</Project>
+      <Name>Ett.Common.Services</Name>
     </ProjectReference>
     <ProjectReference Include="..\Ett.Common.Web\Ett.Common.Web.csproj">
       <Project>{380739f8-bcc9-4dc6-a836-370954c441ab}</Project>
@@ -65,7 +97,13 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Actions\" />
+    <Folder Include="Reducers\" />
+    <Folder Include="States\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -7,6 +7,7 @@
     using Ett.Common.Dal.Infrastructure;
     using Ett.Common.Services.Services.Entity;
     using Ett.TimeTracker.Domain.Entities;
+    using Ett.TimeTracker.Services.TimeTracker.Mappers;
     using Ett.TimeTracker.Services.TimeTracker.Models.Projects.Entity;
     using Ett.TimeTracker.Services.TimeTracker.Models.Projects.Overviews;
 
@@ -18,11 +19,17 @@
         {
         }
 
-        protected override Task<ProjectOverviews> DoGetOverviews(IUnitOfWork uow, ProjectOverviewsRequest request)
+        protected override async Task<ProjectOverviews> DoGetOverviews(IUnitOfWork uow, ProjectOverviewsRequest request)
         {
             var projectsRep = uow.GetRepository<ProjectEntity>();
+            var timeReportingsRep = uow.GetRepository<TimeReportingEntity>();
+            var afesRep = uow.GetRepository<AfeEntity>();
 
-            throw new System.NotImplementedException();
+            return await ProjectsMapper.MapToProjectOverviews(
+                    request,
+                    projectsRep.GetAll(),
+                    timeReportingsRep.GetAll(),
+                    afesRep.GetAll());
         }
     }
 }
