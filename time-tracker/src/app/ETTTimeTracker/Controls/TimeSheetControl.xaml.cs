@@ -1,17 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+
 using ETTTimeTracker.Common;
 using ETTTimeTracker.Models;
 using ETTTimeTracker.ViewModels;
@@ -19,23 +9,38 @@ using ETTTimeTracker.Views;
 
 namespace ETTTimeTracker.Controls
 {
+    using Ett.TimeTracker.Workflow.ActionCreators.Timesheet;
+    using Ett.TimeTracker.Workflow.Common;
+    using Ett.TimeTracker.Workflow.Extensions;
+    using Ett.TimeTracker.Workflow.Resources.Projects.Overviews;
+
     /// <summary>
     /// Interaction logic for TimeSheetControl.xaml
     /// </summary>
-    public partial class TimeSheetControl : UserControl
+    public partial class TimeSheetControl
     {
-        private ETTViewModel _viewModel;
+        private ETTViewModel viewModel;
 
         public TimeSheetControl()
         {
-            InitializeComponent();
-            dateDisplay.SelectedDate = DateTime.Now;
+            this.InitializeComponent();
+            this.dateDisplay.SelectedDate = DateTime.Now;
+
+            Workflow.Instance.Store                
+                .Subscribe(
+                state =>
+                    {
+                        var s = state;
+                    });
+
+            Workflow.Instance.Store.Dispatch(
+                ProjectsActionCreator.GetProjects(new ProjectOverviewsRequestResource()));
         }
 
-        public void Initialize(ETTViewModel viewModel)
+        public void Initialize(ETTViewModel vm)
         {
-            _viewModel = viewModel;
-            TaskList.Initialize(_viewModel);
+            this.viewModel = vm;
+            this.TaskList.Initialize(this.viewModel);
         }
 
         private void OnAddNewProject(object sender, RoutedEventArgs e)
@@ -59,7 +64,7 @@ namespace ETTTimeTracker.Controls
                 {
                     task.CostCenter = job.CostCenter;
                 }
-                _viewModel.Tasks.Add(task);
+                this.viewModel.Tasks.Add(task);
 
                 MessageBox.Show("Project added successfully!");
             }
@@ -67,22 +72,22 @@ namespace ETTTimeTracker.Controls
 
         private void OnFilterPopupClose(object sender, EventArgs e)
         {
-            FiltersPopup.IsOpen = false;
+            this.FiltersPopup.IsOpen = false;
         }
 
         private void OnShowFilters(object sender, RoutedEventArgs e)
         {
-            FiltersPopup.IsOpen = true;
+            this.FiltersPopup.IsOpen = true;
         }
 
         private void OnPrevDate(object sender, RoutedEventArgs e)
         {
-            dateDisplay.SelectedDate -= TimeSpan.FromDays(1);
+            this.dateDisplay.SelectedDate -= TimeSpan.FromDays(1);
         }
 
         private void OnNextDate(object sender, RoutedEventArgs e)
         {
-            dateDisplay.SelectedDate += TimeSpan.FromDays(1);
+            this.dateDisplay.SelectedDate += TimeSpan.FromDays(1);
         }
     }
 }

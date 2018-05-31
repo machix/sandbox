@@ -36,14 +36,24 @@
     <Reference Include="Ninject, Version=3.3.4.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
       <HintPath>..\packages\Ninject.3.3.4\lib\net45\Ninject.dll</HintPath>
     </Reference>
-    <Reference Include="Redux, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Redux.NET.2.0.0\lib\netstandard1.1\Redux.dll</HintPath>
+    <Reference Include="Redux, Version=0.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Redux.NET.0.4.0\lib\portable-net45+netcore45\Redux.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Reactive, Version=4.0.0.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Reactive.4.0.0\lib\net46\System.Reactive.dll</HintPath>
+    <Reference Include="System.Reactive.Core, Version=2.2.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rx-Core.2.2.5\lib\net45\System.Reactive.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Interfaces, Version=2.2.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rx-Interfaces.2.2.5\lib\net45\System.Reactive.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Linq, Version=2.2.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rx-Linq.2.2.5\lib\net45\System.Reactive.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.PlatformServices, Version=2.2.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rx-PlatformServices.2.2.5\lib\net45\System.Reactive.PlatformServices.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Windows" />
@@ -60,16 +70,44 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActionCreators\Timesheet\ProjectsActionCreator.cs" />
+    <Compile Include="Actions\Common\LoadingEndAction.cs" />
+    <Compile Include="Actions\Common\LoadingStartAction.cs" />
+    <Compile Include="Actions\Timesheet\ProjectsLoadedAction.cs" />
+    <Compile Include="Common\Workflow.cs" />
     <Compile Include="Configuration\Concrete\WorkflowConfiguration.cs" />
     <Compile Include="Configuration\IWorkflowConfiguration.cs" />
+    <Compile Include="Extensions\AsyncActionsCreator.cs" />
+    <Compile Include="Extensions\StoreExtensions.cs" />
     <Compile Include="Infrastructure\DependencyInjectionUtils.cs" />
+    <Compile Include="Infrastructure\TimeTrackerResourcesProfile.cs" />
     <Compile Include="Infrastructure\WorkflowNinjectModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reducers\Common\LoadingReducer.cs" />
+    <Compile Include="Reducers\Common\WorkflowReducer.cs" />
+    <Compile Include="Reducers\Dashboard\DashboardReducer.cs" />
+    <Compile Include="Reducers\Reports\ReportsReducer.cs" />
+    <Compile Include="Reducers\Settings\SettingsReducer.cs" />
+    <Compile Include="Reducers\Timesheet\TimesheetReducer.cs" />
+    <Compile Include="Resources\Projects\Entity\ProjectResource.cs" />
+    <Compile Include="Resources\Projects\Overviews\ProjectOverviewResource.cs" />
+    <Compile Include="Resources\Projects\Overviews\ProjectOverviewsRequestResource.cs" />
+    <Compile Include="Resources\Projects\Overviews\ProjectOverviewsResource.cs" />
+    <Compile Include="States\Common\LoadingState.cs" />
+    <Compile Include="States\Common\WorkflowState.cs" />
+    <Compile Include="States\Dashboard\DashboardState.cs" />
+    <Compile Include="States\Reports\ReportsState.cs" />
+    <Compile Include="States\Settings\SettingsState.cs" />
+    <Compile Include="States\Timesheet\TimesheetState.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Ett.Common.Dal\Ett.Common.Dal.csproj">
       <Project>{33b4cf82-a19b-41e0-afa8-30eb7e49baf5}</Project>
       <Name>Ett.Common.Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ett.Common.DataAnnotations\Ett.Common.DataAnnotations.csproj">
+      <Project>{7cd95d92-3860-40f5-8e4b-d5e1efc49a25}</Project>
+      <Name>Ett.Common.DataAnnotations</Name>
     </ProjectReference>
     <ProjectReference Include="..\Ett.Common.IoC.Ninject\Ett.Common.IoC.Ninject.csproj">
       <Project>{d5a808c4-3d55-478b-b930-8f6d487eba1d}</Project>
@@ -101,9 +139,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Actions\" />
-    <Folder Include="Reducers\" />
-    <Folder Include="States\" />
+    <Folder Include="ActionCreators\Common\" />
+    <Folder Include="ActionCreators\Dashboard\" />
+    <Folder Include="ActionCreators\Reports\" />
+    <Folder Include="ActionCreators\Settings\" />
+    <Folder Include="Actions\Dashboard\" />
+    <Folder Include="Actions\Reports\" />
+    <Folder Include="Actions\Settings\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
