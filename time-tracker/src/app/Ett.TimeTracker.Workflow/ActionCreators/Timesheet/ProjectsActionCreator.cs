@@ -1,7 +1,5 @@
 ﻿namespace Ett.TimeTracker.Workflow.ActionCreators.Timesheet
 {
-    using System;
-
     using AutoMapper;
 
     using Ett.Common.IoC.Ninject.IoC;
@@ -20,23 +18,15 @@
         {
             return async (dispatch, getState) =>
             {
-                try
-                {
-                    dispatch(new LoadingStartAction());
+                dispatch(new LoadingStartAction());
 
-                    var projectsService = ManualDependencyResolver.Get<IProjectsService>();
-                    var request = Mapper.Map<ProjectOverviewsRequest>(requestResource);
-                    var overviews = await projectsService.GetOverviews(request);
-                    var overviewsResource = Mapper.Map<ProjectOverviewsResource>(overviews);
-                    dispatch(new ProjectsLoadedAction(overviewsResource));
+                var projectsService = ManualDependencyResolver.Get<IProjectsService>();
+                var request = Mapper.Map<ProjectOverviewsRequest>(requestResource);
+                var overviews = await projectsService.GetOverviews(request);
+                var overviewsResource = Mapper.Map<ProjectOverviewsResource>(overviews);
+                dispatch(new ProjectsLoadedAction(overviewsResource));
 
-                    dispatch(new LoadingEndAction());
-                }
-                catch (Exception e)
-                {
-                    Console.WriteLine(e);
-                    throw;
-                }
+                dispatch(new LoadingEndAction());
             };
         }
     }
