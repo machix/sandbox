@@ -94,6 +94,11 @@
     <Compile Include="Common\JobHelper.cs" />
     <Compile Include="Common\Observable.cs" />
     <Compile Include="Common\SettingsEventArgs.cs" />
+    <Compile Include="Connectors\Common\WorkflowConnector.cs" />
+    <Compile Include="Connectors\Dashboard\DashboardConnector.cs" />
+    <Compile Include="Connectors\Reports\ReportsConnector.cs" />
+    <Compile Include="Connectors\Settings\SettingsConnector.cs" />
+    <Compile Include="Connectors\Timesheet\TimesheetConnector.cs" />
     <Compile Include="Controls\CustomDialog.cs" />
     <Compile Include="Controls\CustomWindow.cs" />
     <Compile Include="Controls\DashboardControl.xaml.cs">
@@ -317,11 +322,16 @@
     <Resource Include="Assets\Icons\Radial.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Ett.Common.Web\Ett.Common.Web.csproj">
+      <Project>{380739f8-bcc9-4dc6-a836-370954c441ab}</Project>
+      <Name>Ett.Common.Web</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Ett.TimeTracker.Workflow\Ett.TimeTracker.Workflow.csproj">
       <Project>{eae9bea1-0698-490c-82d8-fbf3386cbce3}</Project>
       <Name>Ett.TimeTracker.Workflow</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent>taskkill /F /IM $(TargetName).exe 2&gt;&amp;1 | exit /B 0</PreBuildEvent>

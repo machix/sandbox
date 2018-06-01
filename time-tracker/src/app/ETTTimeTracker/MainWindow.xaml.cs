@@ -1,171 +1,168 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+
 using ETTTimeTracker.Common;
-using ETTTimeTracker.Controls;
 using ETTTimeTracker.ViewModels;
 
 namespace ETTTimeTracker
 {
+    using ETTTimeTracker.Connectors.Common;
+
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : CustomWindow
+    public partial class MainWindow
     {
-        private ETTViewModel _viewModel;
-        private SettingsViewModel _settingsViewModel;
+        private readonly ETTViewModel viewModel;
+        private readonly SettingsViewModel settingsViewModel;
 
         public MainWindow()
         {
-            InitializeComponent();
-            _viewModel = new ETTViewModel();
+            this.InitializeComponent();
+            this.viewModel = new ETTViewModel();
+            this.settingsViewModel = new SettingsViewModel();
 
-            TimerWidgetControl.Initialize(_viewModel);
-            Dashboard.Initialize(_viewModel);
-            Timesheet.Initialize(_viewModel);
+            // Connect to workflow
+            var connector = new WorkflowConnector(this.viewModel, this.settingsViewModel);
 
-            _settingsViewModel = new SettingsViewModel();
-            _viewModel.UpdateSettingsViewModel(_settingsViewModel);
-            Settings.Initialize(_settingsViewModel);
-            MiniSettings.Initialize(_settingsViewModel);
-            TaskWidget.Initialize(_viewModel);
+            this.TimerWidgetControl.Initialize(this.viewModel);
+            this.Dashboard.Initialize(this.viewModel);
+            this.Timesheet.Initialize(this.viewModel, connector);
 
-            DataContext = _viewModel;
+            this.viewModel.UpdateSettingsViewModel(this.settingsViewModel);
+            this.Settings.Initialize(this.settingsViewModel);
+            this.MiniSettings.Initialize(this.settingsViewModel);
+            this.TaskWidget.Initialize(this.viewModel);
+
+            this.DataContext = this.viewModel;
+
         }
 
         protected override void OnMinimize(object sender, RoutedEventArgs e)
         {
             base.OnMinimize(sender, e);
-            if (WindowFrameMode == WindowMode.Mini)
+            if (this.WindowFrameMode == WindowMode.Mini)
             {
-                TimerWidgetControl.Mode = TimerWidgetMode.Mini;
-                TaskWidget.Visibility = Visibility.Collapsed;
-                Grid.SetRow(TimerWidgetControl, 1);
-                Grid.SetColumn(TimerWidgetControl, 0);
-                Grid.SetColumnSpan(TimerWidgetControl, 2);
-                TimerWidgetControl.Margin = new Thickness();
+                this.TimerWidgetControl.Mode = TimerWidgetMode.Mini;
+                this.TaskWidget.Visibility = Visibility.Collapsed;
+                Grid.SetRow(this.TimerWidgetControl, 1);
+                Grid.SetColumn(this.TimerWidgetControl, 0);
+                Grid.SetColumnSpan(this.TimerWidgetControl, 2);
+                this.TimerWidgetControl.Margin = new Thickness();
             }
         }
 
         protected override void OnWidget(object sender, RoutedEventArgs e)
         {
             base.OnWidget(sender, e);
-            UpdateWidgetLayout();
+            this.UpdateWidgetLayout();
         }
 
         protected override void OnClose(object sender, RoutedEventArgs e)
         {
-            if (WindowFrameMode == WindowMode.Widget)
+            if (this.WindowFrameMode == WindowMode.Widget)
             {
-                TaskWidget.Visibility = Visibility.Collapsed;
+                this.TaskWidget.Visibility = Visibility.Collapsed;
             }
-            ETTTab.Visibility = Visibility.Visible;
-            Grid.SetRow(TimerWidgetControl, 0);
-            Grid.SetColumn(TimerWidgetControl, 1);
-            Grid.SetColumnSpan(TimerWidgetControl, 1);
-            TimerWidgetControl.Mode = TimerWidgetMode.Maximized;
-            TimerWidgetControl.Margin = new Thickness(0, 2, 100, -2);
+            this.ETTTab.Visibility = Visibility.Visible;
+            Grid.SetRow(this.TimerWidgetControl, 0);
+            Grid.SetColumn(this.TimerWidgetControl, 1);
+            Grid.SetColumnSpan(this.TimerWidgetControl, 1);
+            this.TimerWidgetControl.Mode = TimerWidgetMode.Maximized;
+            this.TimerWidgetControl.Margin = new Thickness(0, 2, 100, -2);
             base.OnClose(sender, e);
         }
 
         private void OnSwitchToWidget(object sender, EventArgs e)
         {
             SystemCommands.RestoreWindow(this);
-            WindowFrameMode = WindowMode.Widget;
-            UpdateWidgetLayout();
+            this.WindowFrameMode = WindowMode.Widget;
+            this.UpdateWidgetLayout();
         }
 
         private void UpdateWidgetLayout()
         {
-            TimerWidgetControl.Mode = TimerWidgetMode.Widget;
-            ETTTab.Visibility = Visibility.Collapsed;
-            TaskWidget.Visibility = Visibility.Visible;
-            Grid.SetRow(TimerWidgetControl, 1);
-            Grid.SetColumn(TimerWidgetControl, 0);
-            Grid.SetColumnSpan(TimerWidgetControl, 2);
-            TimerWidgetControl.Margin = new Thickness(0, 0, 0, 0);
+            this.TimerWidgetControl.Mode = TimerWidgetMode.Widget;
+            this.ETTTab.Visibility = Visibility.Collapsed;
+            this.TaskWidget.Visibility = Visibility.Visible;
+            Grid.SetRow(this.TimerWidgetControl, 1);
+            Grid.SetColumn(this.TimerWidgetControl, 0);
+            Grid.SetColumnSpan(this.TimerWidgetControl, 2);
+            this.TimerWidgetControl.Margin = new Thickness(0, 0, 0, 0);
         }
 
         protected override void OnMiniSettings(object sender, RoutedEventArgs e)
         {
-            MiniSettingsPopup.IsOpen = !MiniSettingsPopup.IsOpen;
+            this.MiniSettingsPopup.IsOpen = !this.MiniSettingsPopup.IsOpen;
         }
 
         private void OnMiniSettingsClose(UIElement sender, SettingsEventArgs args)
         {
             if (args.SaveSettings)
             {
-                _viewModel.SaveSettings(_settingsViewModel);
+                this.viewModel.SaveSettings(this.settingsViewModel);
             }
             else
             {
-                _viewModel.UpdateSettingsViewModel(_settingsViewModel);
+                this.viewModel.UpdateSettingsViewModel(this.settingsViewModel);
             }
             // Close the popup
-            MiniSettingsPopup.IsOpen = false;
+            this.MiniSettingsPopup.IsOpen = false;
         }
 
         private void OnUpdateSettings(UIElement sender, SettingsEventArgs args)
         {
             if (args.SaveSettings)
             {
-                _viewModel.SaveSettings(_settingsViewModel);
+                this.viewModel.SaveSettings(this.settingsViewModel);
             }
             else
             {
-                _viewModel.UpdateSettingsViewModel(_settingsViewModel);
+                this.viewModel.UpdateSettingsViewModel(this.settingsViewModel);
             }
         }
 
         private void OnTabItemSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            DashboardPath.Fill = Brushes.White;
-            DashboardText.Foreground = Brushes.White;
-            TimesheetPath.Fill = Brushes.White;
-            TimesheetText.Foreground = Brushes.White;
-            ReportsPath.Fill = Brushes.White;
-            ReportsText.Foreground = Brushes.White;
-            SettingsPath.Fill = Brushes.White;
-            SettingsText.Foreground = Brushes.White;
+            this.DashboardPath.Fill = Brushes.White;
+            this.DashboardText.Foreground = Brushes.White;
+            this.TimesheetPath.Fill = Brushes.White;
+            this.TimesheetText.Foreground = Brushes.White;
+            this.ReportsPath.Fill = Brushes.White;
+            this.ReportsText.Foreground = Brushes.White;
+            this.SettingsPath.Fill = Brushes.White;
+            this.SettingsText.Foreground = Brushes.White;
 
-            switch (ETTTab.SelectedIndex)
+            switch (this.ETTTab.SelectedIndex)
             {
                 case 0:
-                    DashboardPath.Fill = Brushes.Black;
-                    DashboardText.Foreground = Brushes.Black;
+                    this.DashboardPath.Fill = Brushes.Black;
+                    this.DashboardText.Foreground = Brushes.Black;
                     break;
 
                 case 1:
-                    TimesheetPath.Fill = Brushes.Black;
-                    TimesheetText.Foreground = Brushes.Black;
+                    this.TimesheetPath.Fill = Brushes.Black;
+                    this.TimesheetText.Foreground = Brushes.Black;
+                    this.Timesheet.UpdateProjects();
                     break;
 
                 case 2:
-                    ReportsPath.Fill = Brushes.Black;
-                    ReportsText.Foreground = Brushes.Black;
+                    this.ReportsPath.Fill = Brushes.Black;
+                    this.ReportsText.Foreground = Brushes.Black;
                     break;
 
                 case 3:
-                    SettingsPath.Fill = Brushes.Black;
-                    SettingsText.Foreground = Brushes.Black;
+                    this.SettingsPath.Fill = Brushes.Black;
+                    this.SettingsText.Foreground = Brushes.Black;
                     break;
             }
         }
 
         private void OnShowNotifications(object sender, RoutedEventArgs e)
         {
-            NotificationsPopup.IsOpen = true;
+            this.NotificationsPopup.IsOpen = true;
         }
     }
 }

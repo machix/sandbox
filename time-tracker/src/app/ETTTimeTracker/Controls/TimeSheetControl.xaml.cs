@@ -9,10 +9,7 @@ using ETTTimeTracker.Views;
 
 namespace ETTTimeTracker.Controls
 {
-    using Ett.TimeTracker.Workflow.ActionCreators.Timesheet;
-    using Ett.TimeTracker.Workflow.Common;
-    using Ett.TimeTracker.Workflow.Extensions;
-    using Ett.TimeTracker.Workflow.Resources.Projects.Overviews;
+    using ETTTimeTracker.Connectors.Common;
 
     /// <summary>
     /// Interaction logic for TimeSheetControl.xaml
@@ -21,26 +18,24 @@ namespace ETTTimeTracker.Controls
     {
         private ETTViewModel viewModel;
 
+        private WorkflowConnector connector;
+
         public TimeSheetControl()
         {
             this.InitializeComponent();
             this.dateDisplay.SelectedDate = DateTime.Now;
-
-            Workflow.Instance.Store                
-                .Subscribe(
-                state =>
-                    {
-                        var s = state;
-                    });
-
-            Workflow.Instance.Store.Dispatch(
-                ProjectsActionCreator.GetProjects(new ProjectOverviewsRequestResource()));
         }
 
-        public void Initialize(ETTViewModel vm)
+        internal void Initialize(ETTViewModel vm, WorkflowConnector workflowConnector)
         {
+            this.connector = workflowConnector;
             this.viewModel = vm;
             this.TaskList.Initialize(this.viewModel);
+        }
+
+        public void UpdateProjects()
+        {
+            this.connector.Timesheet.UpdateProjects();
         }
 
         private void OnAddNewProject(object sender, RoutedEventArgs e)
