@@ -1,0 +1,1148 @@
+{
+  "subTabActive": "General Impact",
+  "tabShowSetting": {
+    "maxStatementsNumber": 100,
+    "maxTermsNumber": 100,
+    "date": true,
+    "scriptList": true,
+    "inputType": true,
+    "value": true,
+    "searchTypeExplicit": true,
+    "searchTypeImplicit": true,
+    "additionalDropdownShow": true,
+    "outputGroupShow": true,
+    "queryScopeGroupShow": false,
+    "inputTypeDropdown": {
+      "optionList": [
+        {
+          "optionName": "Select",
+          "subDropdownType": "",
+          "valueDropdownType": "list",
+          "searchImplicitSetting": {
+            "showImplicitSearch": false,
+            "typeOptionList": [
+            ],
+            "showLevelNumber": false
+          }
+        },
+        {
+          "optionName": "Attributes",
+          "subDropdownType": "secondInputType",
+          "valueDropdownType": "tree-level-1",
+          "searchImplicitSetting": {
+            "showImplicitSearch": true,
+            "typeOptionList": [
+              {
+                "optionName": "Full"
+              },
+              {
+                "optionName": "Hierarchy"
+              }
+            ],
+            "showLevelNumber": true
+          }
+        },
+        {
+          "optionName": "Business Organisation Nodes",
+          "subDropdownType": "hierarchyType",
+          "valueDropdownType": "tree-level-2",
+          "searchImplicitSetting": {
+            "showImplicitSearch": true,
+            "typeOptionList": [
+              {
+                "optionName": "Full"
+              },
+              {
+                "optionName": "Hierarchy"
+              }
+            ],
+            "showLevelNumber": true
+          }
+        },
+        {
+          "optionName": "Calculation Method",
+          "subDropdownType": "",
+          "valueDropdownType": "list",
+          "searchImplicitSetting": {
+            "showImplicitSearch": false,
+            "typeOptionList": [
+            ],
+            "showLevelNumber": false
+          }
+        },
+        {
+          "optionName": "Composite Nodes",
+          "subDropdownType": "",
+          "valueDropdownType": "list",
+          "searchImplicitSetting": {
+            "showImplicitSearch": true,
+            "typeOptionList": [
+              {
+                "optionName": "Full"
+              }
+            ],
+            "showLevelNumber": false
+          }
+        },
+        {
+          "optionName": "Entities",
+          "subDropdownType": "secondInputType",
+          "valueDropdownType": "tree-level-1",
+          "searchImplicitSetting": {
+            "showImplicitSearch": true,
+            "typeOptionList": [
+              {
+                "optionName": "Full"
+              },
+              {
+                "optionName": "Hierarchy"
+              }
+            ],
+            "showLevelNumber": true
+          }
+        },
+        {
+          "optionName": "Internal Collections",
+          "subDropdownType": "",
+          "valueDropdownType": "tree-level-1",
+          "searchImplicitSetting": {
+            "showImplicitSearch": true,
+            "typeOptionList": [
+              {
+                "optionName": "Full"
+              }
+            ],
+            "showLevelNumber": true
+          }
+        },
+        {
+          "optionName": "Other",
+          "subDropdownType": "secondInputType",
+          "valueDropdownType": "list",
+          "searchImplicitSetting": {
+            "showImplicitSearch": false,
+            "typeOptionList": [
+            ],
+            "showLevelNumber": false
+          }
+        },
+        {
+          "optionName": "Parameters",
+          "subDropdownType": "secondInputType",
+          "valueDropdownType": "tree-level-1",
+          "searchImplicitSetting": {
+            "showImplicitSearch": false,
+            "typeOptionList": [
+            ],
+            "showLevelNumber": false
+          }
+        },
+        {
+          "optionName": "Report Trees",
+          "subDropdownType": "",
+          "valueDropdownType": "list",
+          "searchImplicitSetting": {
+            "showImplicitSearch": false,
+            "typeOptionList": [
+            ],
+            "showLevelNumber": false
+          }
+        },
+        {
+          "optionName": "Risk Types",
+          "subDropdownType": "",
+          "valueDropdownType": "list",
+          "searchImplicitSetting": {
+            "showImplicitSearch": true,
+            "typeOptionList": [
+              {
+                "optionName": "Full"
+              }
+            ],
+            "showLevelNumber": false
+          }
+        }
+      ]
+    },
+    "functionDropdown": {
+      "optionList": [
+        {
+          "optionName": "Select"
+        },
+        {
+          "optionName": "Equals"
+        },
+        {
+          "optionName": "Not Equals"
+        },
+        {
+          "optionName": "Like"
+        }
+      ]
+    }
+  },
+  "subTabList": [
+    {
+      "tabName": "General Impact",
+      "tabShowSetting": {
+        "maxStatementsNumber": 100,
+        "maxTermsNumber": 100,
+        "date": true,
+        "scriptList": true,
+        "inputType": true,
+        "value": true,
+        "searchTypeExplicit": true,
+        "searchTypeImplicit": true,
+        "additionalDropdownShow": true,
+        "outputGroupShow": true,
+        "queryScopeGroupShow": false,
+        "inputTypeDropdown": {
+          "optionList": [
+            {
+              "optionName": "Select",
+              "subDropdownType": "",
+              "valueDropdownType": "list",
+              "searchImplicitSetting": {
+                "showImplicitSearch": false,
+                "typeOptionList": [
+                ],
+                "showLevelNumber": false
+              }
+            },
+            {
+              "optionName": "Attributes",
+              "subDropdownType": "secondInputType",
+              "valueDropdownType": "tree-level-1",
+              "searchImplicitSetting": {
+                "showImplicitSearch": true,
+                "typeOptionList": [
+                  {
+                    "optionName": "Full"
+                  },
+                  {
+                    "optionName": "Hierarchy"
+                  }
+                ],
+                "showLevelNumber": true
+              }
+            },
+            {
+              "optionName": "Business Organisation Nodes",
+              "subDropdownType": "hierarchyType",
+              "valueDropdownType": "tree-level-2",
+              "searchImplicitSetting": {
+                "showImplicitSearch": true,
+                "typeOptionList": [
+                  {
+                    "optionName": "Full"
+                  },
+                  {
+                    "optionName": "Hierarchy"
+                  }
+                ],
+                "showLevelNumber": true
+              }
+            },
+            {
+              "optionName": "Calculation Method",
+              "subDropdownType": "",
+              "valueDropdownType": "list",
+              "searchImplicitSetting": {
+                "showImplicitSearch": false,
+                "typeOptionList": [
+                ],
+                "showLevelNumber": false
+              }
+            },
+            {
+              "optionName": "Composite Nodes",
+              "subDropdownType": "",
+              "valueDropdownType": "list",
+              "searchImplicitSetting": {
+                "showImplicitSearch": true,
+                "typeOptionList": [
+                  {
+                    "optionName": "Full"
+                  }
+                ],
+                "showLevelNumber": false
+              }
+            },
+            {
+              "optionName": "Entities",
+              "subDropdownType": "secondInputType",
+              "valueDropdownType": "tree-level-1",
+              "searchImplicitSetting": {
+                "showImplicitSearch": true,
+                "typeOptionList": [
+                  {
+                    "optionName": "Full"
+                  },
+                  {
+                    "optionName": "Hierarchy"
+                  }
+                ],
+                "showLevelNumber": true
+              }
+            },
+            {
+              "optionName": "Internal Collections",
+              "subDropdownType": "",
+              "valueDropdownType": "tree-level-1",
+              "searchImplicitSetting": {
+                "showImplicitSearch": true,
+                "typeOptionList": [
+                  {
+                    "optionName": "Full"
+                  }
+                ],
+                "showLevelNumber": true
+              }
+            },
+            {
+              "optionName": "Other",
+              "subDropdownType": "secondInputType",
+              "valueDropdownType": "list",
+              "searchImplicitSetting": {
+                "showImplicitSearch": false,
+                "typeOptionList": [
+                ],
+                "showLevelNumber": false
+              }
+            },
+            {
+              "optionName": "Parameters",
+              "subDropdownType": "secondInputType",
+              "valueDropdownType": "tree-level-1",
+              "searchImplicitSetting": {
+                "showImplicitSearch": false,
+                "typeOptionList": [
+                ],
+                "showLevelNumber": false
+              }
+            },
+            {
+              "optionName": "Report Trees",
+              "subDropdownType": "",
+              "valueDropdownType": "list",
+              "searchImplicitSetting": {
+                "showImplicitSearch": false,
+                "typeOptionList": [
+                ],
+                "showLevelNumber": false
+              }
+            },
+            {
+              "optionName": "Risk Types",
+              "subDropdownType": "",
+              "valueDropdownType": "list",
+              "searchImplicitSetting": {
+                "showImplicitSearch": true,
+                "typeOptionList": [
+                  {
+                    "optionName": "Full"
+                  }
+                ],
+                "showLevelNumber": false
+              }
+            }
+          ]
+        },
+        "functionDropdown": {
+          "optionList": [
+            {
+              "optionName": "Select"
+            },
+            {
+              "optionName": "Equals"
+            },
+            {
+              "optionName": "Not Equals"
+            },
+            {
+              "optionName": "Like"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "tabName": "Re-Org",
+      "tabShowSetting": {
+        "maxStatementsNumber": 100,
+        "maxTermsNumber": 1,
+        "date": true,
+        "scriptList": true,
+        "inputType": true,
+        "value": true,
+        "searchTypeExplicit": true,
+        "searchTypeImplicit": true,
+        "additionalDropdownShow": true,
+        "outputGroupShow": true,
+        "queryScopeGroupShow": false,
+        "inputTypeDropdown": {
+          "optionList": [
+            {
+              "optionName": "Select",
+              "subDropdownType": "",
+              "valueDropdownType": "list",
+              "searchImplicitSetting": {
+                "showImplicitSearch": false,
+                "typeOptionList": [
+                ],
+                "showLevelNumber": false
+              }
+            },
+            {
+              "optionName": "Business Organisation Nodes",
+              "subDropdownType": "hierarchyType",
+              "valueDropdownType": "tree-level-2",
+              "searchImplicitSetting": {
+                "showImplicitSearch": true,
+                "typeOptionList": [
+                  {
+                    "optionName": "Full"
+                  },
+                  {
+                    "optionName": "Hierarchy"
+                  }
+                ],
+                "showLevelNumber": true
+              }
+            }
+          ]
+        },
+        "functionDropdown": {
+          "optionList": [
+            {
+              "optionName": "Select"
+            },
+            {
+              "optionName": "Equals"
+            },
+            {
+              "optionName": "Not Equals"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "tabName": "MaRS Schedules",
+      "tabShowSetting": {
+        "maxStatementsNumber": 100,
+        "maxTermsNumber": 1,
+        "date": false,
+        "script List": false,
+        "inputType": true,
+        "value": true,
+        "searchTypeExplicit": true,
+        "searchTypeImplicit": true,
+        "additionalDropdownShow": false,
+        "outputGroupShow": false,
+        "queryScopeGroupShow": false,
+        "inputTypeDropdown": {
+          "optionList": [
+            {
+              "optionName": "Select",
+              "subDropdownType": "",
+              "valueDropdownType": "list",
+              "searchImplicitSetting": {
+                "showImplicitSearch": false,
+                "typeOptionList": [
+                ],
+                "showLevelNumber": false
+              }
+            },
+            {
+              "optionName": "Business Organisation Nodes",
+              "subDropdownType": "hierarchyType",
+              "valueDropdownType": "tree-level-2",
+              "searchImplicitSetting": {
+                "showImplicitSearch": true,
+                "typeOptionList": [
+                  {
+                    "optionName": "Full"
+                  },
+                  {
+                    "optionName": "Hierarchy"
+                  }
+                ],
+                "showLevelNumber": true
+              }
+            }
+          ]
+        },
+        "functionDropdown": {
+          "optionList": [
+            {
+              "optionName": "Select"
+            },
+            {
+              "optionName": "Equals"
+            },
+            {
+              "optionName": "Not Equals"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "tabName": "Flags and Limits",
+      "tabShowSetting": {
+        "maxStatementsNumber": 100,
+        "maxTermsNumber": 100,
+        "date": false,
+        "scriptList": false,
+        "inputType": true,
+        "value": true,
+        "searchTypeExplicit": true,
+        "searchTypeImplicit": true,
+        "additionalDropdownShow": false,
+        "outputGroupShow": false,
+        "queryScopeGroupShow": true,
+        "inputTypeDropdown": {
+          "optionList": [
+            {
+              "optionName": "Select",
+              "subDropdownType": "",
+              "valueDropdownType": "list",
+              "searchImplicitSetting": {
+                "showImplicitSearch": false,
+                "typeOptionList": [
+                ],
+                "showLevelNumber": false
+              }
+            },
+            {
+              "optionName": "Attributes",
+              "subDropdownType": "secondInputType",
+              "valueDropdownType": "tree-level-1",
+              "searchImplicitSetting": {
+                "showImplicitSearch": true,
+                "typeOptionList": [
+                  {
+                    "optionName": "Full"
+                  },
+                  {
+                    "optionName": "Hierarchy"
+                  }
+                ],
+                "showLevelNumber": true
+              }
+            },
+            {
+              "optionName": "Business Organisation Nodes",
+              "subDropdownType": "hierarchyType",
+              "valueDropdownType": "tree-level-2",
+              "searchImplicitSetting": {
+                "showImplicitSearch": true,
+                "typeOptionList": [
+                  {
+                    "optionName": "Full"
+                  },
+                  {
+                    "optionName": "Hierarchy"
+                  }
+                ],
+                "showLevelNumber": true
+              }
+            },
+            {
+              "optionName": "Calculation Method",
+              "subDropdownType": "",
+              "valueDropdownType": "list",
+              "searchImplicitSetting": {
+                "showImplicitSearch": false,
+                "typeOptionList": [
+                ],
+                "showLevelNumber": false
+              }
+            },
+            {
+              "optionName": "Composite Nodes",
+              "subDropdownType": "",
+              "valueDropdownType": "list",
+              "searchImplicitSetting": {
+                "showImplicitSearch": true,
+                "typeOptionList": [
+                  {
+                    "optionName": "Full"
+                  }
+                ],
+                "showLevelNumber": false
+              }
+            },
+            {
+              "optionName": "Entities",
+              "subDropdownType": "secondInputType",
+              "valueDropdownType": "tree-level-1",
+              "searchImplicitSetting": {
+                "showImplicitSearch": true,
+                "typeOptionList": [
+                  {
+                    "optionName": "Full"
+                  },
+                  {
+                    "optionName": "Hierarchy"
+                  }
+                ],
+                "showLevelNumber": true
+              }
+            },
+            {
+              "optionName": "Internal Collections",
+              "subDropdownType": "",
+              "valueDropdownType": "tree-level-1",
+              "searchImplicitSetting": {
+                "showImplicitSearch": true,
+                "typeOptionList": [
+                  {
+                    "optionName": "Full"
+                  }
+                ],
+                "showLevelNumber": true
+              }
+            },
+            {
+              "optionName": "Other",
+              "subDropdownType": "secondInputType",
+              "valueDropdownType": "list",
+              "searchImplicitSetting": {
+                "showImplicitSearch": false,
+                "typeOptionList": [
+                ],
+                "showLevelNumber": false
+              }
+            },
+            {
+              "optionName": "Parameters",
+              "subDropdownType": "secondInputType",
+              "valueDropdownType": "tree-level-1",
+              "searchImplicitSetting": {
+                "showImplicitSearch": false,
+                "typeOptionList": [
+                ],
+                "showLevelNumber": false
+              }
+            },
+            {
+              "optionName": "Report Trees",
+              "subDropdownType": "",
+              "valueDropdownType": "list",
+              "searchImplicitSetting": {
+                "showImplicitSearch": false,
+                "typeOptionList": [
+                ],
+                "showLevelNumber": false
+              }
+            },
+            {
+              "optionName": "Risk Types",
+              "subDropdownType": "",
+              "valueDropdownType": "list",
+              "searchImplicitSetting": {
+                "showImplicitSearch": true,
+                "typeOptionList": [
+                  {
+                    "optionName": "Full"
+                  }
+                ],
+                "showLevelNumber": false
+              }
+            }
+          ]
+        },
+        "functionDropdown": {
+          "optionList": [
+            {
+              "optionName": "Select"
+            },
+            {
+              "optionName": "Equals"
+            },
+            {
+              "optionName": "Not Equals"
+            },
+            {
+              "optionName": "Like"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "tabName": "Report Trees",
+      "tabShowSetting": {
+        "maxStatementsNumber": 100,
+        "maxTermsNumber": 100,
+        "date": false,
+        "scriptList": false,
+        "inputType": true,
+        "value": true,
+        "searchTypeExplicit": true,
+        "searchTypeImplicit": false,
+        "additionalDropdownShow": false,
+        "outputGroupShow": false,
+        "queryScopeGroupShow": false,
+        "inputTypeDropdown": {
+          "optionList": [
+            {
+              "optionName": "Select",
+              "subDropdownType": "",
+              "valueDropdownType": "list",
+              "searchImplicitSetting": {
+                "showImplicitSearch": false,
+                "typeOptionList": [
+                ],
+                "showLevelNumber": false
+              }
+            },
+            {
+              "optionName": "Attributes",
+              "subDropdownType": "secondInputType",
+              "valueDropdownType": "tree-level-1",
+              "searchImplicitSetting": {
+                "showImplicitSearch": true,
+                "typeOptionList": [
+                  {
+                    "optionName": "Full"
+                  },
+                  {
+                    "optionName": "Hierarchy"
+                  }
+                ],
+                "showLevelNumber": true
+              }
+            },
+            {
+              "optionName": "Business Organisation Nodes",
+              "subDropdownType": "hierarchyType",
+              "valueDropdownType": "tree-level-2",
+              "searchImplicitSetting": {
+                "showImplicitSearch": true,
+                "typeOptionList": [
+                  {
+                    "optionName": "Full"
+                  },
+                  {
+                    "optionName": "Hierarchy"
+                  }
+                ],
+                "showLevelNumber": true
+              }
+            },
+            {
+              "optionName": "Composite Nodes",
+              "subDropdownType": "",
+              "valueDropdownType": "list",
+              "searchImplicitSetting": {
+                "showImplicitSearch": true,
+                "typeOptionList": [
+                  {
+                    "optionName": "Full"
+                  }
+                ],
+                "showLevelNumber": false
+              }
+            },
+            {
+              "optionName": "Entities",
+              "subDropdownType": "secondInputType",
+              "valueDropdownType": "tree-level-1",
+              "searchImplicitSetting": {
+                "showImplicitSearch": true,
+                "typeOptionList": [
+                  {
+                    "optionName": "Full"
+                  },
+                  {
+                    "optionName": "Hierarchy"
+                  }
+                ],
+                "showLevelNumber": true
+              }
+            }
+          ]
+        },
+        "functionDropdown": {
+          "optionList": [
+            {
+              "optionName": "Select"
+            },
+            {
+              "optionName": "Equals"
+            },
+            {
+              "optionName": "Not Equals"
+            },
+            {
+              "optionName": "Like"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "tabName": "Internal Collections",
+      "tabShowSetting": {
+        "maxStatementsNumber": 100,
+        "maxTermsNumber": 100,
+        "date": false,
+        "scriptList": false,
+        "inputType": true,
+        "value": true,
+        "searchTypeExplicit": true,
+        "searchTypeImplicit": false,
+        "additionalDropdownShow": false,
+        "outputGroupShow": false,
+        "queryScopeGroupShow": false,
+        "inputTypeDropdown": {
+          "optionList": [
+            {
+              "optionName": "Select",
+              "subDropdownType": "",
+              "valueDropdownType": "list",
+              "searchImplicitSetting": {
+                "showImplicitSearch": false,
+                "typeOptionList": [
+                ],
+                "showLevelNumber": false
+              }
+            },
+            {
+              "optionName": "Attributes",
+              "subDropdownType": "secondInputType",
+              "valueDropdownType": "tree-level-1",
+              "searchImplicitSetting": {
+                "showImplicitSearch": true,
+                "typeOptionList": [
+                  {
+                    "optionName": "Full"
+                  },
+                  {
+                    "optionName": "Hierarchy"
+                  }
+                ],
+                "showLevelNumber": true
+              }
+            },
+            {
+              "optionName": "Entities",
+              "subDropdownType": "secondInputType",
+              "valueDropdownType": "tree-level-1",
+              "searchImplicitSetting": {
+                "showImplicitSearch": true,
+                "typeOptionList": [
+                  {
+                    "optionName": "Full"
+                  },
+                  {
+                    "optionName": "Hierarchy"
+                  }
+                ],
+                "showLevelNumber": true
+              }
+            },
+            {
+              "optionName": "Internal Collections",
+              "subDropdownType": "",
+              "valueDropdownType": "tree-level-1",
+              "searchImplicitSetting": {
+                "showImplicitSearch": true,
+                "typeOptionList": [
+                  {
+                    "optionName": "Full"
+                  }
+                ],
+                "showLevelNumber": true
+              }
+            },
+            {
+              "optionName": "Risk Types",
+              "subDropdownType": "",
+              "valueDropdownType": "list",
+              "searchImplicitSetting": {
+                "showImplicitSearch": true,
+                "typeOptionList": [
+                  {
+                    "optionName": "Full"
+                  }
+                ],
+                "showLevelNumber": false
+              }
+            }
+          ]
+        },
+        "functionDropdown": {
+          "optionList": [
+            {
+              "optionName": "Select"
+            },
+            {
+              "optionName": "Equals"
+            },
+            {
+              "optionName": "Not Equals"
+            },
+            {
+              "optionName": "Like"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "tabName": "Internal Collections Expansion",
+      "tabShowSetting": {
+        "maxStatementsNumber": 1,
+        "maxTermsNumber": 1,
+        "date": false,
+        "scriptList": false,
+        "inputType": true,
+        "value": true,
+        "searchTypeExplicit": true,
+        "searchTypeImplicit": false,
+        "additionalDropdownShow": false,
+        "outputGroupShow": false,
+        "queryScopeGroupShow": false,
+        "inputTypeDropdown": {
+          "optionList": [
+            {
+              "optionName": "Select",
+              "subDropdownType": "",
+              "valueDropdownType": "list",
+              "searchImplicitSetting": {
+                "showImplicitSearch": false,
+                "typeOptionList": [
+                ],
+                "showLevelNumber": false
+              }
+            },
+            {
+              "optionName": "Internal Collections",
+              "subDropdownType": "",
+              "valueDropdownType": "tree-level-1",
+              "searchImplicitSetting": {
+                "showImplicitSearch": true,
+                "typeOptionList": [
+                  {
+                    "optionName": "Full"
+                  }
+                ],
+                "showLevelNumber": true
+              }
+            }
+          ]
+        },
+        "functionDropdown": {
+          "optionList": [
+            {
+              "optionName": "Select"
+            },
+            {
+              "optionName": "Equals"
+            },
+            {
+              "optionName": "Not Equals"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "tabName": "Ancestral",
+      "tabShowSetting": {
+        "maxStatementsNumber": 1,
+        "maxTermsNumber": 1,
+        "date": false,
+        "scriptList": false,
+        "inputType": true,
+        "value": true,
+        "searchTypeExplicit": true,
+        "searchTypeImplicit": false,
+        "additionalDropdownShow": false,
+        "outputGroupShow": false,
+        "queryScopeGroupShow": false,
+        "inputTypeDropdown": {
+          "optionList": [
+            {
+              "optionName": "Select",
+              "subDropdownType": "",
+              "valueDropdownType": "list",
+              "searchImplicitSetting": {
+                "showImplicitSearch": false,
+                "typeOptionList": [
+                ],
+                "showLevelNumber": false
+              }
+            },
+            {
+              "optionName": "Attributes",
+              "subDropdownType": "secondInputType",
+              "valueDropdownType": "tree-level-1",
+              "searchImplicitSetting": {
+                "showImplicitSearch": true,
+                "typeOptionList": [
+                  {
+                    "optionName": "Full"
+                  },
+                  {
+                    "optionName": "Hierarchy"
+                  }
+                ],
+                "showLevelNumber": true
+              }
+            },
+            {
+              "optionName": "Business Organisation Nodes",
+              "subDropdownType": "hierarchyType",
+              "valueDropdownType": "tree-level-2",
+              "searchImplicitSetting": {
+                "showImplicitSearch": true,
+                "typeOptionList": [
+                  {
+                    "optionName": "Full"
+                  },
+                  {
+                    "optionName": "Hierarchy"
+                  }
+                ],
+                "showLevelNumber": true
+              }
+            },
+            {
+              "optionName": "Entities",
+              "subDropdownType": "secondInputType",
+              "valueDropdownType": "tree-level-1",
+              "searchImplicitSetting": {
+                "showImplicitSearch": true,
+                "typeOptionList": [
+                  {
+                    "optionName": "Full"
+                  },
+                  {
+                    "optionName": "Hierarchy"
+                  }
+                ],
+                "showLevelNumber": true
+              }
+            }
+          ]
+        },
+        "functionDropdown": {
+          "optionList": [
+            {
+              "optionName": "Select"
+            },
+            {
+              "optionName": "Equals"
+            },
+            {
+              "optionName": "Not Equals"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "tabName": "Composite Nodes",
+      "tabShowSetting": {
+        "maxStatementsNumber": 100,
+        "maxTermsNumber": 100,
+        "date": false,
+        "scriptList": false,
+        "inputType": true,
+        "value": true,
+        "searchTypeExplicit": true,
+        "searchTypeImplicit": false,
+        "additionalDropdownShow": false,
+        "outputGroupShow": false,
+        "queryScopeGroupShow": false,
+        "inputTypeDropdown": {
+          "optionList": [
+            {
+              "optionName": "Select",
+              "subDropdownType": "",
+              "valueDropdownType": "list",
+              "searchImplicitSetting": {
+                "showImplicitSearch": false,
+                "typeOptionList": [
+                ],
+                "showLevelNumber": false
+              }
+            },
+            {
+              "optionName": "Attributes",
+              "subDropdownType": "secondInputType",
+              "valueDropdownType": "tree-level-1",
+              "searchImplicitSetting": {
+                "showImplicitSearch": true,
+                "typeOptionList": [
+                  {
+                    "optionName": "Full"
+                  },
+                  {
+                    "optionName": "Hierarchy"
+                  }
+                ],
+                "showLevelNumber": true
+              }
+            },
+            {
+              "optionName": "Business Organisation Nodes",
+              "subDropdownType": "hierarchyType",
+              "valueDropdownType": "tree-level-2",
+              "searchImplicitSetting": {
+                "showImplicitSearch": true,
+                "typeOptionList": [
+                  {
+                    "optionName": "Full"
+                  },
+                  {
+                    "optionName": "Hierarchy"
+                  }
+                ],
+                "showLevelNumber": true
+              }
+            },
+            {
+              "optionName": "Entities",
+              "subDropdownType": "secondInputType",
+              "valueDropdownType": "tree-level-1",
+              "searchImplicitSetting": {
+                "showImplicitSearch": true,
+                "typeOptionList": [
+                  {
+                    "optionName": "Full"
+                  },
+                  {
+                    "optionName": "Hierarchy"
+                  }
+                ],
+                "showLevelNumber": true
+              }
+            }
+          ]
+        },
+        "functionDropdown": {
+          "optionList": [
+            {
+              "optionName": "Select"
+            },
+            {
+              "optionName": "Equals"
+            },
+            {
+              "optionName": "Not Equals"
+            },
+            {
+              "optionName": "Like"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+<body class="bd-landing">
+	<app-sd-header></app-sd-header>
+	
+  <div class="contents">
+  	<div class="sub-banner">
+  		<h4 class="titles">Query Dashboard</h4>
+  		<a href="javascript:;" class="green-links"
+  		  id="tipStep10"
+  		  (click)="showRightPanel['isShown'] = true;">
+  			<i class="icons icon-show"></i>
+  			<span class="txt">Show This Session's Query Queue</span>	
+  		</a>
+  	</div>
+  	<!--end .sub-banner-->
+  	<div class="white-panel">
+  		<div class="top-bar">
+  			<div class="tab-nav clearfix">
+  				<ul>
+  					<li>
+  					  <a [routerLink]="['/dashboard-page']" class="current items">Query Builder</a>
+  					</li>
+  					<li [ngClass]="{'disabled': !showResultTab}">
+  					  <a href="javascript:;" class="items" 
+  					     id="tipStep11" (click)="clickResultPage()">
+  					    Results
+  					  </a>
+  					</li>
+  				</ul>
+  			</div>
+  		</div>
+  		<!--end .top-bar-->
+  		<div class="tab-content clearfix">
+  			<app-sd-left-sidebar [dataList]="dataList"></app-sd-left-sidebar>
+  			
+  			<div class="right-contents">
+  				<app-sd-query-item
+  				  [subTabActive]="dataList['subTabActive']"
+  				  [tabShowSetting]="dataList['tabShowSetting']"
+  				  *ngIf="dataList['subTabActive'] === 'General Impact'">
+  				</app-sd-query-item>
+  				
+  				<app-sd-query-item
+  				  [subTabActive]="dataList['subTabActive']"
+  				  [tabShowSetting]="dataList['tabShowSetting']"
+  				  *ngIf="dataList['subTabActive'] === 'Re-Org'">
+  				</app-sd-query-item>
+  				
+  				<app-sd-query-item
+  				  [subTabActive]="dataList['subTabActive']"
+  				  [tabShowSetting]="dataList['tabShowSetting']"
+  				  *ngIf="dataList['subTabActive'] === 'Flags and Limits'">
+  				</app-sd-query-item>
+  				
+  				<app-sd-query-item
+  				  [subTabActive]="dataList['subTabActive']"
+  				  [tabShowSetting]="dataList['tabShowSetting']"
+  				  *ngIf="dataList['subTabActive'] === 'Internal Collections'">
+  				</app-sd-query-item>
+  				
+  				<app-sd-query-item
+  				  [subTabActive]="dataList['subTabActive']"
+  				  [tabShowSetting]="dataList['tabShowSetting']"
+  				  *ngIf="dataList['subTabActive'] === 'Internal Collections Expansion'">
+  				</app-sd-query-item>
+  				
+  				<app-sd-query-item
+  				  [subTabActive]="dataList['subTabActive']"
+  				  [tabShowSetting]="dataList['tabShowSetting']"
+  				  *ngIf="dataList['subTabActive'] === 'Composite Nodes'">
+  				</app-sd-query-item>
+  				
+  				<app-sd-query-item
+  				  [subTabActive]="dataList['subTabActive']"
+  				  [tabShowSetting]="dataList['tabShowSetting']"
+  				  *ngIf="dataList['subTabActive'] === 'Report Trees'">
+  				</app-sd-query-item>
+  				
+  				<app-sd-query-item
+  				  [subTabActive]="dataList['subTabActive']"
+  				  [tabShowSetting]="dataList['tabShowSetting']"
+  				  *ngIf="dataList['subTabActive'] === 'Ancestral'">
+  				</app-sd-query-item>
+  				
+  				<app-sd-query-item
+  				  [subTabActive]="dataList['subTabActive']"
+  				  [tabShowSetting]="dataList['tabShowSetting']"
+  				  *ngIf="dataList['subTabActive'] === 'MaRS Schedules'">
+  				</app-sd-query-item>
+  				
+  				<div class="bottom-btn">
+  					<a href="javascript:;" class="btn btn-green-border">Clear</a>
+  					<a href="javascript:;" class="btn btn-green" 
+  					   id="tipStep9" (click)="showResultTab = true">Submit</a>
+  				</div>
+  				<!--end .botttom-btn-->
+  			</div>
+  			<!--end .right-contents-->
+  		</div>
+  		<!--end .tab-content-->
+  	</div>
+  	<!--end .white-panel-->
+  </div>
+  
+  <app-sd-right-sidebar [showRightPanel]="showRightPanel"></app-sd-right-sidebar>
+  
+  <app-sd-footer></app-sd-footer>
+</body>

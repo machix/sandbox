@@ -1,0 +1,286 @@
+@import '../../../styles/variables';
+
+//.header
+.header {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: space-between;
+    height: 80px;
+    background-color: $whiteColor;
+    z-index: 1010;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+    .left-logo {
+        height: 80px;
+        line-height: 80px;
+        .logo-btn {
+            height: 80px;
+            background-color: $whiteColor;
+            float: left;
+            vertical-align: middle;
+            padding: 0 30px 0 30px;
+            img {
+                width: 63px;
+                height: 48px;
+            }
+            .txt-area {
+                display: inline-block;
+                vertical-align: middle;
+                line-height: 1;
+                margin-left: 10px;
+                .green-txt {
+                    font-size: 36px;
+                    color: $greenColor;
+                }
+                .gray-txt {
+                    color: $grayLabelColor;
+                    font-size: 12px;
+                    display: block;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .nav-tab {
+            float: left;
+            li {
+                display: block;
+                float: left;
+                text-align: center;
+                line-height: 1;
+                width: auto;
+                a {
+                    padding: 0 21px;
+                    height: 80px;
+                    display: block;
+                    &.active,
+                    &:hover {
+                        background-color: $darkgreen;
+                        .txt {
+                            color: $whiteColor;
+                        }
+                        .icons {
+                            &.icon-dashboard {
+                                background-position: 0 0;
+                            }
+                            &.icon-manager {
+                                background-position: -192px -96px;
+                            }
+                            &.icon-saved {
+                                background-position: -224px -96px;
+                            }
+                            &.icon-about {
+                                background-position: -128px -96px;
+                            }
+                        }
+                    }
+                }
+                &.active {
+                    background-color: $darkgreen;
+                }
+                .icons {
+                    width: 32px;
+                    height: 32px;
+                    margin: 10px auto 5px auto;
+                    &.icon-dashboard {
+                        background-position: -160px -96px;
+                    }
+                    &.icon-manager {
+                        background-position: -32px 0;
+                    }
+                    &.icon-saved {
+                        background-position: -64px 0;
+                    }
+                    &.icon-about {
+                        background-position: -96px 0;
+                    }
+                }
+                .txt {
+                    display: block;
+                    color: $lightGrayLabelColor;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .right-area {
+        .user-name {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: right;
+            line-height: 1;
+            margin-right: 10px;
+            .gray-txt {
+                font-size: 14px;
+                color: $lightGrayLabelColor;
+                display: block;
+            }
+            .user-name {
+                color: $blackColor;
+                font-size: 14px;
+            }
+        }
+        .user-photo {
+            width: 38px;
+            height: 38px;
+            display: inline-block;
+            vertical-align: middle;
+            border-radius: 100%;
+            overflow: hidden;
+            img {
+                width: 38px;
+                height: 38px;
+            }
+        }
+        .notific-wrapper {
+            display: inline-block;
+            position: relative;
+            &.open {
+                .noti-boxs {
+                    display: block;
+                }
+            }
+            .noti-boxs {
+                display: none;
+                position: absolute;
+                left: 10%;
+                top: 115%;
+                background-color: $whiteColor;
+                z-index: 9000;
+                width: 337px;
+                box-shadow: 0 0 5px rgba(0,0,0,.23);
+                .icon-top {
+                    background-position: -296px -98px;
+                    width: 17px;
+                    height: 10px;
+                    position: absolute;
+                    left: 45px;
+                    top: -10px;
+                }
+                .line-title {
+                    font-size: 18px;
+                    .blue-links {
+                        font-size: 12px;
+                        color: $lightGrayColor;
+                        float: right;
+                        margin-top: 5px;
+                    }
+                }
+                .noti-list {
+                    li {
+                        &.readed {
+                            opacity: 0.7;
+                        }
+                        padding: 16px 11px;
+                        border-bottom: 1px solid #ebe9e4;
+                        &:last-child {
+                            border-bottom: 0;
+                        }
+                        .user-section {
+                            position: relative;
+                            padding-left: 55px;
+                            .user-photo {
+                                position: absolute;
+                                left: 0;
+                                top: 50%;
+                                margin-top: -22px;
+                            }
+                        }
+                        .blod-txt {
+                            font-family: "FrutigerLT_Black";
+                            font-size: 14px;
+                            color: #040404;
+                            display: inline-block;
+                        }
+                        .gray-txt {
+                            font-size: 14px;
+                            color: $lightGrayColor;
+                            display: inline;
+                        }
+                        .green-txt {
+                            font-size: 14px;
+                            color: #8a9c3c;
+                        }
+                        .icons  {
+                            width: 14px;
+                            height: 14px;
+                            vertical-align: middle;
+                            margin-right: 5px;
+                            &.icon-like {
+                                background-position: -78px 0px;
+                                background-size: 205px auto;
+                            }
+                            &.icon-talk {
+                                background-position: -92px 0px;
+                                background-size: 205px auto;
+                            }
+                        }
+                        .time {
+                            font-size: 12px;
+                            color: $lightGrayColor;
+                        }
+                    }
+                }
+            }
+        }
+        .btn-bell {
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+            margin: 0 20px;
+            .icon-bell {
+                background-position: -128px 0;
+                width: 28px;
+                height: 30px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .num {
+                position: absolute;
+                top: -2px;
+                right: -4px;
+                min-width: 8px;
+                height: 8px;
+                border-radius: 100%;
+                background-color: $greenColor;
+            }
+        }
+        .btn-user {
+            display: inline-block;
+            vertical-align: middle;
+            width: 45px;
+            height: 45px;
+            border-radius: 100%;
+            border: 1px solid #cbcbcb;
+            overflow: hidden;
+        }
+        .btn-green {
+            height: 80px;
+            line-height: 80px;
+            margin-left: 50px;
+            padding: 0 20px;
+            width: 192px;
+            .icon-add {
+                background-size: 20px 20px;
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 12px;
+            }
+        }
+        .btn-logout {
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+            margin-right: 32px;
+            width: 32px;
+            height: 32px;
+            .icon-logout {
+                background-position: -160px 0;
+                width: 32px;
+                height: 32px;
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,23 @@
+<div class="blue-panel">
+  <app-sd-term-item 
+    *ngFor="let item of termsList;let i = index"
+    [tabShowSetting]="tabShowSetting"
+    [totalTermNumber]="termsList.length"
+    [termsList]="termsList"
+    [statementsIndex]='statementsIndex'
+    [termIndex]="i"
+    (deleteTerm)="deleteTerm($event)">
+  </app-sd-term-item>
+	
+	<div class="bottom-bar"
+	  *ngIf="(tabShowSetting['maxTermsNumber'] > 1) && (termsList.length < tabShowSetting['maxTermsNumber'])">
+		<a href="javascript:;" class="add-block" id="tipStep8"
+		  (click)="addTerm()">
+			<span class="btn-add">
+				<i class="icons icon-add"></i>
+			</span>
+			<span class="txt">Add Term</span>
+		</a>
+	</div>
+</div>
+<!--end .blue-panel-->

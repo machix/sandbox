@@ -1,0 +1,284 @@
+<div class="cover-layer"
+  *ngIf="showRightPanel['isShown']"
+  (click)="showRightPanel['isShown'] = false;">
+</div>
+
+<aside class="fixed-right"
+  *ngIf="showRightPanel['isShown']">
+  <h2 class="titles">This Session's Query Queue
+    <a href="javascript:;" class="icons icon-close"
+      (click)="showRightPanel['isShown'] = false;">
+    </a>
+  </h2>
+  <div class="tabs clearfix">
+    <a href="javascript:;" class="tabs-link"
+      [ngClass]="{'active': tabIndex === 0}"
+      (click)="tabIndex = 0;">
+      <span class="icons icon-completed"></span>
+      <span class="txts">Completed</span>
+    </a>
+    <a href="javascript:;" class="tabs-link"
+      [ngClass]="{'active': tabIndex === 1}"
+      (click)="tabIndex = 1;">
+      <span class="icons icon-processing"></span>
+      <span class="txts">Processing</span>
+    </a>
+    <a href="javascript:;" class="tabs-link"
+      [ngClass]="{'active': tabIndex === 2}"
+      (click)="tabIndex = 2;">
+      <span class="icons icon-failed"></span>
+      <span class="txts">Failed</span>
+    </a>
+  </div>
+  <!--end .tabs-->
+  <div class="query-list"
+    *ngIf="tabIndex === 0;">
+    <div class="query-view clearfix">
+      <div class="btn-group">
+        <a [routerLink]="['/result-page']" class="icons icon-eye"></a>
+      </div>
+      <div class="txts">
+        <a [routerLink]="['/result-page']" class="color-black">Query Name Lorem Ipsum</a>
+        <span class="color-gray">General Impact Query</span>
+        <span class="color-gray">Username: Tony Snow</span>
+      </div>
+    </div>
+    <!--end .query-view-->
+    <div class="query-view clearfix">
+      <div class="btn-group">
+        <a [routerLink]="['/result-page']" class="icons icon-eye"></a>
+      </div>
+      <div class="txts">
+        <a [routerLink]="['/result-page']" class="color-black">Query Name Lorem Ipsum</a>
+        <span class="color-gray">Re-Org Query</span>
+        <span class="color-gray">Username: Michelle Smith</span>
+      </div>
+    </div>
+    <!--end .query-view-->
+    <div class="query-view clearfix">
+      <div class="btn-group">
+        <a [routerLink]="['/result-page']" class="icons icon-eye"></a>
+      </div>
+      <div class="txts">
+        <a [routerLink]="['/result-page']" class="color-black">Query Name Lorem Ipsum</a>
+        <span class="color-gray">Flags & Limits Query</span>
+        <span class="color-gray">Username: Adam Brown</span>
+      </div>
+    </div>
+    <!--end .query-view-->
+    <div class="query-view clearfix">
+      <div class="btn-group">
+        <a [routerLink]="['/result-page']" class="icons icon-eye"></a>
+      </div>
+      <div class="txts">
+        <a [routerLink]="['/result-page']" class="color-black">Query Name Lorem Ipsum</a>
+        <span class="color-gray">Internal Collections Query</span>
+        <span class="color-gray">Username: George Ramirez</span>
+      </div>
+    </div>
+    <!--end .query-view-->
+    <div class="query-view clearfix">
+      <div class="btn-group">
+        <a [routerLink]="['/result-page']" class="icons icon-eye"></a>
+      </div>
+      <div class="txts">
+        <a [routerLink]="['/result-page']" class="color-black">Query Name Lorem Ipsum</a>
+        <span class="color-gray">Internal Collection Expansion Query</span>
+        <span class="color-gray">Username: Tim Elliot</span>
+      </div>
+    </div>
+    <!--end .query-view-->
+  </div>
+  <!--end .query-list-->
+
+  <div class="query-list"
+    *ngIf="tabIndex === 1;">
+    <div class="query-view clearfix">
+      <div class="btn-group">
+        <a href="javascript:;" class="icons icon-delete"></a>
+      </div>
+      <div class="txts">
+        <a href="javascript:;" class="color-black">Query Name Lorem Ipsum</a>
+        <span class="color-gray">General Impact Query</span>
+        <span class="color-gray">Username: Tony Snow</span>
+      </div>
+    </div>
+    <!--end .query-view-->
+    <div class="query-view clearfix">
+      <div class="btn-group">
+        <a href="javascript:;" class="icons icon-delete"></a>
+      </div>
+      <div class="txts">
+        <a href="javascript:;" class="color-black">Query Name Lorem Ipsum</a>
+        <span class="color-gray">Re-Org Query</span>
+        <span class="color-gray">Username: Michelle Smith</span>
+      </div>
+    </div>
+    <!--end .query-view-->
+    <div class="query-view clearfix">
+      <div class="btn-group">
+        <a href="javascript:;" class="icons icon-delete"></a>
+      </div>
+      <div class="txts">
+        <a href="javascript:;" class="color-black">Query Name Lorem Ipsum</a>
+        <span class="color-gray">Flags & Limits Query</span>
+        <span class="color-gray">Username: Adam Brown</span>
+      </div>
+    </div>
+    <!--end .query-view-->
+    <div class="query-view clearfix">
+      <div class="btn-group">
+        <a href="javascript:;" class="icons icon-delete"></a>
+      </div>
+      <div class="txts">
+        <a href="javascript:;" class="color-black">Query Name Lorem Ipsum</a>
+        <span class="color-gray">Internal Collections Query</span>
+        <span class="color-gray">Username: George Ramirez</span>
+      </div>
+    </div>
+    <!--end .query-view-->
+    <div class="query-view clearfix">
+      <div class="btn-group">
+        <a href="javascript:;" class="icons icon-delete"></a>
+      </div>
+      <div class="txts">
+        <a href="javascript:;" class="color-black">Query Name Lorem Ipsum</a>
+        <span class="color-gray">Internal Collection Expansion Query</span>
+        <span class="color-gray">Username: Tim Elliot</span>
+      </div>
+    </div>
+    <!--end .query-view-->
+  </div>
+  <!--end .query-list-->
+
+  <div class="query-list"
+    *ngIf="tabIndex === 2;">
+    <div class="query-view clearfix">
+      <div class="btn-group">
+        <a href="javascript:;" class="icons icon-refresh"></a>
+        <a href="javascript:;" class="icons icon-edit"></a>
+        <div class="question-wrapper tips-wrap">
+					<a href="javascript:;" class="icons icon-tips"></a>
+					<div class="gray-panel">
+					  <i class="icon-arrow"></i>
+					  <p class="txt">
+						  Error info lorem ipsum dolor sit amet, 
+						  consectetur adipisicing elit, sed do 
+						  eiusmod tempor incididunt ut labore et 
+						  dolore magna aliqua.
+					  </p>
+				  </div>
+				</div>
+        <a href="javascript:;" class="icons icon-delete"></a>
+      </div>
+      <div class="txts">
+        <a href="javascript:;" class="color-black">Query Name Lorem Ipsum</a>
+        <span class="color-gray">General Impact Query</span>
+        <span class="color-gray">Username: Tony Snow</span>
+      </div>
+    </div>
+    <!--end .query-view-->
+    <div class="query-view clearfix">
+      <div class="btn-group">
+        <a href="javascript:;" class="icons icon-refresh"></a>
+        <a href="javascript:;" class="icons icon-edit"></a>
+        <div class="question-wrapper tips-wrap">
+					<a href="javascript:;" class="icons icon-tips"></a>
+					<div class="gray-panel">
+					  <i class="icon-arrow"></i>
+					  <p class="txt">
+						  Error info lorem ipsum dolor sit amet, 
+						  consectetur adipisicing elit, sed do 
+						  eiusmod tempor incididunt ut labore et 
+						  dolore magna aliqua.
+					  </p>
+				  </div>
+				</div>
+        <a href="javascript:;" class="icons icon-delete"></a>
+      </div>
+      <div class="txts">
+        <a href="javascript:;" class="color-black">Query Name Lorem Ipsum</a>
+        <span class="color-gray">Re-Org Query</span>
+        <span class="color-gray">Username: Michelle Smith</span>
+      </div>
+    </div>
+    <!--end .query-view-->
+    <div class="query-view clearfix">
+      <div class="btn-group">
+        <a href="javascript:;" class="icons icon-refresh"></a>
+        <a href="javascript:;" class="icons icon-edit"></a>
+        <div class="question-wrapper tips-wrap">
+					<a href="javascript:;" class="icons icon-tips"></a>
+					<div class="gray-panel">
+					  <i class="icon-arrow"></i>
+					  <p class="txt">
+						  Error info lorem ipsum dolor sit amet, 
+						  consectetur adipisicing elit, sed do 
+						  eiusmod tempor incididunt ut labore et 
+						  dolore magna aliqua.
+					  </p>
+				  </div>
+				</div>
+        <a href="javascript:;" class="icons icon-delete"></a>
+      </div>
+      <div class="txts">
+        <a href="javascript:;" class="color-black">Query Name Lorem Ipsum</a>
+        <span class="color-gray">Flags & Limits Query</span>
+        <span class="color-gray">Username: Adam Brown</span>
+      </div>
+    </div>
+    <!--end .query-view-->
+    <div class="query-view clearfix">
+     <div class="btn-group">
+       <a href="javascript:;" class="icons icon-refresh"></a>
+       <a href="javascript:;" class="icons icon-edit"></a>
+       <div class="question-wrapper tips-wrap">
+					<a href="javascript:;" class="icons icon-tips"></a>
+					<div class="gray-panel">
+					  <i class="icon-arrow"></i>
+					  <p class="txt">
+						  Error info lorem ipsum dolor sit amet, 
+						  consectetur adipisicing elit, sed do 
+						  eiusmod tempor incididunt ut labore et 
+						  dolore magna aliqua.
+					  </p>
+				  </div>
+				</div>
+       <a href="javascript:;" class="icons icon-delete"></a>
+     </div>
+      <div class="txts">
+        <a href="javascript:;" class="color-black">Query Name Lorem Ipsum</a>
+        <span class="color-gray">Internal Collections Query</span>
+        <span class="color-gray">Username: George Ramirez</span>
+      </div>
+    </div>
+    <!--end .query-view-->
+    <div class="query-view clearfix">
+      <div class="btn-group">
+        <a href="javascript:;" class="icons icon-refresh"></a>
+        <a href="javascript:;" class="icons icon-edit"></a>
+        <div class="question-wrapper tips-wrap">
+					<a href="javascript:;" class="icons icon-tips"></a>
+					<div class="gray-panel">
+					  <i class="icon-arrow"></i>
+					  <p class="txt">
+						  Error info lorem ipsum dolor sit amet, 
+						  consectetur adipisicing elit, sed do 
+						  eiusmod tempor incididunt ut labore et 
+						  dolore magna aliqua.
+					  </p>
+				  </div>
+				</div>
+        <a href="javascript:;" class="icons icon-delete"></a>
+      </div>
+      <div class="txts">
+        <a href="javascript:;" class="color-black">Query Name Lorem Ipsum</a>
+        <span class="color-gray">Internal Collection Expansion Query</span>
+        <span class="color-gray">Username: Tim Elliot</span>
+      </div>
+    </div>
+    <!--end .query-view-->
+  </div>
+  <!--end .query-list-->
+</aside>
+<!--end .fixed-right-->

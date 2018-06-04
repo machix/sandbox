@@ -1,0 +1,102 @@
+<aside class="left-area" id="tipStep4">
+	<div class="blue-bar">
+		Reporting Analysis
+	</div>
+	<!--end .blue-bar-->
+	<nav class="nav-list">
+		<ul>
+			<li>
+				<a href="javascript:;" class="item"
+				  [ngClass]="{'current': this.dataList['subTabActive'] === 'General Impact'}"
+				  (click)="clickNav('General Impact')">
+					<i class="icons icon-impact"></i>
+					<span class="txt">General Impact</span>
+					<i class="icons icon-trans"></i>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;" class="item"
+				  [ngClass]="{'current': this.dataList['subTabActive'] === 'Re-Org'}"
+				  (click)="clickNav('Re-Org')">
+					<i class="icons icon-re"></i>
+					<span class="txt">Re-Org</span>
+					<i class="icons icon-trans"></i>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;" class="item"
+				  [ngClass]="{'current': this.dataList['subTabActive'] === 'Flags and Limits'}"
+				  (click)="clickNav('Flags and Limits')">
+					<i class="icons icon-flags"></i>
+					<span class="txt">Flags & Limits</span>
+					<i class="icons icon-trans"></i>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<!--end .nav-list-->
+	<div class="blue-bar">
+		hierarchy AnalYsis
+	</div>
+	<!--end .blue-bar-->
+	<nav class="nav-list">
+		<ul>
+			<li>
+				<a href="javascript:;" class="item"
+				  [ngClass]="{'current': this.dataList['subTabActive'] === 'Internal Collections'}"
+				  (click)="clickNav('Internal Collections')">
+					<i class="icons icon-collections"></i>
+					<span class="txt">Internal Collections</span>
+					<i class="icons icon-trans"></i>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;" class="item"
+				  [ngClass]="{'current': this.dataList['subTabActive'] === 'Internal Collections Expansion'}"
+				  (click)="clickNav('Internal Collections Expansion')">
+					<i class="icons icon-expansion"></i>
+					<span class="txt">Internal Collection Expansion</span>
+					<i class="icons icon-trans"></i>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;" class="item"
+				  [ngClass]="{'current': this.dataList['subTabActive'] === 'Composite Nodes'}"
+				  (click)="clickNav('Composite Nodes')">
+					<i class="icons icon-composite"></i>
+					<span class="txt">Composite Nodes</span>
+					<i class="icons icon-trans"></i>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;" class="item"
+				  [ngClass]="{'current': this.dataList['subTabActive'] === 'Report Trees'}"
+				  (click)="clickNav('Report Trees')">
+					<i class="icons icon-report"></i>
+					<span class="txt">Report Trees</span>
+					<i class="icons icon-trans"></i>
+				</a>
+			</li> 
+			<li>
+				<a href="javascript:;" class="item"
+				  [ngClass]="{'current': this.dataList['subTabActive'] === 'Ancestral'}"
+				  (click)="clickNav('Ancestral')">
+					<i class="icons icon-ancestral"></i>
+					<span class="txt">Ancestral</span>
+					<i class="icons icon-trans"></i>
+				</a>
+			</li> 
+			<li>
+				<a href="javascript:;" class="item"
+				  [ngClass]="{'current': this.dataList['subTabActive'] === 'MaRS Schedules'}"
+				  (click)="clickNav('MaRS Schedules')">
+					<i class="icons icon-mars"></i>
+					<span class="txt">MaRS Schedules</span>
+					<i class="icons icon-trans"></i>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<!--end .nav-list-->
+</aside>
+<!--end .left-area-->

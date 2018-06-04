@@ -1,0 +1,406 @@
+<div class="title-bar" (click)="clickBody();">
+	<h4 class="titles">{{subTabActive}} Query</h4>
+	<div class="right-btns">
+		<a href="javascript:;" class="btn btn-green-border" id="tipStep5"
+		  (click)="clickLoadSavedQuery()">
+		  Load Saved Query
+		</a>
+		<a href="javascript:;" class="btn btn-green-border"
+		  [ngClass]="{'disabled': !saveQueryEnabled}"
+		  (click)="clickSaveQuery()">
+		  Save Query
+		</a>
+	</div>
+</div>
+<!--end .title-bar-->
+<div class="border-boxs" id="tipStep6" (click)="clickBody();">
+	<div class="box-list clearfix"
+	  [ngClass]="{'w100': !(tabShowSetting['date'] && tabShowSetting['scriptList'])}">
+		<ul>
+			<li>
+				<div class="inner">
+					<span class="label-txt">Query Name</span>
+					<div class="question-wrapper">
+					  <a href="javascript:;" class="btn-question">
+						  <i class="icons icon-qusetion"></i>
+					  </a>
+					  <div class="gray-panel">
+						  <i class="icon-arrow"></i>
+						  <p class="txt">
+							  Tooltip info lorem ipsum dolor sit amet,
+							  consectetur adipisicing elit, sed do 
+							  eiusmod tempor incididunt ut labore et 
+							  dolore magna aliqua.
+						  </p>
+					  </div>
+				  </div>
+				  <!--end .question-wrapper-->
+					<div class="input-area">
+						<div class="inputs ">
+							<input type="text" placeholder="Enter" />
+						</div>
+					</div>
+				</div>
+			</li>
+			<li *ngIf="tabShowSetting['date']">
+				<div class="inner">
+					<span class="label-txt">Date</span>
+					<div class="question-wrapper">
+						<a href="javascript:;" class="btn-question">
+							<i class="icons icon-qusetion"></i>
+						</a>
+						<div class="gray-panel">
+						  <i class="icon-arrow"></i>
+						  <p class="txt">
+							  Tooltip info lorem ipsum dolor sit amet,
+							  consectetur adipisicing elit, sed do 
+							  eiusmod tempor incididunt ut labore et 
+							  dolore magna aliqua.
+						  </p>
+					  </div>
+					</div>
+					<div class="input-area">
+						<div class="inputs date-inputs">
+							<input type="text" 
+							  [(ngModel)]="model" ngbDatepicker #date="ngbDatepicker"/>
+							<a href="javascript:;" class="btn-datepicker" (click)="date.toggle()">
+							  <i class="icons icon-date"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li *ngIf="tabShowSetting['scriptList']">
+				<div class="inner">
+					<div class="checkbox-wrap mt-16">
+					  <input type="checkbox" id="checkbox" [(ngModel)]="scriptListChecked">
+					  <label for="checkbox"></label>
+					</div>
+					<span class="label-txt">Script List</span>
+					<div class="question-wrapper">
+						<a href="javascript:;" class="btn-question">
+							<i class="icons icon-qusetion"></i>
+						</a>
+						<div class="gray-panel">
+						  <i class="icon-arrow"></i>
+						  <p class="txt">
+							  Tooltip info lorem ipsum dolor sit amet,
+							  consectetur adipisicing elit, sed do 
+							  eiusmod tempor incididunt ut labore et 
+							  dolore magna aliqua.
+						  </p>
+					  </div>
+					</div>
+					<!--end .question-wrapper-->
+					<div class="input-area disabled"
+					  [ngClass]="{'disabled': !scriptListChecked}">
+						<div ngbDropdown class="d-inline-block">
+				      <button class="btn btn-outline-primary" ngbDropdownToggle
+				        [ngClass]="{'default-label': scriptListDropdownValue === 'Select'}">
+				        {{scriptListDropdownValue}}
+				      </button>
+				      <div ngbDropdownMenu malihu-scrollbar>
+				        <button class="dropdown-item"
+				         [ngClass]="{'active': scriptListDropdownValue === 'Select'}"
+				         (click)="scriptListDropdownValue = 'Select'">Select</button>
+				        <button class="dropdown-item" 
+				         [ngClass]="{'active': scriptListDropdownValue === 'Listname 1'}"
+				         (click)="scriptListDropdownValue = 'Listname 1'">Listname 1</button>
+				        <button class="dropdown-item" 
+				         [ngClass]="{'active': scriptListDropdownValue === 'Listname 2'}"
+				         (click)="scriptListDropdownValue = 'Listname 2'">Listname 2</button>
+				        <button class="dropdown-item"
+				         [ngClass]="{'active': scriptListDropdownValue === 'Listname 3'}"
+				         (click)="scriptListDropdownValue = 'Listname 3'">Listname 3</button>
+				        <button class="dropdown-item"
+				         [ngClass]="{'active': scriptListDropdownValue === 'Listname 4'}"
+				         (click)="scriptListDropdownValue = 'Listname 4'">Listname 4</button>
+				        <button class="dropdown-item"
+				         [ngClass]="{'active': scriptListDropdownValue === 'Listname 5'}"
+				         (click)="scriptListDropdownValue = 'Listname 5'">Listname 5</button>
+				      </div>
+				    </div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="section statement-section">
+		<div class="title-area">
+			<span class="label-txt">Statements</span>
+			<div class="question-wrapper">
+			  <a href="javascript:;" class="btn-question">
+				  <i class="icons icon-qusetion"></i>
+			  </a>
+			  <div class="gray-panel">
+				  <i class="icon-arrow"></i>
+				  <p class="txt">
+					  Tooltip info lorem ipsum dolor sit amet,
+					  consectetur adipisicing elit, sed do 
+					  eiusmod tempor incididunt ut labore et 
+					  dolore magna aliqua.
+				  </p>
+			  </div>
+		  </div>
+		  <!--end .question-wrapper-->
+		</div>
+		<!--end .title-area-->
+		<div class="choose-panel tab-content"
+		  [ngClass]="{'no-some': statementsList.length <= 5}">
+		  	<div class="tabs">
+			<div class="tabs-btns"
+			  *ngIf="tabShowSetting['maxStatementsNumber'] > 1">
+			  <a href="javascript:;" class="btns btn-prev"
+			    (click)="clickPrev()"
+			    [ngClass]="{'disabled': activeIndex === 0}">
+			    <i class="icon-btn icon-prev"></i>
+			  </a>
+				<a href="javascript:;" class="btns btn-next"
+				  (click)="clickNext()"
+				  [ngClass]="{'disabled': activeIndex === (totalLength - 1)}">
+				  <i class="icon-btn icon-next"></i>
+				</a>
+				<span class="shadows"></span>
+				<div class="tabs" malihu-scrollbar [scrollbarOptions]="scrollbarOptions">
+				  <div class="tabs-links clearfix" [ngStyle]="{'width': totalLength === 1 ? 138 : 180 * totalLength + 'px'}">
+				    <div class="btn-check"
+				      *ngFor="let item of statementsList;let i = index"
+				      [ngClass]="{'current': i === activeIndex}"
+				      (click)="clickStatementTab(i)">
+				      <span class="txt">{{item.name}}</span>
+				      <span class="line" 
+				        *ngIf="statementsList.length > 1">
+				      </span>
+				      <a href="javascript:;" class="btn-del"
+				        (click)="clickDeleteStatement(i)"
+				        *ngIf="statementsList.length > 1">
+				        <i class="icons icon-del"></i>
+				      </a>
+				    </div>
+				  </div>
+				</div>
+				<!--end .tabs-->
+				<div class="btn-check darkgray fr" id="tipStep7"
+				  (click)="addStatement()"
+				  *ngIf="statementsList.length < tabShowSetting['maxStatementsNumber']">
+				  <a href="javascript:;" class="btn-add">
+				    <i class="icons icon-add"></i>
+				  </a>
+				  <span class="txt">Add</span>
+			    </div>
+			  </div>
+			  <!--end .tabs-btns -->
+			</div>
+			<div 
+			  *ngFor="let item of statementsList;let i = index">
+			  <app-sd-statement-item
+			    *ngIf="i === activeIndex"
+			    [tabShowSetting]="tabShowSetting"
+			    [termsList]="item['termsList']"
+			    [statementsIndex]='i'
+			    (clickDeleteTerm)="clickDeleteTerm($event)">
+			  </app-sd-statement-item>
+			</div>
+		</div>
+		<!--end .check-panel-->
+	</div>
+	<!--end .section statement-section-->
+	<div class="section additional-section clearfix"
+	  *ngIf="tabShowSetting['additionalDropdownShow']">
+	  <div class="col-area w224">
+		  <div class="txt">
+			  Additional Breakdown
+			  <div class="question-wrapper">
+			    <a href="javascript:;" class="btn-question">
+				    <i class="icons icon-qusetion"></i>
+			    </a>
+			    <div class="gray-panel">
+				    <i class="icon-arrow"></i>
+				    <p class="txt">
+					    Tooltip info lorem ipsum dolor sit amet,
+					    consectetur adipisicing elit, sed do 
+					    eiusmod tempor incididunt ut labore et 
+					    dolore magna aliqua.
+				    </p>
+			    </div>
+		    </div>
+		    <!--end .question-wrapper-->
+		  </div>
+	  </div>
+	  <!--end .col-area-->
+	  <div class="col-area">
+		  <div class="checkbox-wrap d-inline-block mr10 mt-16">
+        <input type="checkbox" id="additionalBreakDownCheckbox" 
+          [(ngModel)]="additionalBreakDownCheck">
+        <label for="additionalBreakDownCheckbox"></label>
+      </div>
+      <!--end .checkbox-wrap-->
+      <div *ngIf="additionalBreakDownCheck" class="d-inline-block">
+        <div *ngFor="let breakDownItem of additionalBreakDownList;let i = index" class="break-by-line">
+          <span class="line d-inline-block mr10"></span>
+          <span class="txt d-inline-block mr10">Break by</span>
+          <div ngbDropdown class="d-inline-block w160 mr10">
+            <button class="btn btn-outline-primary" ngbDropdownToggle
+              [ngClass]="{'default-label': breakDownItem['dropdownValue'] === 'Select'}">
+              {{breakDownItem['dropdownValue']}}
+            </button>
+            <div ngbDropdownMenu malihu-scrollbar>
+              <button class="dropdown-item"
+                *ngFor="let item of tabShowSetting['inputTypeDropdown'].optionList"
+                [ngClass]="{'active': breakDownItem['dropdownValue'] === item.optionName}"
+                (click)="breakDownItem['dropdownValue'] = item.optionName;">
+                {{item.optionName}}
+              </button>
+            </div>
+          </div>
+          <a href="javascript:;" class="btn-del d-inline-block mr10"
+            *ngIf="(additionalBreakDownList.length > 1)"
+            (click)="deleteBreakDownItem(i)">
+    	      <i class="icons icon-del"></i>
+          </a>
+          <a href="javascript:;" class="btn-add d-inline-block"
+            (click)="addBreakDownItem()">
+    	      <i class="icons icon-add"></i>
+          </a>
+        </div>
+      </div>
+	  </div>
+	  <!--end .col-area-->
+	</div>
+	<!--end .additional-section-->
+	<div class="section output-section clearfix verlign-top"
+	  *ngIf="tabShowSetting['outputGroupShow']">
+		<div class="col-area w224">
+			<div class="txt">
+				Output
+				<div class="question-wrapper">
+				  <a href="javascript:;" class="btn-question">
+					  <i class="icons icon-qusetion"></i>
+				  </a>
+				  <div class="gray-panel">
+					  <i class="icon-arrow"></i>
+					  <p class="txt">
+						  Tooltip info lorem ipsum dolor sit amet,
+						  consectetur adipisicing elit, sed do 
+						  eiusmod tempor incididunt ut labore et 
+						  dolore magna aliqua.
+					  </p>
+				  </div>
+			  </div>
+			  <!--end .question-wrapper-->
+			</div>
+		</div>
+		<!--end .col-area-->
+		<div class="col-area ">
+			<div class="checkbox-wrap d-block ">
+        <input type="checkbox" id="checkbox3">
+        <label for="checkbox3">Impacted MaRS Scripts</label>
+      </div>
+      <!--end .checkbox-wrap-->
+          
+	    <div class="checkbox-wrap d-block">
+        <input type="checkbox" id="checkbox4">
+        <label for="checkbox4">Impacted ClusterNet Reports</label>
+      </div>
+      <!--end .checkbox-wrap-->
+      <div class="checkbox-wrap d-block">
+        <input type="checkbox" id="checkbox5">
+        <label for="checkbox5">Impacted Result Storage EUCs</label>
+      </div>
+      <!--end .checkbox-wrap-->
+		</div>
+		<!--end .col-area-->
+	</div>
+	<!--end .additional-section-->
+	
+	<div class="section output-section clearfix verlign-top"
+	  *ngIf="tabShowSetting['queryScopeGroupShow']">
+		<div class="col-area w224">
+			<div class="txt">
+				Query Scope
+				<div class="question-wrapper">
+				  <a href="javascript:;" class="btn-question">
+					  <i class="icons icon-qusetion"></i>
+				  </a>
+				  <div class="gray-panel">
+					  <i class="icon-arrow"></i>
+					  <p class="txt">
+						  Tooltip info lorem ipsum dolor sit amet,
+						  consectetur adipisicing elit, sed do 
+						  eiusmod tempor incididunt ut labore et 
+						  dolore magna aliqua.
+					  </p>
+				  </div>
+			  </div>
+			  <!--end .question-wrapper-->
+			</div>
+		</div>
+		<!--end .col-area-->
+		<div class="col-area ">
+		  <div class="checkbox-wrap d-block ">
+		    <input type="checkbox" id="checkbox6">
+		    <label for="checkbox6">Tactical Flags</label>
+		  </div>
+		  <!--end .checkbox-wrap-->
+          
+		  <div class="checkbox-wrap d-block">
+		    <input type="checkbox" id="checkbox7">
+		    <label for="checkbox7">Non-Tactical Flags</label>
+		  </div>
+		  <!--end .checkbox-wrap-->
+		  
+		  <div class="checkbox-wrap d-block">
+		    <input type="checkbox" id="checkbox8">
+		    <label for="checkbox8">Tactical Limits</label>
+		  </div>
+		  <!--end .checkbox-wrap-->
+		 
+		  <div class="checkbox-wrap d-block">
+		    <input type="checkbox" id="checkbox9">
+		    <label for="checkbox9">Non-Tactical Limits</label>
+		  </div>
+		  <!--end .checkbox-wrap-->
+	  </div>
+	  <!--end .col-area-->
+	</div>
+	<!--end .additional-section-->
+	
+	<div class="section showsql-section clearfix nb">
+		<div class="col-area w224">
+			<div class="txt">
+				Show SQL
+				<div class="question-wrapper">
+				  <a href="javascript:;" class="btn-question">
+					  <i class="icons icon-qusetion"></i>
+				  </a>
+				  <div class="gray-panel">
+					  <i class="icon-arrow"></i>
+					  <p class="txt">
+						  Tooltip info lorem ipsum dolor sit amet,
+						  consectetur adipisicing elit, sed do 
+						  eiusmod tempor incididunt ut labore et 
+						  dolore magna aliqua.
+					  </p>
+				  </div>
+			  </div>
+			  <!--end .question-wrapper-->
+			</div>
+		</div>
+		<!--end .col-area-->
+		<div class="col-area ">
+		  <div class="checkbox-wrap mt-16">
+		    <input type="checkbox" id="checkbox10">
+		    <label for="checkbox10"></label>
+		  </div>
+		  <!--end .checkbox-wrap-->
+		</div>
+		<!--end .col-area-->
+	</div>
+	<!--end .additional-section-->
+</div>
+<!--end .border-boxs-->
+
+<app-sd-modal-windows
+  (confirmDeleteStatement)="confirmDeleteStatement($event)"
+  (confirmDeleteTerm)="confirmDeleteTerm($event)">
+</app-sd-modal-windows>

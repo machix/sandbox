@@ -1,0 +1,66 @@
+<body class="bd-landing">
+	<app-sd-header></app-sd-header>
+	
+  <div class="contents">
+  	<div class="sub-banner">
+  		<h4 class="titles">Query Dashboard</h4>
+  		<a href="javascript:;" class="green-links"
+  		  (click)="showRightPanel['isShown'] = true;">
+  			<i class="icons icon-show"></i>
+  			<span class="txt">Show This Session's Query Queue</span>
+  		</a>
+  	</div>
+  	<!--end .sub-banner-->
+  	<div class="white-panel">
+  		<div class="top-bar">
+  			<div class="tab-nav clearfix">
+  				<ul>
+  					<li><a [routerLink]="['/dashboard-page']" class="items">Query Builder</a></li>
+  					<li><a [routerLink]="['/result-page']" class="items current">Results</a></li>
+  				</ul>
+  			</div>
+  		</div>
+  		<!--end .top-bar-->
+  		<div class="tab-content">
+        <div class="tabs-btns">
+          <a href="javascript:;" class="btns btn-prev"
+            (click)="clickPrev()"
+            [ngClass]="{'disabled': activeIndex === 0}">
+            <i class="icons icon-prev"></i>
+          </a>
+          <a href="javascript:;" class="btns btn-next"
+            (click)="clickNext()"
+            [ngClass]="{'disabled': activeIndex === (totalLength - 1)}">
+            <i class="icons icon-next"></i>
+          </a>
+          <span class="shadows rights"></span>
+          <div class="tabs" malihu-scrollbar [scrollbarOptions]="scrollbarOptions">
+            <div class="tabs-links clearfix" [ngStyle]="{'width': 176 * totalLength + 'px'}">
+              <a href="javascript:;" class="tabs-a"
+                *ngFor="let item of dataList['queryResultList'];let i = index"
+                [ngClass]="{'active': i === activeIndex}"
+                (click)="clickQueryResultTab(i)">
+                {{item.name}}
+              </a>
+            </div>
+          </div>
+          <!--end .tabs-->
+        </div>
+        <!--end .tabs-btns -->
+
+        <div 
+          *ngFor="let item of dataList['queryResultList'];let i = index">
+          <app-sd-result-table 
+            *ngIf="i === activeIndex">
+          </app-sd-result-table>
+        </div>
+  		</div>
+  		<!--end .tab-content-->
+  	</div>
+  	<!--end .white-panel-->
+  </div>
+
+  <app-sd-right-sidebar [showRightPanel]="showRightPanel"></app-sd-right-sidebar>
+  
+  <app-sd-footer></app-sd-footer>
+</body>

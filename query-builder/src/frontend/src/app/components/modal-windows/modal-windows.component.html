@@ -1,0 +1,284 @@
+<ng-template #loadSavedQueryModal let-c="close" let-d="dismiss">
+  <div class="node-dialog">
+    <div class="node-boxs">
+      <div class="node-header">
+        <span class="title">Load Saved Query</span>
+        <a href="javascript:;" class="icons icon-close white-close" (click)="d('Cross click')"></a>
+      </div>
+      <!--end .node-header-->
+      <div class="node-main">
+        <div class="tips">Select saved query from General Impact Query below:</div>
+        <div class="radios-group clearfix">
+          <div class="radio-wraper">
+            <input type="radio" name="radio" id="modal-radio1" checked="checked">
+            <label for="modal-radio1">My Queries</label>
+          </div>
+          <div class="radio-wraper">
+            <input type="radio" name="radio" id="modal-radio2">
+            <label for="modal-radio2">All Queries</label>
+          </div>
+        </div>
+        <!--end .radios-group-->
+        <div class="query-list" malihu-scrollbar>
+          <div class="query-view clearfix">
+            <span class="icons icons-query"></span>
+            <div class="radio-wraper">
+              <input type="radio" name="q" id="modal-radio3" checked="checked">
+              <label for="modal-radio3"></label>
+            </div>
+            <div class="txts">
+              <h2 class="color-black">Query Template 1</h2>
+              <p class="color-gray">General Impact Query</p>
+              <p class="color-gray">Username: Tony Snow</p>
+            </div>
+          </div>
+          <!--end .query-view-->
+          <div class="query-view clearfix">
+            <span class="icons icons-query"></span>
+            <div class="radio-wraper">
+              <input type="radio" name="q"  id="modal-radio4">
+              <label for="modal-radio4"></label>
+            </div>
+            <div class="txts">
+              <h2 class="color-black">Query Template 2</h2>
+              <p class="color-gray">General Impact Query</p>
+              <p class="color-gray">Username: Michelle Smith</p>
+            </div>
+          </div>
+          <!--end .query-view-->
+          <div class="query-view clearfix">
+            <span class="icons icons-query"></span>
+            <div class="radio-wraper">
+              <input type="radio" name="q"  id="modal-radio5">
+              <label for="modal-radio5"></label>
+            </div>
+            <div class="txts">
+              <h2 class="color-black">Query Template 3</h2>
+              <p class="color-gray">General Impact Query</p>
+              <p class="color-gray">Username: Adam Brown</p>
+            </div>
+          </div>
+          <!--end .query-view-->
+          <div class="query-view clearfix">
+            <span class="icons icons-query"></span>
+            <div class="radio-wraper">
+              <input type="radio" name="q"  id="modal-radio6">
+              <label for="modal-radio6"></label>
+            </div>
+            <div class="txts">
+              <h2 class="color-black">Query Template 4</h2>
+              <p class="color-gray">General Impact Query</p>
+              <p class="color-gray">Username: George Ramirez</p>
+            </div>
+          </div>
+          <!--end .query-view-->
+          <div class="query-view clearfix">
+            <span class="icons icons-query"></span>
+            <div class="radio-wraper">
+              <input type="radio" name="q"  id="modal-radio7">
+              <label for="modal-radio7"></label>
+            </div>
+            <div class="txts">
+              <h2 class="color-black">Query Template 5</h2>
+              <p class="color-gray">General Impact Query</p>
+              <p class="color-gray">Username: Tim Elliot</p>
+            </div>
+          </div>
+          <!--end .query-view-->
+          <div class="query-view clearfix">
+            <span class="icons icons-query"></span>
+            <div class="radio-wraper">
+              <input type="radio" name="q" id="modal-radio8">
+              <label for="modal-radio8"></label>
+            </div>
+            <div class="txts">
+              <h2 class="color-black">Query Template 5</h2>
+              <p class="color-gray">General Impact Query</p>
+              <p class="color-gray">Username: Tim Elliot</p>
+            </div>
+          </div>
+          <!--end .query-view-->
+        </div>
+        <!--end .query-list-->
+        <div class="bottom-btn clearfix">
+        	<a href="javascript:;" class="btns btns-save" (click)="d('Cross click')">Load</a>
+          <a href="javascript:;" class="btns btns-cancel" (click)="d('Cross click')">Cancel</a>
+        </div>
+      </div>
+      <!--end .node-main-->
+    </div>
+    <!--end .modal-boxs-->
+  </div>
+  <!--end .node-dialog-->
+</ng-template>
+
+<ng-template #saveQueryModal let-c="close" let-d="dismiss">
+  <div class="node-dialog">
+    <div class="node-boxs">
+      <div class="node-header">
+        <span class="title">Save Query</span>
+        <a href="javascript:;" class="icons icon-close white-close" (click)="d('Cross click')"></a>
+      </div>
+      <div class="node-main">
+        <form action="">
+          <div class="inputs-group clearfix">
+            <label for="" class="input-label">Category</label>
+            <div class="input-control">
+              <i class="icons icon-impact"></i>
+              <span class="txt">Impact Query</span>
+            </div>
+          </div>
+          <!--end .inputs-group-->
+          <div class="inputs-group clearfix">
+            <label for="" class="input-label">Query Name</label>
+            <div class="input-control">
+              <div class="inputs">
+                <input type="text" value="Andrew Query 123"/>
+              </div>
+            </div>
+          </div>
+          <!--end .inputs-group-->
+          <div class="inputs-group clearfix">
+            <label for="" class="input-label">Override
+            	<div class="question-wrapper">
+							  <a href="javascript:;" class="btn-question">
+								  <i class="icons icon-qusetion"></i>
+							  </a>
+							  <div class="gray-panel">
+								  <i class="icon-arrow"></i>
+								  <p class="txt">
+									  Tooltip info lorem ipsum dolor sit amet,
+									  consectetur adipisicing elit, sed do
+									  eiusmod tempor incididunt ut labore et
+									  dolore magna aliqua.
+								  </p>
+							  </div>
+						  </div>
+						  <!--end .question-wrapper-->
+            </label>
+            <div class="input-control">
+              <div class="checkbox-wrap">
+                <input type="checkbox" id="modal-checkbox" checked="checked">
+                <label for="modal-checkbox"></label>
+              </div>
+            </div>
+          </div>
+          <!--end .inputs-group-->
+          <div class="bottom-btn clearfix">
+          	<a href="javascript:;" class="btns btns-save" (click)="confirmSaveQuery()">Save</a>
+          	<a href="javascript:;" class="btns btns-cancel" (click)="d('Cross click')">Cancel</a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!--end .modal-boxs-->
+  </div>
+  <!--end .node-dialog-->
+</ng-template>
+
+<ng-template #saveQueryConfirmedModal let-c="close" let-d="dismiss">
+  <div class="node-dialog">
+    <div class="modal-content">
+      <div class="modal-header clearfix">
+        <a href="javascript:;" class="icons icon-close" (click)="d('Cross click')"></a>
+      </div>
+      <div class="pic">
+        <i class="icons icon-save"></i>
+      </div>
+      <div class="txt">
+        Your query <strong>Andrew Query 123</strong> has been saved.
+      </div>
+      <div class="bottom-btn">
+        <a href="javascript:;" class="btns btn-submit" (click)="d('Cross click')">OK</a>
+      </div>
+    </div>
+    <!--end .modal-content -->
+  </div>
+  <!--end .node-dialog-->
+</ng-template>
+
+<ng-template #deleteStatementModal let-c="close" let-d="dismiss">
+  <div class="node-dialog">
+    <div class="modal-content">
+      <div class="modal-header clearfix">
+        <a href="javascript:;" class="icons icon-close" (click)="d('Cross click')"></a>
+      </div>
+      <div class="pic">
+        <i class="icons icon-del-red"></i>
+      </div>
+      <div class="txt">
+        Are you sure to delete this statement and all its terms?
+      </div>
+      <div class="bottom-btn">
+        <a href="javascript:;" class="btns btn-red btn-darkgreen" (click)="d('Cross click')">Cancel</a>
+        <a href="javascript:;" class="btns btn-red" (click)="clickConfirmDeleteStatement()">Delete</a>
+      </div>
+    </div>
+    <!--end .modal-content -->
+  </div>
+  <!--end .node-dialog-->
+</ng-template>
+
+<ng-template #deleteStatementConfirmedModal let-c="close" let-d="dismiss">
+  <div class="node-dialog">
+    <div class="modal-content">
+      <div class="modal-header clearfix">
+        <a href="javascript:;" class="icons icon-close" (click)="d('Cross click')"></a>
+      </div>
+      <div class="pic">
+      	<i class="icons icon-del"></i>
+      </div>
+      <div class="txt">
+        Statement has been deleted.
+      </div>
+      <div class="bottom-btn">
+        <a href="javascript:;" class="btns btn-submit" (click)="d('Cross click')">OK</a>
+      </div>
+    </div>
+    <!--end .modal-content -->
+  </div>
+  <!--end .node-dialog-->
+</ng-template>
+
+<ng-template #deleteTermModal let-c="close" let-d="dismiss">
+  <div class="node-dialog">
+    <div class="modal-content">
+      <div class="modal-header clearfix">
+        <a href="javascript:;" class="icons icon-close" (click)="d('Cross click')"></a>
+      </div>
+      <div class="pic">
+        <i class="icons icon-del-red"></i>
+      </div>
+      <div class="txt">
+        Are you sure to delete this term?
+      </div>
+      <div class="bottom-btn">
+        <a href="javascript:;" class="btns btn-red btn-darkgreen" (click)="d('Cross click')">Cancel</a>
+        <a href="javascript:;" class="btns btn-red" (click)="clickConfirmDeleteTerm()">Delete</a>
+      </div>
+    </div>
+    <!--end .modal-content -->
+  </div>
+  <!--end .node-dialog-->
+</ng-template>
+
+<ng-template #deleteTermConfirmedModal let-c="close" let-d="dismiss">
+  <div class="node-dialog">
+    <div class="modal-content">
+      <div class="modal-header clearfix">
+        <a href="javascript:;" class="icons icon-close" (click)="d('Cross click')"></a>
+      </div>
+      <div class="pic">
+        <i class="icons icon-del"></i>
+      </div>
+      <div class="txt">
+        Term has been deleted.
+      </div>
+      <div class="bottom-btn">
+        <a href="javascript:;" class="btns btn-submit" (click)="d('Cross click')">OK</a>
+      </div>
+    </div>
+    <!--end .modal-content -->
+  </div>
+  <!--end .node-dialog-->
+</ng-template>
