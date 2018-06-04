@@ -9,26 +9,26 @@
 	  </a>
 	  <nav class="nav-tab">
 		  <ul>
-			  <li id="tipStep1">
-				  <a [routerLink]="['/dashboard-page']" class="active">
+			  <li id="tipStep1" routerLinkActive="active">
+				  <a [routerLink]="['/dashboard-page']">
 					  <i class="icons icon-dashboard"></i>
 					  <span class="txt">Query Dashboard</span>
 				  </a>
 			  </li>
-			  <li id="tipStep2">
-				  <a href="javascript:;">
+			  <li id="tipStep2" routerLinkActive="active">
+				  <a [routerLink]="['/list-manager']">
 					  <i class="icons icon-manager"></i>
 					  <span class="txt">List Manager</span>
 				  </a>
 			  </li>
-			  <li id="tipStep3">
-				  <a href="javascript:;">
+			  <li id="tipStep3" routerLinkActive="active">
+				  <a [routerLink]="['/saved-queries']">
 					  <i class="icons icon-saved"></i>
 					  <span class="txt">Saved Queries</span>
 				  </a>
 			  </li>
-			  <li>
-				  <a href="javascript:;">
+			  <li routerLinkActive="active">
+				  <a [routerLink]="['/about']">
 					  <i class="icons icon-about"></i>
 					  <span class="txt">About</span>
 				  </a>

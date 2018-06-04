@@ -17,6 +17,9 @@ import { ClipboardModule } from 'ngx-clipboard';
 // pages
 import { DashboardPageComponent } from './pages/dashboard-page/dashboard-page.component';
 import { ResultPageComponent } from './pages/result-page/result-page.component';
+import { ListManagerPageComponent } from './pages/list-manager-page/list-manager-page.component';
+import { SavedQueriesPageComponent } from './pages/saved-queries-page/saved-queries-page.component';
+import { AboutPageComponent } from './pages/about-page/about-page.component';
 
 // reusable components
 import { HeaderComponent } from './components/header/header.component';
@@ -38,6 +41,9 @@ import { DataListService } from './shared/data-list/data-list.service';
     AppComponent,
     DashboardPageComponent,
     ResultPageComponent,
+    ListManagerPageComponent,
+    SavedQueriesPageComponent,
+    AboutPageComponent,
 
     HeaderComponent,
     FooterComponent,
