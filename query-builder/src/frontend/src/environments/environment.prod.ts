@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+  production: true,
+  API_BASE_URL: '/api/v1/',
+  PAGE_SIZE: 10
 };

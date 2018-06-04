@@ -1,0 +1,357 @@
+@import '../../../../styles/variables';
+
+//.form-section
+.form-section {
+    background: $lightGrayBgColor;
+    position: relative;
+    .bottom-border {
+        height: 1px;
+        background: $defaultLabelColor;
+        width: 96%;
+        margin-left: 2%;
+        position: absolute;
+        bottom: 0;
+        left: auto;
+    }
+    &.bbgray {
+        border-bottom: 1px solid $defaultLabelColor;
+    }
+}
+
+//.blue-boxs
+.blue-boxs {
+    .textareas {
+        width: 109%;
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        background-color: $whiteColor;
+        min-height: 135px;
+        padding: 10px 10px;
+        textarea {
+            color: $blackTitleColor;
+            min-height: 107px;
+        }
+    }
+}
+
+.btn-del {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    vertical-align: middle;
+    .icon-del {
+        background-position: -160px -64px;
+        width: 32px;
+        height: 32px;        
+    }
+    &.right-top {
+        position: absolute;
+        top: 8px;
+        right: 20px;
+        z-index: 666;
+    }
+}
+
+.btn-edit {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 3px;
+    margin-left: -5px;
+    .icon-edit {
+        background-position: -256px -64px;
+        width: 32px;
+        height: 32px;
+    }
+}
+
+//.row-line
+.row-line {
+    padding: 14px 23px 14px 23px;
+}
+
+//.input-row
+.input-row {
+    display: flex;
+    margin-bottom: 30px;
+    position: relative;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &.dblock {
+        display: block;
+        .items {
+            &.w25 {
+                width: 196px;
+            }
+        }
+    }
+    &.pr60 {
+        padding-right: 27px;
+        .items {
+            &:last-child {
+                position: absolute;
+                right: 8px;
+                top: 0;
+            }    
+        }
+    }
+    .items {
+        float: left;
+        margin-right: 1.2%;
+        position: relative;
+        &.mr5 {
+            margin-right: 5px;
+        }
+        &.ml5 {
+            margin-left: 0.1%;
+        }
+        &:last-child {
+            margin-right: 0;
+            .btn-edit {
+                margin-right: -11px;
+            }
+        }
+        .label-txt {
+            font-size: 15px;
+            line-height: 21px;
+            min-height: 21px;
+            margin-bottom: 5px;
+            color: $blackColor;
+            display: block;
+            font-weight: normal;
+        }
+        &.w15 {
+            width: 19%;
+        }
+        &.w18 {
+            width: 18%;
+        }
+        
+        &.w25 {
+            min-width: 23%;
+            width: 39%;
+        }
+        &.w35 {
+            width: 38.7%;
+        }
+        &.w54 {
+            width: 54%;
+        }
+    }
+}
+
+.block-border {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: bottom;
+    background-color: $whiteColor;
+    border-radius: 3px;
+    border: 1px solid $borderColor;
+    margin-top: 26px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 15px;
+    color: $blackColor;
+    &.inputs {
+        width: 40px;
+        height: 40px;
+    }
+    &.error {
+      border-color: red;
+    }
+}
+
+//.type-module
+.type-module {
+    display: block;
+    margin-top: 10px;
+    .txt {
+        font-size: 14px;
+        color: $lightGrayLabelColor;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    &.left {
+        .left-txt {
+            color: $greenColor;
+        }
+        .color-bar {
+            .icon-circle {
+                left: -5px;
+                top: -7px;
+            }
+        }
+        .right-txt {
+            color: $lightGrayLabelColor;
+        }
+    }
+    &.right {
+        .left-txt {
+            color: $lightGrayLabelColor;
+        }
+        .right-txt {
+            color: $greenColor;
+        }
+        .color-bar {
+            .icon-circle {
+                left: auto;
+                right: -5px;
+                top: -7px;
+                
+            }
+        }
+    }
+    .color-bar {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 15px;
+        position: relative;
+        height: 4px;
+        width: 34px;
+        border-radius: 2px;
+        background-color: $darkgreen;
+        .icon-circle {
+            position: absolute;
+            left: -5px;
+            top: -6px;
+            background: url(../../../../assets/i/check.png) -7px -40px no-repeat;
+            width: 18px;
+            height: 18px;
+            display: inline-block;
+        }
+    }
+    &.one-status {
+        .txt {
+            color: $lightGrayLabelColor;
+            cursor: default;
+            pointer-events: none;
+        }
+        .color-bar {
+            background-color: $lightGrayLabelColor;
+            cursor: default;
+            .icon-circle {
+                background: url(../../../../assets/i/check.png) -39px -40px no-repeat;
+            }
+            pointer-events: none;
+        }
+    }
+}
+
+//.auto-tree
+.auto-tree {
+    position: relative;
+    .inputs {
+        border-color: $lightGrayLabelColor;
+        &.default-label {
+            input {
+                color: $defaultLabelColor;
+            }
+        }
+    }
+    &.open {
+        .tree-boxs {
+            display: block;
+            width: 100%;
+            margin-top: 5px;
+            position: absolute;
+            top: 100%;
+            border: 1px solid $lightGrayLabelColor;
+            border-radius: 4px;
+            background-color: $whiteColor;
+            padding: 10px 0;
+            z-index: 1000;
+            .scroll-boxs {
+                max-height: 264px;
+                height: 264px;
+                overflow-y: auto;
+                padding: 0 15px;
+            }
+            .bottom-choose {
+                .label-txt {
+                    font-weight: bold;
+                }
+            }
+            ul {
+                &.drop-list {
+                    &.open {
+                        .btn-tree {
+                            background: url(../../../../assets/i/icon-sprites.png) -326px -105px no-repeat;
+                        }
+                        ul {
+                            display: block;
+                        }
+                    }
+                }
+                li {
+                    margin-bottom: 8px;
+                    ul {
+                        display: none;
+                        li {
+                            margin-top: 10px;
+                            padding-left: 57px;
+                            position: relative;
+                            &:before {
+                                position: absolute;
+                                left: 34px;
+                                top: -17px;
+                                content: '';
+                                display: block;
+                                width: 23px;
+                                height: 31px;
+                                background: url(../../../../assets/i/icon-sprites.png) -79px -151px no-repeat;
+                            }
+                            .three-tree {
+                                margin-left: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+            .checkbox-wrap {
+                vertical-align: middle;
+                background-color: $whiteColor;
+                position: relative;
+                z-index: 10;
+            }
+            
+            .txt {
+                font-size: 15px;
+                color: $blackColor;
+            }
+        }
+    }
+    .btn-tree {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: url(../../../../assets/i/icon-sprites.png) -317px -208px no-repeat;
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+    .tree-boxs {
+        display: none;
+    }
+}
+
+.bottom-choose {
+    width: 100%;
+    height: 80px;
+    border-top: 1px solid $lightGrayLabelColor;
+    padding: 15px;
+    .radio-wraper {
+        margin-right: 10px;
+        &:last-child {
+            margin-right: 0;    
+        }
+    }
+    &.heightauto {
+        height: auto;
+        padding-bottom: 5px;
+        margin-top: 10px;
+    }
+}

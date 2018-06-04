@@ -1,0 +1,60 @@
+@import '../../../../styles/variables';
+
+//.bottom-btn
+.bottom-btn {
+    display: flex;
+    height: 65px;
+    padding-top: 25px;
+    justify-content: flex-end;
+    .btn {
+        margin-left: 8px;
+        &.btn-green-border {
+            min-width: 96px;
+        }
+    }
+}
+
+.top-bar {
+    height: 95px;
+    background-color: $whiteColor;
+    display: block;
+    text-align: center;
+    .tab-nav {
+        line-height: 1;
+        
+    }
+    li {
+        display: inline-block;
+        &.disabled {
+            pointer-events: none;
+            a.items {
+                font-weight: normal;
+            }
+        }
+        a {
+            &.items {
+                font-size: 20px;
+                font-weight: normal;
+                text-transform: uppercase;
+                display: block;
+                height: 95px;
+                line-height: 95px;
+                color: $lightGrayLabelColor;
+                padding: 0 13px;
+                &:hover,
+                &.current {
+                    color: $darkgreen;
+                    font-weight: bold;
+                    box-shadow: 0 -5px $greenColor inset;    
+                }
+            }
+        }
+        &:last-child {
+            a {
+                &.items {
+                    padding: 0 50px;
+                }
+            }
+        }
+    }
+}

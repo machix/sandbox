@@ -1,0 +1,133 @@
+@import '../../../../styles/variables';
+
+//.left-area
+.left-area {
+    width: 232px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: calc(100%);
+    overflow-y: auto;
+    background-color: $darkgreen;
+}
+
+//.blue-bar
+.blue-bar {
+    background-color: $greenColor;
+    height: 40px;
+    line-height: 40px;
+    color: $whiteColor;
+    padding: 0 24px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+
+//.nav-list
+.nav-list {
+    background-color: $darkgreen;
+    li {
+        position: relative;
+        .item {
+            position: relative;
+            padding-left: 63px;
+            padding-right: 26px;
+            display: block;
+            height: 64px;
+            line-height: 1.4;
+            width: 100%;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #1a6c76;
+            .txt {
+                font-size: 15px;
+                color: $whiteColor;
+            }
+            &:hover,&.current {
+                opacity: 1;
+                background-color: $whiteColor;
+                .txt {
+                    color: $darkgreen;
+                }
+                .icon-trans {
+                    display: block;
+                    margin-top: 0;
+                    right: 0;
+                    width: 24px;
+                    height: 64px;
+                    top: 0;
+                    left: auto;
+                    background-position: -14px -138px;
+                    
+                }
+                .icon-impact {
+                    background-position: -224px 0;
+                }
+                .icon-re {
+                    background-position: -288px 0;
+                }
+                .icon-flags {
+                    background-position: 0 -32px;
+                }
+                .icon-collections {
+                    background-position: -64px -32px;
+                }
+                .icon-expansion {
+                    background-position: -128px -32px;
+                }
+                .icon-composite {
+                    background-position: -192px -32px;
+                }
+                .icon-report {
+                    background-position: -256px -32px;
+                }
+                .icon-ancestral {
+                    background-position: -320px -32px;
+                }
+                .icon-mars {
+                    background-position: -32px -64px;
+                }
+            }
+        }
+        .icons {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            margin-top: -16px;
+            height: 32px;
+            width: 32px;
+        }
+        .icon-trans {
+            display: none;
+        }
+        .icon-impact {
+            background-position: -256px 0;
+        }
+        .icon-re {
+            background-position: -320px 0;
+        }
+        .icon-flags {
+            background-position: -32px -32px;
+        }
+        .icon-collections {
+            background-position: -96px -32px;
+        }
+        .icon-expansion {
+            background-position: -160px -32px;
+        }
+        .icon-composite {
+            background-position: -224px -32px;
+        }
+        .icon-report {
+            background-position: -288px -32px;
+        }
+        .icon-ancestral {
+            background-position: 0 -64px;
+        }
+        .icon-mars {
+            background-position: -64px -64px;
+        }
+    }
+}
