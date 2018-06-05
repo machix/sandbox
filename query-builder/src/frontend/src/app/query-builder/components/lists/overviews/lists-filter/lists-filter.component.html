@@ -1,0 +1,40 @@
+<mat-card *ngIf="request">
+    <mat-card-content>   
+      <mat-form-field>
+        <input matInput [(ngModel)]="request.searchText" placeholder="Search List">
+      </mat-form-field> 
+      
+      <mat-form-field *ngIf="usersList">
+        <mat-select placeholder="Users" multiple [(value)]="request.lastModifiedBy">
+          <mat-option *ngFor="let item of usersList.items" [value]="item.value">
+            {{ item.text }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      
+      <mat-form-field>
+          <input matInput 
+            [matDatepicker]="lastModifiedStart" 
+            placeholder="Start Date" 
+            [(ngModel)]="request.lastModifiedStart">
+          <mat-datepicker-toggle matSuffix 
+            [for]="lastModifiedStart"></mat-datepicker-toggle>
+          <mat-datepicker #lastModifiedStart></mat-datepicker>
+      </mat-form-field>        
+
+      <mat-form-field>
+          <input matInput 
+            [matDatepicker]="lastModifiedEnd" 
+            placeholder="End Date" 
+            [(ngModel)]="request.lastModifiedEnd">
+          <mat-datepicker-toggle matSuffix 
+            [for]="lastModifiedEnd"></mat-datepicker-toggle>
+          <mat-datepicker #lastModifiedEnd></mat-datepicker>
+      </mat-form-field>        
+      
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button (click)="onClearFilter()">Reset</button>                
+      <button mat-raised-button color="primary" (click)="onFilter()">Apply</button>
+    </mat-card-actions>
+  </mat-card> 

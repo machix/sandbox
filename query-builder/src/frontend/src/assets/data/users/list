@@ -1,0 +1,28 @@
+{
+    "request": {
+
+    },
+
+    "items": [
+        {
+            "value": 1,
+            "text": "Tony Snow"
+        },
+        {
+            "value": 2,
+            "text": "Michelle Smith"
+        },
+        {
+            "value": 3,
+            "text": "Adam Brown"
+        },
+        {
+            "value": 4,
+            "text": "George Ramirez"
+        },
+        {
+            "value": 5,
+            "text": "Tim Elliot"
+        }        
+    ]
+}

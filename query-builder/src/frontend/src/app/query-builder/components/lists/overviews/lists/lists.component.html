@@ -1,0 +1,45 @@
+<app-lists-filter [request]="request" (filter)="onFilter($event)"></app-lists-filter>
+<mat-card>
+  <mat-card-content>
+      <mat-table #table 
+      [dataSource]="dataSource" 
+      matSort 
+      (matSortChange)="onSortChange($event)">
+      <ng-container matColumnDef="name">
+        <mat-header-cell *matHeaderCellDef mat-sort-header="maker"> Script List Name </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.name}} </mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="numberOfScripts">
+        <mat-header-cell *matHeaderCellDef mat-sort-header="numberOfScripts"> No. of Scripts </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.numberOfScripts}} </mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="lastModifiedBy">
+        <mat-header-cell *matHeaderCellDef mat-sort-header="lastModifiedBy"> Last Modified by </mat-header-cell>
+        <mat-cell *matCellDef="let row"> {{row.lastModifiedBy}} </mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="lastModified">
+          <mat-header-cell *matHeaderCellDef mat-sort-header="lastModified"> Last Modified </mat-header-cell>
+          <mat-cell *matCellDef="let row"> {{row.lastModified}} </mat-cell>
+        </ng-container>        
+      <ng-container matColumnDef="actions">
+        <mat-header-cell *matHeaderCellDef> Actions </mat-header-cell>
+        <mat-cell *matCellDef="let row">
+          <button mat-mini-fab color="primary" routerLink="/lists/{{row.id}}">Edit</button>
+        </mat-cell>
+      </ng-container>
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+
+    <mat-paginator *ngIf="overviews" 
+                  #paginator
+                  [pageSize]="pageSize"
+                  [pageSizeOptions]="[pageSize, pageSize * 2]"
+                  [length]="overviews.recordsCount"
+                  (page)="onPageChange($event)">
+    </mat-paginator>    
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="primary" routerLink="/lists/new">Add New Script List</button>
+  </mat-card-actions>
+</mat-card> 

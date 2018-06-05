@@ -13,9 +13,9 @@ export abstract class OverviewsComponent
     TOverview>
   extends BaseComponent implements OnInit {
 
-  protected request: TOverviewsRequest;
+  public request: TOverviewsRequest;
 
-  protected overviews: TOverviews;
+  public overviews: TOverviews;
 
   constructor(
       @Inject(IProcessServiceToken) protected processService: IProcessService,
@@ -39,7 +39,7 @@ export abstract class OverviewsComponent
           });
   }
 
-  protected onFilter(request: TOverviewsRequest) {
+  public onFilter(request: TOverviewsRequest) {
     this.request = request;
     this.updateOverviews();
   }

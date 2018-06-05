@@ -41,9 +41,25 @@ import { DataListService } from './shared/data-list/data-list.service';
 // Angular Material
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatTableModule } from '@angular/material/table';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatCardModule } from '@angular/material/card';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatSortModule } from '@angular/material/sort';
+import { MatNativeDateModule } from '@angular/material/core';
+
 
 // Common features
 import { AppCommonModule } from './../common/app-common.module';
+
+import { ListsComponent } from './components/lists/overviews/lists/lists.component';
+import { ListOverviewComponent } from './components/lists/overviews/list-overview/list-overview.component';
+import { ListsFilterComponent } from './components/lists/overviews/lists-filter/lists-filter.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +69,6 @@ import { AppCommonModule } from './../common/app-common.module';
     ListManagerPageComponent,
     SavedQueriesPageComponent,
     AboutPageComponent,
-
     HeaderComponent,
     FooterComponent,
     LeftSidebarComponent,
@@ -64,6 +79,9 @@ import { AppCommonModule } from './../common/app-common.module';
     ResultTableComponent,
     ModalWindowsComponent,
     QueryBuilderComponent,
+    ListsComponent,
+    ListOverviewComponent,
+    ListsFilterComponent,
   ],
   imports: [
             AppCommonModule.forRoot(),
@@ -77,6 +95,17 @@ import { AppCommonModule } from './../common/app-common.module';
             queryBuilderRouting,
             BrowserAnimationsModule,
             MatPaginatorModule,
+            MatDatepickerModule,
+            MatTableModule,
+            MatSortModule,
+            MatTabsModule,
+            MatFormFieldModule,
+            MatButtonModule,
+            MatInputModule,
+            MatSelectModule,
+            MatCardModule,
+            MatCheckboxModule,
+            MatNativeDateModule,
            ],
   exports: [
     QueryBuilderComponent

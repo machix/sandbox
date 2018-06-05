@@ -16,7 +16,7 @@ export abstract class MatTableOverviewsComponent
     extends OverviewsComponent<TOverviewsService, TOverviewsRequest, TOverviews, TOverview>
     implements OnInit, AfterViewInit {
 
-    private dataSource;
+    public dataSource;
     @ViewChild(MatPaginator) paginator: MatPaginator;
     @ViewChild(MatSort) sort: MatSort;
 
@@ -44,7 +44,7 @@ export abstract class MatTableOverviewsComponent
       this.updateOverviews();
     }
 
-    private onSortChange(event: any) {
+    public onSortChange(event: any) {
       this.request.sortBy = event.active;
       this.request.desc = event.direction === 'desc';
       this.updateOverviews();
