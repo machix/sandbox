@@ -24,7 +24,7 @@
                                      .GetByTimeReportings(request.TimeReportings)
                                      .GetByAfes(request.Afes)
                                      .GetByTypeOfTimeEntry(request.IsManualEntry)
-                                     .GetByStatus(request.IsActive)
+                                     .GetByStatus(request.IsArchived)
                         join t in timeReportings on p.TimeReportingId equals t.Id
                         join a in afes on p.AfeId equals a.Id
                         select new

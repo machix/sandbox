@@ -12,7 +12,7 @@
             IEnumerable<int> timeReportings, 
             IEnumerable<int> afes, 
             bool? isManualEntry, 
-            bool? isActive,
+            bool? isArchived,
             DateTime? date, 
             DateTime? dateStart, 
             DateTime? dateEnd,
@@ -25,7 +25,7 @@
             this.TimeReportings = timeReportings;
             this.Afes = afes;
             this.IsManualEntry = isManualEntry;
-            this.IsActive = isActive;
+            this.IsArchived = isArchived;
             this.Date = date;
             this.DateStart = dateStart;
             this.DateEnd = dateEnd;
@@ -39,7 +39,7 @@
 
         public bool? IsManualEntry { get; }
 
-        public bool? IsActive { get; }
+        public bool? IsArchived { get; }
 
         public DateTime? Date { get; }
 

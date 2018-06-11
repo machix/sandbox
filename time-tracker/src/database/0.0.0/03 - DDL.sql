@@ -48,6 +48,7 @@ BEGIN
 		[IsManualEntry] BIT NOT NULL,
 		[ManualEntryStart] DATETIME NULL,
 		[ManualEntryEnd] DATETIME NULL,
+		[IsArchived] BIT NOT NULL
 CONSTRAINT [PK_Projects] PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC
@@ -70,6 +71,12 @@ REFERENCES [dbo].[Afes] ([Id])
 	ALTER TABLE [dbo].[Projects]
 		ADD CONSTRAINT DF_Projects_IsManualEntry
 		DEFAULT 0 FOR [IsManualEntry] 
+
+
+	-- Default value for IsArchived column
+	ALTER TABLE [dbo].[Projects]
+		ADD CONSTRAINT DF_Projects_IsArchived
+		DEFAULT 0 FOR [IsArchived] 
 
 END
 GO

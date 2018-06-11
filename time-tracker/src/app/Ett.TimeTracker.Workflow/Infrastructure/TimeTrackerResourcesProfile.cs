@@ -21,7 +21,7 @@
                         r.TimeReportings,
                         r.Afes,
                         r.IsManualEntry,
-                        r.IsActive,
+                        r.IsArchived,
                         r.Date,
                         r.DateStart,
                         r.DateEnd,
@@ -62,7 +62,8 @@
                         r.LogTime,
                         r.IsManualEntry,
                         r.ManualEntryStart,
-                        r.ManualEntryEnd));
+                        r.ManualEntryEnd,
+                        r.IsArchived));
         }
     }
 }

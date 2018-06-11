@@ -58,14 +58,14 @@
 
         internal static IQueryable<ProjectEntity> GetByStatus(
             this IQueryable<ProjectEntity> query,
-            bool? isActive)
+            bool? isArchived)
         {
-            if (!isActive.HasValue)
+            if (!isArchived.HasValue)
             {
                 return query;
             }
 
-            return query;
+            return query.Where(e => e.IsArchived == isArchived);
         }
 
         internal static IQueryable<ProjectEntity> GetByDate(

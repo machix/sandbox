@@ -7,10 +7,6 @@
 
     public sealed class ProjectResource : IntIdResource
     {
-        public ProjectResource()
-        {            
-        }
-
         public ProjectResource(
             int id,
             DateTime date,
@@ -20,7 +16,8 @@
             DateTime? logTime,
             bool isManualEntry,
             DateTime? manualEntryStart,
-            DateTime? manualEntryEnd)
+            DateTime? manualEntryEnd,
+            bool isArchived)
             : base(id)
         {
             this.Date = date;
@@ -31,6 +28,7 @@
             this.IsManualEntry = isManualEntry;
             this.ManualEntryStart = manualEntryStart;
             this.ManualEntryEnd = manualEntryEnd;
+            this.IsArchived = isArchived;
         }
 
         public DateTime Date { get; set; }
@@ -50,5 +48,7 @@
         public DateTime? ManualEntryStart { get; set; }
 
         public DateTime? ManualEntryEnd { get; set; }
+
+        public bool IsArchived { get; set; }
     }
 }

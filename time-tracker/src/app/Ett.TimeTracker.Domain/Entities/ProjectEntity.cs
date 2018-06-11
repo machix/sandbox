@@ -22,6 +22,8 @@
 
         public DateTime? ManualEntryEnd { get; set; }
 
+        public bool IsArchived { get; set; }
+
         public virtual TimeReportingEntity TimeReporting { get; set; }
 
         public virtual AfeEntity Afe { get; set; }

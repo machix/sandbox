@@ -18,7 +18,8 @@
             DateTime? logTime, 
             bool isManualEntry, 
             DateTime? manualEntryStart, 
-            DateTime? manualEntryEnd)
+            DateTime? manualEntryEnd,
+            bool isArchived)
             : base(id)
         {
             this.Date = date;
@@ -29,6 +30,7 @@
             this.IsManualEntry = isManualEntry;
             this.ManualEntryStart = manualEntryStart;
             this.ManualEntryEnd = manualEntryEnd;
+            this.IsArchived = isArchived;
         }
 
         public DateTime Date { get; }
@@ -48,5 +50,7 @@
         public DateTime? ManualEntryStart { get; }
 
         public DateTime? ManualEntryEnd { get; }
+
+        public bool IsArchived { get; }
     }
 }

@@ -18,6 +18,7 @@
             this.Property(e => e.IsManualEntry).IsRequired();
             this.Property(e => e.ManualEntryStart).IsOptional();
             this.Property(e => e.ManualEntryEnd).IsOptional();
+            this.Property(e => e.IsArchived).IsRequired();
 
             this.HasRequired(e => e.TimeReporting)
                 .WithMany(e => e.Projects)

@@ -21,7 +21,8 @@
                         e.LogTime,
                         e.IsManualEntry,
                         e.ManualEntryStart,
-                        e.ManualEntryEnd));
+                        e.ManualEntryEnd,
+                        e.IsArchived));
         }
     }
 }
