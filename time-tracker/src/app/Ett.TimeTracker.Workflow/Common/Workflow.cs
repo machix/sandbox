@@ -11,7 +11,7 @@
     public sealed class Workflow
     {
         public readonly IStore<WorkflowState> Store = new Store<WorkflowState>(
-            WorkflowReducer.Reduce, new WorkflowState());
+            WorkflowReducer.Reduce, new WorkflowState(), Taiste.Redux.Middleware.ThunkMiddleware);
 
         public Workflow(params Profile[] profiles)
         {

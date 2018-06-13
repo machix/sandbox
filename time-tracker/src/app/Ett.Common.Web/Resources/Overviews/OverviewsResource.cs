@@ -25,6 +25,6 @@
         [MinIntValue(0)]
         public int RecordsCount { get; set; }
 
-        public IEnumerable<TOverview> Overviews { get; set; }
+        public IEnumerable<TOverview> Overviews { get; set; } = new TOverview[0];
     }
 }
