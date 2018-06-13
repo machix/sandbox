@@ -1,12 +1,16 @@
 ﻿namespace ETTTimeTracker.Connectors.Common
 {
+    using AutoMapper;
+
+    using Ett.TimeTracker.Workflow.Common;
+
     using ETTTimeTracker.Connectors.Dashboard;
     using ETTTimeTracker.Connectors.Reports;
     using ETTTimeTracker.Connectors.Settings;
     using ETTTimeTracker.Connectors.Timesheet;
     using ETTTimeTracker.ViewModels;
 
-    internal sealed class WorkflowConnector
+    internal sealed class WorkflowConnector : TimeTrackerConnector
     {
         public DashboardConnector Dashboard { get; }
 
@@ -17,13 +21,16 @@
         public TimesheetConnector Timesheet { get; }
 
         public WorkflowConnector(
-            ETTViewModel ett,
-            SettingsViewModel settings)
+            ETTViewModel ettVm,
+            SettingsViewModel settingsVm,
+            Workflow workflow,
+            IMapper mapper)
+            : base(ettVm, settingsVm, workflow, mapper)
         {
-            this.Dashboard = new DashboardConnector(ett, settings);
-            this.Reports = new ReportsConnector(ett, settings);
-            this.Settings = new SettingsConnector(ett, settings);
-            this.Timesheet = new TimesheetConnector(ett, settings);
+            this.Dashboard = new DashboardConnector(ettVm, settingsVm, workflow, mapper);
+            this.Reports = new ReportsConnector(ettVm, settingsVm, workflow, mapper);
+            this.Settings = new SettingsConnector(ettVm, settingsVm, workflow, mapper);
+            this.Timesheet = new TimesheetConnector(ettVm, settingsVm, workflow, mapper);
         }
     }
 }

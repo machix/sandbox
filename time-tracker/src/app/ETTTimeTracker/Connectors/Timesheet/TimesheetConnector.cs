@@ -1,51 +1,44 @@
 ﻿namespace ETTTimeTracker.Connectors.Timesheet
 {
     using System;
+    using System.Collections.Generic;
     using System.Collections.ObjectModel;
-    using System.Linq;
+
+    using AutoMapper;
 
     using Ett.TimeTracker.Workflow.ActionCreators.Timesheet;
     using Ett.TimeTracker.Workflow.Common;
     using Ett.TimeTracker.Workflow.Extensions;
     using Ett.TimeTracker.Workflow.Resources.Projects.Overviews;
 
+    using ETTTimeTracker.Connectors.Common;
     using ETTTimeTracker.Models;
     using ETTTimeTracker.ViewModels;
 
-    internal sealed class TimesheetConnector
+    internal sealed class TimesheetConnector : TimeTrackerConnector
     {
-        private readonly ETTViewModel ett;
-
-        private readonly SettingsViewModel settings;
-
         public TimesheetConnector(
-            ETTViewModel ett, 
-            SettingsViewModel settings)
+            ETTViewModel ettVm, 
+            SettingsViewModel settingsVm,
+            Workflow workflow,
+            IMapper mapper)
+            : base(ettVm, settingsVm, workflow, mapper)
         {
-            this.ett = ett;
-            this.settings = settings;
-
-            Workflow.Instance.Store.Subscribe(state =>
+            this.Workflow.Store.Subscribe(state =>
             {
                 if (state.Timesheet?.Projects?.Overviews == null)
                 {
                     return;
                 }
 
-                this.ett.Tasks = new ObservableCollection<JobTask>(
-                    state.Timesheet.Projects.Overviews.Select(p => new JobTask
-                    {
-                        Name = p.TimeReporting,
-                        AFE = p.Afe,
-                        Comments = p.Comments,
-                        CostCenter = p.Afe
-                    }));
+                this.EttVm.Tasks = new ObservableCollection<JobTask>(
+                    this.Mapper.Map<IEnumerable<JobTask>>(state.Timesheet.Projects.Overviews));
             });
         }
 
         public void UpdateProjects()
         {
-            Workflow.Instance.Store.Dispatch(
+            this.Workflow.Store.Dispatch(
                 ProjectsActionCreator.GetProjects(new ProjectOverviewsRequestResource()));
         }
     }

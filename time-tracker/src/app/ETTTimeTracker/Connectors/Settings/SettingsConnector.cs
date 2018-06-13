@@ -1,19 +1,21 @@
 ﻿namespace ETTTimeTracker.Connectors.Settings
 {
+    using AutoMapper;
+
+    using Ett.TimeTracker.Workflow.Common;
+
+    using ETTTimeTracker.Connectors.Common;
     using ETTTimeTracker.ViewModels;
 
-    internal sealed class SettingsConnector
+    internal sealed class SettingsConnector : TimeTrackerConnector
     {
-        private readonly ETTViewModel ett;
-
-        private readonly SettingsViewModel settings;
-
         public SettingsConnector(
-            ETTViewModel ett, 
-            SettingsViewModel settings)
+            ETTViewModel ettVm, 
+            SettingsViewModel settingsVm, 
+            Workflow workflow, 
+            IMapper mapper)
+            : base(ettVm, settingsVm, workflow, mapper)
         {
-            this.ett = ett;
-            this.settings = settings;
         }
     }
 }

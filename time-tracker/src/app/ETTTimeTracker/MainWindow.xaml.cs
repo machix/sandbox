@@ -8,7 +8,13 @@ using ETTTimeTracker.ViewModels;
 
 namespace ETTTimeTracker
 {
+    using AutoMapper;
+
+    using Ett.Common.IoC.Ninject.IoC;
+    using Ett.TimeTracker.Workflow.Common;
+
     using ETTTimeTracker.Connectors.Common;
+    using ETTTimeTracker.Infrastructure;
 
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -25,7 +31,13 @@ namespace ETTTimeTracker
             this.settingsViewModel = new SettingsViewModel();
 
             // Connect to workflow
-            var connector = new WorkflowConnector(this.viewModel, this.settingsViewModel);
+            var workflow = new Workflow(new TimeTrackerClientProfile());
+
+            var connector = new WorkflowConnector(
+                this.viewModel, 
+                this.settingsViewModel,
+                workflow,
+                ManualDependencyResolver.Get<IMapper>());
 
             this.TimerWidgetControl.Initialize(this.viewModel);
             this.Dashboard.Initialize(this.viewModel);
@@ -37,7 +49,6 @@ namespace ETTTimeTracker
             this.TaskWidget.Initialize(this.viewModel);
 
             this.DataContext = this.viewModel;
-
         }
 
         protected override void OnMinimize(object sender, RoutedEventArgs e)

@@ -36,12 +36,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=7.0.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.7.0.0\lib\net45\AutoMapper.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Ninject, Version=3.3.4.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7" />
     <Reference Include="Redux, Version=0.4.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Redux.NET.0.4.0\lib\portable-net45+netcore45\Redux.dll</HintPath>
     </Reference>
@@ -69,6 +73,7 @@
     <Reference Include="System.Reactive.PlatformServices, Version=2.2.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Rx-PlatformServices.2.2.5\lib\net45\System.Reactive.PlatformServices.dll</HintPath>
     </Reference>
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Windows" />
     <Reference Include="System.Windows.Controls.DataVisualization.Toolkit, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Windows.Controls.DataVisualization.Toolkit.4.0.0.0\lib\net40-Client\System.Windows.Controls.DataVisualization.Toolkit.dll</HintPath>
@@ -105,6 +110,7 @@
     <Compile Include="Common\JobHelper.cs" />
     <Compile Include="Common\Observable.cs" />
     <Compile Include="Common\SettingsEventArgs.cs" />
+    <Compile Include="Connectors\Common\TimeTrackerConnector.cs" />
     <Compile Include="Connectors\Common\WorkflowConnector.cs" />
     <Compile Include="Connectors\Dashboard\DashboardConnector.cs" />
     <Compile Include="Connectors\Reports\ReportsConnector.cs" />
@@ -151,6 +157,7 @@
     <Compile Include="Controls\WeeklyTaskView.xaml.cs">
       <DependentUpon>WeeklyTaskView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Infrastructure\TimeTrackerClientProfile.cs" />
     <Compile Include="Models\CopyEntry.cs" />
     <Compile Include="Models\JobTask.cs" />
     <Compile Include="Models\JobTaskBackup.cs" />
@@ -333,6 +340,14 @@
     <Resource Include="Assets\Icons\Radial.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Ett.Common.IoC.Ninject\Ett.Common.IoC.Ninject.csproj">
+      <Project>{D5A808C4-3D55-478B-B930-8F6D487EBA1D}</Project>
+      <Name>Ett.Common.IoC.Ninject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ett.Common.Mapping\Ett.Common.Mapping.csproj">
+      <Project>{F286728F-73CF-4AA2-9A89-2C86B2473D34}</Project>
+      <Name>Ett.Common.Mapping</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Ett.Common.Web\Ett.Common.Web.csproj">
       <Project>{380739f8-bcc9-4dc6-a836-370954c441ab}</Project>
       <Name>Ett.Common.Web</Name>

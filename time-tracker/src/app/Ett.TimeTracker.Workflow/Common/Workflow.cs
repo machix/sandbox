@@ -1,5 +1,7 @@
 ﻿namespace Ett.TimeTracker.Workflow.Common
 {
+    using AutoMapper;
+
     using Ett.TimeTracker.Workflow.Infrastructure;
     using Ett.TimeTracker.Workflow.Reducers.Common;
     using Ett.TimeTracker.Workflow.States.Common;
@@ -8,32 +10,12 @@
 
     public sealed class Workflow
     {
-        private static Workflow instance;
-        private static readonly object Padlock = new object();
-
-        private Workflow()
-        {
-            DependencyInjectionUtils.Initialize();
-        }
-
         public readonly IStore<WorkflowState> Store = new Store<WorkflowState>(
             WorkflowReducer.Reduce, new WorkflowState());
 
-        public static Workflow Instance
+        public Workflow(params Profile[] profiles)
         {
-            get
-            {
-                lock (Padlock)
-                {
-                    if (instance == null)
-                    {
-                        instance = new Workflow();
-
-                    }
-
-                    return instance;
-                }
-            }
+            DependencyInjectionUtils.Initialize(profiles);
         }
     }
 }
