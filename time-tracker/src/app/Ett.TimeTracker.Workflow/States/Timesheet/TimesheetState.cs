@@ -4,6 +4,8 @@
 
     public sealed class TimesheetState
     {
-        public ProjectOverviewsResource Projects { get; set; }
+        public ProjectOverviewsRequestResource Request { get; set; } = new ProjectOverviewsRequestResource();
+
+        public ProjectOverviewsResource Projects { get; set; } = new ProjectOverviewsResource();
     }
 }

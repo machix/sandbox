@@ -3,10 +3,12 @@
     using System;
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
+    using System.Reactive.Linq;
 
     using AutoMapper;
 
     using Ett.TimeTracker.Workflow.ActionCreators.Timesheet;
+    using Ett.TimeTracker.Workflow.Actions.Timesheet;
     using Ett.TimeTracker.Workflow.Common;
     using Ett.TimeTracker.Workflow.Extensions;
     using Ett.TimeTracker.Workflow.Resources.Projects.Overviews;
@@ -24,22 +26,32 @@
             IMapper mapper)
             : base(ettVm, settingsVm, workflow, mapper)
         {
-            this.Workflow.Store.Subscribe(state =>
+            this.Workflow.Store
+                .DistinctUntilChanged(state => new { state.Timesheet.Request }) 
+                .Subscribe(state =>
             {
-                if (state.Timesheet?.Projects?.Overviews == null)
+                if (state.Timesheet.Projects.Overviews == null)
                 {
                     return;
                 }
 
-                this.EttVm.Tasks = new ObservableCollection<JobTask>(
-                    this.Mapper.Map<IEnumerable<JobTask>>(state.Timesheet.Projects.Overviews));
+                var tasks = this.Mapper.Map<IEnumerable<JobTask>>(state.Timesheet.Projects.Overviews);
+                this.EttVm.Tasks = new ObservableCollection<JobTask>(tasks);
             });
         }
 
-        public void UpdateProjects()
+        public void ApplyRequest()
         {
-            this.Workflow.Store.Dispatch(
-                ProjectsActionCreator.GetProjects(new ProjectOverviewsRequestResource()));
+            var request = this.Mapper.Map<ProjectOverviewsRequestResource>(this.EttVm);
+            this.Workflow.Store.Dispatch(new ApplyProjectsRequestAction(request));
+            this.Workflow.Store.Dispatch(ProjectsActionCreator.GetProjects(request));
+        }
+
+        public void ClearRequest()
+        {
+            this.Workflow.Store.Dispatch(new ClearProjectsRequestAction());
+            var request = new ProjectOverviewsRequestResource();
+            this.Workflow.Store.Dispatch(ProjectsActionCreator.GetProjects(request));
         }
     }
 }

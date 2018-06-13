@@ -1,41 +1,44 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace ETTTimeTracker.Controls
 {
+    using ETTTimeTracker.Connectors.Common;
+    using ETTTimeTracker.ViewModels;
+
     /// <summary>
     /// Interaction logic for FilterControl.xaml
     /// </summary>
-    public partial class FilterControl : UserControl
+    public partial class FilterControl
     {
+        private ETTViewModel viewModel;
+
+        private WorkflowConnector connector;
+
         public event EventHandler Close;
 
         public FilterControl()
         {
-            InitializeComponent();
+            this.InitializeComponent();
+        }
+
+        internal void Initialize(ETTViewModel vm, WorkflowConnector workflowConnector)
+        {
+            this.connector = workflowConnector;
+            this.viewModel = vm;
         }
 
         private void OnClearFilters(object sender, RoutedEventArgs e)
         {
-            Close?.Invoke(this, null);
+            this.connector.Timesheet.ClearRequest();
+            this.Close?.Invoke(this, null);
         }
 
         private void OnApplyFilters(object sender, RoutedEventArgs e)
         {
+            this.connector.Timesheet.ApplyRequest();
             MessageBox.Show("Filters Successfully applied.", "ETT Time Tracker");
-            Close?.Invoke(this, null);
+            this.Close?.Invoke(this, null);
         }
     }
 }

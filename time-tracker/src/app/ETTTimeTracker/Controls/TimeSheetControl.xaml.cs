@@ -30,12 +30,13 @@ namespace ETTTimeTracker.Controls
         {
             this.connector = workflowConnector;
             this.viewModel = vm;
+            this.Filters.Initialize(vm, this.connector);
             this.TaskList.Initialize(this.viewModel);
         }
 
         public void UpdateProjects()
         {
-            this.connector.Timesheet.UpdateProjects();
+            this.connector.Timesheet.ApplyRequest();
         }
 
         private void OnAddNewProject(object sender, RoutedEventArgs e)

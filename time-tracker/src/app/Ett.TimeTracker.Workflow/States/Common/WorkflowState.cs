@@ -7,14 +7,14 @@
 
     public sealed class WorkflowState
     {
-        public LoadingState Loading { get; set; }
+        public LoadingState Loading { get; set; } = new LoadingState();
 
-        public DashboardState Dashboard { get; set; }
+        public DashboardState Dashboard { get; set; } = new DashboardState();
 
-        public ReportsState Reports { get; set; }
+        public ReportsState Reports { get; set; } = new ReportsState();
 
-        public SettingsState Settings { get; set; }
+        public SettingsState Settings { get; set; } = new SettingsState();
 
-        public TimesheetState Timesheet { get; set; }
+        public TimesheetState Timesheet { get; set; } = new TimesheetState();
     }
 }

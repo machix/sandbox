@@ -71,8 +71,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ActionCreators\Timesheet\ProjectsActionCreator.cs" />
-    <Compile Include="Actions\Common\LoadingEndAction.cs" />
-    <Compile Include="Actions\Common\LoadingStartAction.cs" />
+    <Compile Include="Actions\Common\ProcessEndAction.cs" />
+    <Compile Include="Actions\Common\ProcessStartAction.cs" />
+    <Compile Include="Actions\Timesheet\ApplyProjectsRequestAction.cs" />
+    <Compile Include="Actions\Timesheet\ClearProjectsRequestAction.cs" />
     <Compile Include="Actions\Timesheet\ProjectsLoadedAction.cs" />
     <Compile Include="Common\Workflow.cs" />
     <Compile Include="Configuration\Concrete\WorkflowConfiguration.cs" />

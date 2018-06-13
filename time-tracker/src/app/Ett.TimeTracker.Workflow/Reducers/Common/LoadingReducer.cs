@@ -9,7 +9,7 @@
     {
         public static LoadingState Reduce(LoadingState state, IAction action)
         {
-            if (action is LoadingStartAction)
+            if (action is ProcessStartAction)
             {
                 return new LoadingState
                 {
@@ -17,7 +17,7 @@
                 };
             }
 
-            if (action is LoadingEndAction)
+            if (action is ProcessEndAction)
             {
                 return new LoadingState
                 {

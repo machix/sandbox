@@ -18,7 +18,7 @@
         {
             return async (dispatch, getState) =>
             {
-                dispatch(new LoadingStartAction());
+                dispatch(new ProcessStartAction());
 
                 var projectsService = ManualDependencyResolver.Get<IProjectsService>();
                 var request = Mapper.Map<ProjectOverviewsRequest>(requestResource);
@@ -26,7 +26,7 @@
                 var overviewsResource = Mapper.Map<ProjectOverviewsResource>(overviews);
                 dispatch(new ProjectsLoadedAction(overviewsResource));
 
-                dispatch(new LoadingEndAction());
+                dispatch(new ProcessEndAction());
             };
         }
     }
