@@ -1,0 +1,348 @@
+USE [Ideas]
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- Users
+IF OBJECT_ID (N'Users', N'U') IS NULL 
+BEGIN
+	CREATE TABLE [dbo].[Users](
+		[Id] INT IDENTITY(1,1) NOT NULL,		
+		[FirstName] NVARCHAR(20) NOT NULL,
+		[LastName] NVARCHAR(20) NOT NULL,
+		[JobTitle] NVARCHAR(50) NOT NULL,
+		[Phone] NVARCHAR(30) NOT NULL,
+		[Location] NVARCHAR(50) NOT NULL,		
+		[Email] NVARCHAR(255) NOT NULL
+CONSTRAINT [PK_Users] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)
+)	
+
+END
+GO
+
+-- User Photos
+IF OBJECT_ID (N'UserPhotos', N'U') IS NULL 
+BEGIN
+	CREATE TABLE [dbo].[UserPhotos](
+		[Id] INT NOT NULL,	
+		[FileName] NVARCHAR(255) NOT NULL,
+		[MimeType] NVARCHAR(255) NOT NULL,
+		[UserId] INT NOT NULL
+CONSTRAINT [PK_UserPhotos] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)
+)	
+
+ALTER TABLE [dbo].[UserPhotos] WITH CHECK ADD CONSTRAINT [FK_UserPhotos_Users_UserId] FOREIGN KEY([UserId])
+REFERENCES [dbo].[Users] ([Id])
+
+END
+GO
+
+-- Areas
+IF OBJECT_ID (N'Areas', N'U') IS NULL 
+BEGIN
+	CREATE TABLE [dbo].[Areas](
+		[Id] INT IDENTITY(1,1) NOT NULL,	
+		[Name] NVARCHAR(50) NOT NULL
+CONSTRAINT [PK_Areas] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)
+)	
+
+-- Unique constraint for Name
+ALTER TABLE [dbo].[Areas]
+	ADD CONSTRAINT UQ_Areas_Name
+	UNIQUE([Name])	
+
+END
+GO
+
+-- Idea statuses
+IF OBJECT_ID (N'Statuses', N'U') IS NULL 
+BEGIN
+	CREATE TABLE [dbo].[Statuses](
+		[Id] INT IDENTITY(1,1) NOT NULL,	
+		[Name] NVARCHAR(50) NOT NULL
+CONSTRAINT [PK_Statuses] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)
+)	
+
+-- Unique constraint for Name
+ALTER TABLE [dbo].[Statuses]
+	ADD CONSTRAINT UQ_Statuses_Name
+	UNIQUE([Name])	
+
+END
+GO
+
+-- Ideas
+IF OBJECT_ID (N'Ideas', N'U') IS NULL 
+BEGIN
+	CREATE TABLE [dbo].[Ideas](
+		[Id] INT IDENTITY(1,1) NOT NULL,	
+		[Name] NVARCHAR(100) NOT NULL,
+		[StatusId] INT NOT NULL,
+		[CreatedDate] DATETIME NOT NULL,
+		[Description] NVARCHAR(MAX) NOT NULL,
+		[ProblemToSolve] NVARCHAR(MAX) NOT NULL
+CONSTRAINT [PK_Ideas] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)
+)	
+
+ALTER TABLE [dbo].[Ideas] WITH CHECK ADD CONSTRAINT [FK_Ideas_Statuses_StatusId] FOREIGN KEY([StatusId])
+REFERENCES [dbo].[Statuses] ([Id])
+
+-- Default value for CreatedDate column
+ALTER TABLE [dbo].[Ideas]
+	ADD CONSTRAINT DF_Ideas_CreatedDate
+	DEFAULT GETUTCDATE() FOR [CreatedDate] 
+
+END
+GO
+
+-- Idea thumbnails
+IF OBJECT_ID (N'IdeaThumbnails', N'U') IS NULL 
+BEGIN
+	CREATE TABLE [dbo].[IdeaThumbnails](
+		[Id] INT NOT NULL,	
+		[FileName] NVARCHAR(255) NOT NULL,
+		[MimeType] NVARCHAR(255) NOT NULL,
+		[IdeaId] INT NOT NULL
+CONSTRAINT [PK_IdeaThumbnails] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)
+)	
+
+ALTER TABLE [dbo].[IdeaThumbnails] WITH CHECK ADD CONSTRAINT [FK_IdeaThumbnails_Ideas_IdeaId] FOREIGN KEY([IdeaId])
+REFERENCES [dbo].[Ideas] ([Id])
+
+END
+GO
+
+-- Idea submitters
+IF OBJECT_ID (N'IdeasSubmitters', N'U') IS NULL 
+BEGIN
+	CREATE TABLE [dbo].[IdeasSubmitters](
+		[IdeaId] INT NOT NULL,
+		[UserId] INT NOT NULL
+CONSTRAINT [PK_IdeasSubmitters] PRIMARY KEY CLUSTERED 
+(
+	[IdeaId] ASC,
+	[UserId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+ALTER TABLE [dbo].[IdeasSubmitters] WITH CHECK ADD CONSTRAINT [FK_IdeasSubmitters_Ideas_IdeaId] FOREIGN KEY([IdeaId])
+REFERENCES [dbo].[Ideas] ([Id])
+
+ALTER TABLE [dbo].[IdeasSubmitters] WITH CHECK ADD CONSTRAINT [FK_IdeasSubmitters_Users_UserId] FOREIGN KEY([UserId])
+REFERENCES [dbo].[Users] ([Id])
+
+END
+GO
+
+-- Idea owners
+IF OBJECT_ID (N'IdeasOwners', N'U') IS NULL 
+BEGIN
+	CREATE TABLE [dbo].[IdeasOwners](
+		[IdeaId] INT NOT NULL,
+		[UserId] INT NOT NULL
+CONSTRAINT [PK_IdeasOwners] PRIMARY KEY CLUSTERED 
+(
+	[IdeaId] ASC,
+	[UserId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+ALTER TABLE [dbo].[IdeasOwners] WITH CHECK ADD CONSTRAINT [FK_IdeasOwners_Ideas_IdeaId] FOREIGN KEY([IdeaId])
+REFERENCES [dbo].[Ideas] ([Id])
+
+ALTER TABLE [dbo].[IdeasOwners] WITH CHECK ADD CONSTRAINT [FK_IdeasOwners_Users_UserId] FOREIGN KEY([UserId])
+REFERENCES [dbo].[Users] ([Id])
+
+END
+GO
+
+
+-- Idea areas
+IF OBJECT_ID (N'IdeasAreas', N'U') IS NULL 
+BEGIN
+	CREATE TABLE [dbo].[IdeasAreas](
+		[IdeaId] INT NOT NULL,
+		[AreaId] INT NOT NULL
+CONSTRAINT [PK_IdeasAreas] PRIMARY KEY CLUSTERED 
+(
+	[IdeaId] ASC,
+	[AreaId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+ALTER TABLE [dbo].[IdeasAreas] WITH CHECK ADD CONSTRAINT [FK_IdeasAreas_Ideas_IdeaId] FOREIGN KEY([IdeaId])
+REFERENCES [dbo].[Ideas] ([Id])
+
+ALTER TABLE [dbo].[IdeasAreas] WITH CHECK ADD CONSTRAINT [FK_IdeasAreas_Areas_AreaId] FOREIGN KEY([AreaId])
+REFERENCES [dbo].[Areas] ([Id])
+
+END
+GO
+
+-- Attachments
+IF OBJECT_ID (N'Attachments', N'U') IS NULL 
+BEGIN
+	CREATE TABLE [dbo].[Attachments](
+		[Id] UNIQUEIDENTIFIER NOT NULL,	
+		[FileName] NVARCHAR(255) NOT NULL,
+		[OriginalFileName] NVARCHAR(255) NOT NULL,
+		[MimeType] NVARCHAR(255) NOT NULL,
+		[IdeaId] INT NOT NULL
+CONSTRAINT [PK_Attachments] PRIMARY KEY NONCLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)
+)	
+
+ALTER TABLE [dbo].[Attachments] WITH CHECK ADD CONSTRAINT [FK_Attachments_Ideas_IdeaId] FOREIGN KEY([IdeaId])
+REFERENCES [dbo].[Ideas] ([Id])
+
+END
+GO
+
+-- Idea likes
+IF OBJECT_ID (N'IdeaLikes', N'U') IS NULL 
+BEGIN
+	CREATE TABLE [dbo].[IdeaLikes](
+		[Id] INT IDENTITY(1,1) NOT NULL,	
+		[IdeaId] INT NOT NULL,
+		[UserId] INT NOT NULL
+CONSTRAINT [PK_IdeaLikes] PRIMARY KEY CLUSTERED 
+(
+	[IdeaId] ASC,
+	[UserId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+ALTER TABLE [dbo].[IdeaLikes] WITH CHECK ADD CONSTRAINT [FK_IdeaLikes_Ideas_IdeaId] FOREIGN KEY([IdeaId])
+REFERENCES [dbo].[Ideas] ([Id])
+
+ALTER TABLE [dbo].[IdeaLikes] WITH CHECK ADD CONSTRAINT [FK_IdeaLikes_Users_UserId] FOREIGN KEY([UserId])
+REFERENCES [dbo].[Users] ([Id])
+
+END
+GO
+
+-- Idea comments
+IF OBJECT_ID (N'Comments', N'U') IS NULL 
+BEGIN
+	CREATE TABLE [dbo].[Comments](
+		[Id] INT IDENTITY(1,1) NOT NULL,	
+		[IdeaId] INT NOT NULL,
+		[UserId] INT NOT NULL,
+		[Text] NVARCHAR(MAX) NOT NULL,
+		[CreatedDate] DATETIME NOT NULL,
+		[RepliedToId] INT NULL
+CONSTRAINT [PK_Comments] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)
+)	
+
+ALTER TABLE [dbo].[Comments] WITH CHECK ADD CONSTRAINT [FK_Comments_Ideas_IdeaId] FOREIGN KEY([IdeaId])
+REFERENCES [dbo].[Ideas] ([Id])
+
+ALTER TABLE [dbo].[Comments] WITH CHECK ADD CONSTRAINT [FK_Comments_Users_UserId] FOREIGN KEY([UserId])
+REFERENCES [dbo].[Users] ([Id])
+
+ALTER TABLE [dbo].[Comments] WITH CHECK ADD CONSTRAINT [FK_Comments_Comments_RepliedToId] FOREIGN KEY([RepliedToId])
+REFERENCES [dbo].[Comments] ([Id])
+
+
+-- Default value for CreatedDate column
+ALTER TABLE [dbo].[Comments]
+	ADD CONSTRAINT DF_Comments_CreatedDate
+	DEFAULT GETUTCDATE() FOR [CreatedDate] 
+
+END
+GO
+
+-- Idea comment likes
+IF OBJECT_ID (N'CommentLikes', N'U') IS NULL 
+BEGIN
+	CREATE TABLE [dbo].[CommentLikes](
+		[CommentId] INT NOT NULL,
+		[UserId] INT NOT NULL
+CONSTRAINT [PK_CommentLikes] PRIMARY KEY CLUSTERED 
+(
+	[CommentId] ASC,
+	[UserId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+ALTER TABLE [dbo].[CommentLikes] WITH CHECK ADD CONSTRAINT [FK_CommentLikes_Comments_CommentId] FOREIGN KEY([CommentId])
+REFERENCES [dbo].[Comments] ([Id])
+
+ALTER TABLE [dbo].[CommentLikes] WITH CHECK ADD CONSTRAINT [FK_CommentLikes_Users_UserId] FOREIGN KEY([UserId])
+REFERENCES [dbo].[Users] ([Id])
+
+END
+GO
+
+-- Notifications
+IF OBJECT_ID (N'Notifications', N'U') IS NULL 
+BEGIN
+	CREATE TABLE [dbo].[Notifications](
+		[Id] INT IDENTITY(1,1) NOT NULL,	
+		[UserId] INT NOT NULL,
+		[CreatedDate] DATETIME NOT NULL,
+		[IsRead] BIT NOT NULL,
+		[IdeaId] INT NOT NULL,
+		[LikedById] INT NULL,
+		[CommentedById] INT NULL,
+		[StatusToId] INT NULL
+CONSTRAINT [PK_Notifications] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON)
+)	
+
+ALTER TABLE [dbo].[Notifications] WITH CHECK ADD CONSTRAINT [FK_Notifications_Users_UserId] FOREIGN KEY([UserId])
+REFERENCES [dbo].[Users] ([Id])
+
+ALTER TABLE [dbo].[Notifications] WITH CHECK ADD CONSTRAINT [FK_Notifications_Ideas_IdeaId] FOREIGN KEY([IdeaId])
+REFERENCES [dbo].[Ideas] ([Id])
+
+ALTER TABLE [dbo].[Notifications] WITH CHECK ADD CONSTRAINT [FK_Notifications_Users_LikedById] FOREIGN KEY([LikedById])
+REFERENCES [dbo].[Users] ([Id])
+
+ALTER TABLE [dbo].[Notifications] WITH CHECK ADD CONSTRAINT [FK_Notifications_Users_CommentedById] FOREIGN KEY([CommentedById])
+REFERENCES [dbo].[Users] ([Id])
+
+ALTER TABLE [dbo].[Notifications] WITH CHECK ADD CONSTRAINT [FK_Notifications_Statuses_StatusToId] FOREIGN KEY([StatusToId])
+REFERENCES [dbo].[Statuses] ([Id])
+
+-- Default value for CreatedDate column
+ALTER TABLE [dbo].[Notifications]
+	ADD CONSTRAINT DF_Notifications_CreatedDate
+	DEFAULT GETUTCDATE() FOR [CreatedDate] 
+	
+-- Default value for IsRead column
+ALTER TABLE [dbo].[Notifications]
+	ADD CONSTRAINT DF_Notifications_IsRead
+	DEFAULT 0 FOR [IsRead] 	
+
+END
+GO
