@@ -1,12 +1,9 @@
-/*
- * Copyright (C) 2016 TopCoder Inc., All Rights Reserved.
- */
+
 'use strict';
+
 /**
  * The Mission model
  *
- * @author      TSCCODER
- * @version     1.0
  */
 
 const mongoose = require('../datasource').getMongoose();
@@ -44,7 +41,13 @@ const ZoneSchema = new Schema({
 
 // Pilot checklist answer schema
 const PilotChecklistAnswerSchema = new Schema({
-  question: {type: Schema.Types.ObjectId, required: true, unique: true, sparse: true, ref: 'Question'},
+  question: {
+    type: Schema.Types.ObjectId,
+    required: true,
+    unique: true,
+    sparse: true,
+    ref: 'Question',
+  },
   answer: {type: String, enum: _.values(enums.PilotChecklistAnswers)},
   note: String,
 });

@@ -1,14 +1,10 @@
-/**
- * Copyright (c) 2016 Topcoder Inc, All rights reserved.
- */
+
 'use strict';
 
 /**
  * Exposes the API's to manipulate drones in the system
  * This includes create, update and get a list of all the drones
  *
- * @author      TCSCODER
- * @version     1.0
  */
 
 const DroneService = require('../services/DroneService');
@@ -104,8 +100,8 @@ function* updateLocation(req, res) {
   const nfzLimit = req.query.nfzLimit;
   const nearDronesMaxDist = req.query.nearDronesMaxDist;
   const nearDronesLimit = req.query.nearDronesLimit;
-  const drone = yield DroneService.updateLocation(req.params.id, req.body, returnNFZ,
-    nfzFields, nfzLimit, nearDronesMaxDist, nearDroneFields, nearDronesLimit);
+  const drone = yield DroneService
+    .updateLocation(req.params.id, req.body, returnNFZ, nfzFields, nfzLimit, nearDronesMaxDist, nearDroneFields, nearDronesLimit);
   res.json(drone);
   res.io.emit('dronepositionupdate', drone);
 }

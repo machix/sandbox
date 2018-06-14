@@ -1,13 +1,9 @@
-/**
- * Copyright (c) 2016 Topcoder Inc, All rights reserved.
- */
+
 'use strict';
 
 /**
  * SavedPackage module API's
  *
- * @author      TCSCODER
- * @version     1.0
  */
 
 const joi = require('joi');
@@ -75,8 +71,10 @@ function* get(id) {
   const docs = yield SavedPackage.find({user: id}).populate('package').populate('provider');
   return _.map(docs, (d) => {
     const sanitized = _.pick(d, 'id', 'package');
-    sanitized.package = _.pick(d.package, 'id', 'name', 'imageUrl', 'thumbnailUrl',
-      'price', 'bestseller', 'promoted', 'discount');
+    sanitized.package = _.pick(
+      d.package, 'id', 'name', 'imageUrl', 'thumbnailUrl',
+      'price', 'bestseller', 'promoted', 'discount'
+    );
     sanitized.package.provider = _.pick(d.provider, 'id', 'name');
     return sanitized;
   });

@@ -1,14 +1,10 @@
-/**
- * Copyright (c) 2016 Topcoder Inc, All rights reserved.
- */
+
 'use strict';
 
 /**
  * Exposes the API's to manipulate packageRequest in the system
  * This includes create a packageRequest
  *
- * @author      TCSCODER
- * @version     1.0
  */
 
 const _ = require('lodash');

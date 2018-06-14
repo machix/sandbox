@@ -1,12 +1,9 @@
-/*
- * Copyright (C) 2016 TopCoder Inc., All Rights Reserved.
- */
+
 'use strict';
+
 /**
  * The Package model
  *
- * @author      TSCCODER
- * @version     1.0
  */
 
 const mongoose = require('../datasource').getMongoose();
@@ -72,8 +69,8 @@ if (!PackageSchema.options.toObject) {
  * @param  {Object}   options     the transform options
  */
 PackageSchema.options.toObject.transform = function (doc, ret, options) { // eslint-disable-line no-unused-vars
-  const sanitized = _.omit(ret, '__v', '_id', 'provider', 'createdAt', 'updatedAt', 'discount', 'location',
-    'service');
+  const sanitized = _.omit(ret, '__v', '_id', 'provider', 'createdAt', 'updatedAt', 'discount', 'location', 'service');
+
   sanitized.location = _.map(sanitized.location, l => _.omit(l, '_id'));
   sanitized.id = doc._id;
   return sanitized;

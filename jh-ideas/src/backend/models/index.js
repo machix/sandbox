@@ -1,12 +1,9 @@
-/*
- * Copyright (C) 2016 TopCoder Inc., All Rights Reserved.
- */
+
 'use strict';
+
 /**
  * Init models
  *
- * @author      TSCCODER
- * @version     1.0
  */
 const config = require('config');
 

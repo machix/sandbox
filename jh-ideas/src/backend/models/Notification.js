@@ -1,12 +1,9 @@
-/*
- * Copyright (C) 2016 TopCoder Inc., All Rights Reserved.
- */
+
 'use strict';
+
 /**
  * The Notification model
  *
- * @author      TSCCODER
- * @version     1.0
  */
 
 const mongoose = require('../datasource').getMongoose();

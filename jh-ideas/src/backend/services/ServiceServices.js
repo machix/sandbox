@@ -1,13 +1,9 @@
-/**
- * Copyright (c) 2016 Topcoder Inc, All rights reserved.
- */
+
 'use strict';
 
 /**
  * Review module API's
  *
- * @author      TCSCODER
- * @version     1.0
  */
 
 const joi = require('joi');
@@ -142,8 +138,10 @@ function* getSingle(id) {
   const packages = yield Package.find({service: service.id});
 
   ret.packages = _.map(packages, (p) => {
-    const sanz = _.pick(p, 'name', 'description', 'deliverySpeed', 'costPerMile'
-      , 'insuranceClaim', 'maxWeight', 'price', 'discountPrice');
+    const sanz = _.pick(
+      p, 'name', 'description', 'deliverySpeed', 'costPerMile'
+      , 'insuranceClaim', 'maxWeight', 'price', 'discountPrice'
+    );
     sanz.id = p._id;
     return sanz;
   });

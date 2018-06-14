@@ -1,13 +1,5 @@
-/*
- * Copyright (C) 2016 TopCoder Inc., All Rights Reserved.
- */
+
 'use strict';
-/**
- * Init mongo datasource
- *
- * @author      TCSCODER
- * @version     1.0
- */
 
 // The mongoose instance.
 const _mongoose = require('mongoose');
@@ -26,9 +18,7 @@ const dbs = { };
 function getDb(url, poolSize) {
   if (!dbs[url]) {
     const db = _mongoose.createConnection(url, {
-      server: {
-        poolSize: poolSize || 10,
-      },
+      poolSize: poolSize || 10,
     });
     dbs[url] = db;
   }

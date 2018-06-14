@@ -1,12 +1,9 @@
-/*
- * Copyright (C) 2016 TopCoder Inc., All Rights Reserved.
- */
+
 'use strict';
+
 /**
  * The DronePostion model to store the historic position of a drone
  *
- * @author      TSCCODER
- * @version     1.0
  */
 
 const _ = require('lodash');

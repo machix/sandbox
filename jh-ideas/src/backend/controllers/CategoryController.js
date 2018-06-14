@@ -1,14 +1,9 @@
-/**
- * Copyright (c) 2016 Topcoder Inc, All rights reserved.
- */
+
 'use strict';
 
 /**
  * Exposes the API's to manipulate category in the system
  * This includes get a list of all categories
- *
- * @author      TCSCODER
- * @version     1.0
  */
 
 const CategoryService = require('../services/CategoryService');

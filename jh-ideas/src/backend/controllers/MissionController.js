@@ -1,14 +1,10 @@
-/**
- * Copyright (c) 2016 Topcoder Inc, All rights reserved.
- */
+
 'use strict';
 
 /**
  * Exposes the API's to manipulate mission in the system
  * This includes search and get a single mission
  *
- * @author      TCSCODER
- * @version     1.0
  */
 
 const MissionService = require('../services/MissionService');

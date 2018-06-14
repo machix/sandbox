@@ -1,6 +1,4 @@
-/**
- * Copyright (c) 2016 Topcoder Inc, All rights reserved.
- */
+
 'use strict';
 
 /**
@@ -8,8 +6,6 @@
  * This includes read a notification
  * and get all savedPackages for current user
  *
- * @author      TCSCODER
- * @version     1.0
  */
 
 const NotificationService = require('../services/NotificationService');

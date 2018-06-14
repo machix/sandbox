@@ -1,11 +1,6 @@
-/*
- * Copyright (C) 2016 TopCoder Inc., All Rights Reserved.
- */
+
 'use strict';
 
-/**
- * Contains app enums and constants
- */
 const SocialType = {
   GOOGLE: 'google-oauth2',
   FACEBOOK: 'facebook',
