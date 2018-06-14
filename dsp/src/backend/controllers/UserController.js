@@ -1,14 +1,10 @@
-/**
- * Copyright (c) 2016 Topcoder Inc, All rights reserved.
- */
+
 'use strict';
 
 /**
  * Exposes the API's to manipulate users in the system
  * This includes auth, social auth and register
  *
- * @author      TCSCODER
- * @version     1.0
  */
 
 const UserService = require('../services/UserService');

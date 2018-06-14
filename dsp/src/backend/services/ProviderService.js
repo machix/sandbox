@@ -1,13 +1,9 @@
-/**
- * Copyright (c) 2016 Topcoder Inc, All rights reserved.
- */
+
 'use strict';
 
 /**
  * Provider module API's
  *
- * @author      TCSCODER
- * @version     1.0
  */
 
 const joi = require('joi');
@@ -191,7 +187,7 @@ function* getMissions(id, query) {
     .skip(query.offset || 0).limit(query.limit).populate('package');
   return {
     total,
-    items: _.map(docs, (d) => ({id: d.id, packageName: d.package.name, completedAt: d.completedAt})),
+    items: _.map(docs, d => ({id: d.id, packageName: d.package.name, completedAt: d.completedAt})),
   };
 }
 

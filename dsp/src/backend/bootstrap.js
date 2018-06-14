@@ -1,13 +1,5 @@
-/*
- * Copyright (C) 2016 TopCoder Inc., All Rights Reserved.
- */
+
 'use strict';
-/**
- * Init app
- *
- * @author      TCSCODER
- * @version     1.0
- */
 
 global.Promise = require('bluebird');
 const Joi = require('joi');

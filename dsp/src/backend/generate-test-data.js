@@ -1,12 +1,9 @@
-/*
- * Copyright (C) 2016 TopCoder Inc., All Rights Reserved.
- */
+
 'use strict';
+
 /**
  * Module to generate test data
  *
- * @author      TSCCODER
- * @version     1.0
  */
 
 require('./bootstrap');
@@ -77,12 +74,11 @@ co(function*() {
   yield NoFlyZone.remove({});
   yield Question.remove({});
 
-    // encrypt password
-  yield _.map(users, (u) => function* () {
+  // encrypt password
+  yield _.map(users, u => function* () {
     if (u.password) {
       u.password = yield helper.hashString(u.password, config.SALT_WORK_FACTOR);
     }
-    return;
   });
 
   logger.info(`creating ${users.length} users`);
@@ -94,7 +90,7 @@ co(function*() {
   logger.info(`creating ${providers.length} providers`);
   const providerDocs = yield Provider.create(providers);
 
-  yield _.map(providerUsers, (u) => function*() {
+  yield _.map(providerUsers, u => function*() {
     if (u.password) {
       u.password = yield helper.hashString(u.password, config.SALT_WORK_FACTOR);
     }
@@ -164,9 +160,8 @@ co(function*() {
     }];
   });
   logger.info(`creating ${missions.length} missions`);
-  const missionDocs = yield Mission.create(
-    _.map(missions, (mission, index) => _.assign(mission, {missionName: mission.missionName + ' ' + index}))
-  );
+  const missionDocs = yield Mission.create(_.map(missions, (mission, index) =>
+    _.assign(mission, {missionName: mission.missionName + ' ' + index})));
 
   _.each(requests, (r, i) => {
     r.user = userDocs[0].id; // setting all to first user for testing convenience

@@ -1,14 +1,5 @@
-/*
- * Copyright (C) 2016 TopCoder Inc., All Rights Reserved.
- */
-'use strict';
-/**
- * The application entry point
- *
- * @author      TSCCODER
- * @version     1.0
- */
 
+'use strict';
 
 require('./bootstrap');
 const config = require('config');
@@ -40,7 +31,7 @@ apiRouter.use((req, res, next) => {
   next();
 });
 
-io.on('connection', (socket) => {                         // eslint-disable-line no-unused-vars
+io.on('connection', (socket) => { // eslint-disable-line no-unused-vars
   winston.info('socket connection established');
 });
 

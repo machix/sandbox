@@ -1,13 +1,9 @@
-/**
- * Copyright (c) 2016 Topcoder Inc, All rights reserved.
- */
+
 'use strict';
 
 /**
  * PackageRequest module API's
  *
- * @author      TCSCODER
- * @version     1.0
  */
 
 const joi = require('joi');
@@ -241,8 +237,8 @@ function* search(providerId, entity) {
       sanitized.destinationPoint = d.destinationPoint.toObject();
     }
     if (d.startingPoint && d.destinationPoint) {
-      sanitized.distance = helper.getFlatternDistance(sanitized.startingPoint.coordinates,
-        sanitized.destinationPoint.coordinates);
+      sanitized.distance = helper
+        .getFlatternDistance(sanitized.startingPoint.coordinates, sanitized.destinationPoint.coordinates);
     }
     sanitized.serviceName = service.name;
     if (service.category) {
@@ -438,9 +434,11 @@ function* getSingleByProvider(providerId, requestId) {
 
   if (d.mission) {
     const pilot = _.pick(yield User.findOne({_id: d.mission.pilot}), '_id', 'name');
-    sanitized.mission = _.pick(d.mission, 'id', 'status', 'startedAt', 'gallery',
-      'completedAt', 'telemetry', 'eta', 'frontCameraUrl', 'backCameraUrl');
-    sanitized.mission.gallery = _.map(d.mission.gallery, (g) => g.toObject());
+    sanitized.mission = _.pick(
+      d.mission, 'id', 'status', 'startedAt', 'gallery',
+      'completedAt', 'telemetry', 'eta', 'frontCameraUrl', 'backCameraUrl'
+    );
+    sanitized.mission.gallery = _.map(d.mission.gallery, g => g.toObject());
     sanitized.mission.startingPoint = d.mission.startingPoint.toObject();
     sanitized.mission.destinationPoint = d.mission.destinationPoint.toObject();
     sanitized.mission.pilot = {id: pilot._id, name: pilot.name};

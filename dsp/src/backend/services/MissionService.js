@@ -1,13 +1,9 @@
-/**
- * Copyright (c) 2016 Topcoder Inc, All rights reserved.
- */
+
 'use strict';
 
 /**
  * Mission module API's
  *
- * @author      TCSCODER
- * @version     1.0
  */
 
 const joi = require('joi');
@@ -58,7 +54,7 @@ function* search(entity) {
   const docs = yield Mission.find().skip(entity.offset || 0).limit(entity.limit || 100).populate('packageRequest');
   return {
     total,
-    items: _.map(docs, (d) => (d.toObject())),
+    items: _.map(docs, d => (d.toObject())),
   };
 }
 
@@ -248,7 +244,7 @@ function* monthlyCountByDrone(droneId, entity) {
   }, {
     $group: {_id: {$dayOfMonth: '$startedAt'}, count: {$sum: 1}},
   }]);
-  return _.map(docs, (d) => ({
+  return _.map(docs, d => ({
     date: new Date(s.getFullYear(), s.getMonth(), d._id).format('yyyy-MM-dd'),
     count: d.count,
   }));
@@ -435,6 +431,6 @@ function* fetchPilotMissions(pilotId, entity) {
 
   return {
     total,
-    items: _.map(docs, (d) => (_.pick(d.toObject(), ['id', 'missionName', 'status']))),
+    items: _.map(docs, d => (_.pick(d.toObject(), ['id', 'missionName', 'status']))),
   };
 }

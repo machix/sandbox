@@ -1,6 +1,4 @@
-/**
- * Copyright (c) 2016 Topcoder Inc, All rights reserved.
- */
+
 'use strict';
 
 /**
@@ -8,8 +6,6 @@
  * This includes search, update, delete, download and get a single mission
  * as well as get a list of all missions
  *
- * @author      TCSCODER
- * @version     1.0
  */
 
 const ProviderService = require('../services/ProviderService');

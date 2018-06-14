@@ -1,6 +1,4 @@
-/*
- * Copyright (C) 2016 TopCoder Inc., All Rights Reserved.
- */
+
 'use strict';
 
 /**
@@ -8,9 +6,6 @@
  * from a seed point
  *
  * The data is for testing performance of getting nearest drones.
- *
- * @author      TSCCODER
- * @version     1.0
  */
 
 const fs = require('fs');

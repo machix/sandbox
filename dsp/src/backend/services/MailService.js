@@ -1,13 +1,9 @@
-/**
- * Copyright (c) 2016 Topcoder Inc, All rights reserved.
- */
+
 'use strict';
 
 /**
  * Service for sending mail
  *
- * @author      TCSCODER
- * @version     1.0
  */
 
 const nodemailer = require('nodemailer');
@@ -26,7 +22,7 @@ const transporter = nodemailer.createTransport({
 });
 
 function* sendMessage(mailTo, html, text, subject) {
-    // setup e-mail data with unicode symbols
+  // setup e-mail data with unicode symbols
   const mailOptions = {
     from: config.mail.FROM_EMAIL, // sender address
     to: mailTo, // list of receivers

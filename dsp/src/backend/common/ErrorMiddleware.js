@@ -1,13 +1,9 @@
-/*
- * Copyright (C) 2016 TopCoder Inc., All Rights Reserved.
- */
+
 'use strict';
 
 /**
  * Common error handling middleware
  *
- * @author      TSCCODER
- * @version     1.0
  */
 
 const logger = require('./logger');

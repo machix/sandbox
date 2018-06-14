@@ -1,12 +1,9 @@
-/*
- * Copyright (C) 2016 TopCoder Inc., All Rights Reserved.
- */
+
 'use strict';
+
 /**
  * The Review model
  *
- * @author      TSCCODER
- * @version     1.0
  */
 
 const mongoose = require('../datasource').getMongoose();
@@ -17,9 +14,9 @@ const Schema = mongoose.Schema;
 
 const ReviewSchema = new mongoose.Schema({
   user: { type: Schema.Types.ObjectId, required: true, ref: 'User' },
-    // we need to get all reviews for the provider
+  // we need to get all reviews for the provider
   provider: { type: Schema.Types.ObjectId, required: true, ref: 'Provider' },
-    // review is per mission
+  // review is per mission
   mission: { type: Schema.Types.ObjectId, required: true, ref: 'Mission' },
   publicFeedback: String,
   privateFeedback: String,

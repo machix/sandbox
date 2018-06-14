@@ -1,13 +1,9 @@
-/**
- * Copyright (c) 2016 Topcoder Inc, All rights reserved.
- */
+
 'use strict';
 
 /**
  * Drone module API's
  *
- * @author      TCSCODER
- * @version     1.0
  */
 
 const joi = require('joi');
@@ -181,8 +177,12 @@ function * _getAll(providerId, entity) {
   const docs = yield Drone.find(criteria).sort(sortBy).skip(entity.offset || 0).limit(entity.limit || 1000);
   return {
     total: yield Drone.find(criteria).count(),
-    items: _.map(docs, (d) => _.pick(d, 'id', 'imageUrl', 'status', 'thumbnailUrl', 'deviceId', 'serialNumber', 'name',
-      'description', 'type', 'mileage', 'minSpeed', 'maxSpeed', 'maxFlightTime', 'maxCargoWeight', 'currentLocation')),
+    items: _.map(docs, d =>
+      _.pick(
+        d, 'id', 'imageUrl', 'status', 'thumbnailUrl',
+        'deviceId', 'serialNumber', 'name', 'description',
+        'type', 'mileage', 'minSpeed', 'maxSpeed', 'maxFlightTime', 'maxCargoWeight', 'currentLocation'
+      )),
   };
 }
 
@@ -192,7 +192,7 @@ function * _getAll(providerId, entity) {
  */
 function* currentLocations(providerId) {
   const docs = yield Drone.find({provider: providerId});
-  return _.map(docs, (d) => _.pick(d, 'status', 'currentLocation', 'serialNumber', 'id'));
+  return _.map(docs, d => _.pick(d, 'status', 'currentLocation', 'serialNumber', 'id'));
 }
 
 /**

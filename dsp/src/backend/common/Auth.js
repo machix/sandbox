@@ -1,13 +1,9 @@
-/**
- * Copyright (c) 2016 Topcoder Inc, All rights reserved.
- */
+
 'use strict';
 
 /**
  * Application authentication middleware
  *
- * @author      TCSCODER
- * @version     1.0
  */
 
 const jwt = require('express-jwt');

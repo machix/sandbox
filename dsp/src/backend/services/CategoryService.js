@@ -1,13 +1,9 @@
-/**
- * Copyright (c) 2016 Topcoder Inc, All rights reserved.
- */
+
 'use strict';
 
 /**
  * Category module API's
  *
- * @author      TCSCODER
- * @version     1.0
  */
 
 const Category = require('../models').Category;
