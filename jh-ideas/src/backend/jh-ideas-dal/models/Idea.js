@@ -14,10 +14,6 @@ const IdeaSchema = _.merge(Schema, {
   statusId: {
     type: Sequelize.INTEGER,
     allowNull: false,
-    references: {
-      model: 'Statuses',
-      key: 'id',
-    },
   },
   createdDate: {
     type: Sequelize.DATE,

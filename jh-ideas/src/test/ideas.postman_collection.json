@@ -23,34 +23,6 @@
 					"response": []
 				}
 			]
-		},
-		{
-			"name": "{{URL}}/drones?limit=100",
-			"request": {
-				"url": {
-					"raw": "{{URL}}/drones?limit=100",
-					"host": [
-						"{{URL}}"
-					],
-					"path": [
-						"drones"
-					],
-					"query": [
-						{
-							"key": "limit",
-							"value": "100",
-							"equals": true,
-							"description": ""
-						}
-					],
-					"variable": []
-				},
-				"method": "GET",
-				"header": [],
-				"body": {},
-				"description": "Test request."
-			},
-			"response": []
 		}
 	]
 }
