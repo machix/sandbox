@@ -2,14 +2,11 @@
 'use strict';
 
 const Sequelize = require('sequelize');
+const Schema = require('../../jh-common-dal/models/entity-schema').EntitySchema;
+const Configuration = require('../../jh-common-dal/models/entity-configuration').EntityConfiguration;
+const _ = require('lodash');
 
-const IdeaSchema = {
-  id: {
-    type: Sequelize.INTEGER,
-    autoIncrement: true,
-    allowNull: false,
-    primaryKey: true,
-  },
+const IdeaSchema = _.merge(Schema, {
   name: {
     type: Sequelize.STRING(100),
     allowNull: false,
@@ -35,12 +32,11 @@ const IdeaSchema = {
     type: Sequelize.TEXT,
     allowNull: false,
   },
-};
+});
 
-const IdeaConfiguration = {
-  timestamps: false,
+const IdeaConfiguration = _.merge(Configuration, {
   tableName: 'Ideas'
-};
+});
 
 module.exports = {
   IdeaSchema,
