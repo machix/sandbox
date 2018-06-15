@@ -36,7 +36,10 @@ io.on('connection', (socket) => { // eslint-disable-line no-unused-vars
 });
 
 // load all routes
-_.each(require('./routes'), (verbs, url) => {
+const routes = require('./jh-ideas-web/routes/routes');
+const dspRoutes = require('./routes');
+
+_.each(_.merge(routes, dspRoutes), (verbs, url) => {
   _.each(verbs, (def, verb) => {
     let actions = [
       function (req, res, next) {
