@@ -39,6 +39,10 @@ io.on('connection', (socket) => { // eslint-disable-line no-unused-vars
 const routes = require('./jh-ideas-web/routes/routes');
 const dspRoutes = require('./routes');
 
+const controllers = './jh-ideas-web/controllers/';
+const dspControllers = './controllers/';
+const allControllers = [controllers, dspControllers];
+
 _.each(_.merge(routes, dspRoutes), (verbs, url) => {
   _.each(verbs, (def, verb) => {
     let actions = [
@@ -47,7 +51,18 @@ _.each(_.merge(routes, dspRoutes), (verbs, url) => {
         next();
       },
     ];
-    const method = require('./controllers/' + def.controller)[def.method];
+
+    let method;
+    _.each(allControllers, (controller) => {
+      if (!method) {
+        try {
+          method = require(controller + def.controller)[def.method];
+        } catch (err) {
+          // catch
+        }
+      }
+    });
+
     if (!method) {
       throw new Error(def.method + ' is undefined, for controller ' + def.controller);
     }

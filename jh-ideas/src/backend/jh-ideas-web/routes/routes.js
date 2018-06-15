@@ -4,7 +4,7 @@
 module.exports = {
   '/ideas': {
     get: {
-      controller: 'IdeasController',
+      controller: 'ideas/IdeasController',
       method: 'getOverviews',
     },
   },
