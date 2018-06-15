@@ -10,7 +10,19 @@
 		{
 			"name": "ideas",
 			"description": "",
-			"item": []
+			"item": [
+				{
+					"name": "{{URL}}/ideas",
+					"request": {
+						"url": "{{URL}}/ideas",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "Get ideas overviews."
+					},
+					"response": []
+				}
+			]
 		},
 		{
 			"name": "{{URL}}/drones?limit=100",

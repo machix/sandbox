@@ -19,6 +19,8 @@ Joi.geoJSON = () => Joi.object({
 });
 
 // build all services
+logger.buildService(require('./jh-ideas-services/services/ideas/IdeasService'));
+
 logger.buildService(require('./services/DroneService'));
 logger.buildService(require('./services/MissionService'));
 logger.buildService(require('./services/UserService'));

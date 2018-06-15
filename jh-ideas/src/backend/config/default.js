@@ -6,7 +6,17 @@
  *
  */
 
+const Sequelize = require('sequelize');
+
 module.exports = {
+  Sequelize: {
+    dialect: 'mssql',
+    host: 'localhost',
+    database: 'Ideas',
+    username: 'Ideas',
+    password: 'DbPassword!234',
+    operatorsAliases: Sequelize.Op,
+  },
   LOG_LEVEL: process.env.LOG_LEVEL || 'debug',
   PORT: process.env.PORT || 3500,
   AUTH0_CLIENT_ID: process.env.AUTH0_CLIENT_ID || 'h7p6V93Shau3SSvqGrl6V4xrATlkrVGm',

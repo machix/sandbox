@@ -10,6 +10,12 @@ const providerRole = require('./common/Permission').providerRole;
 const pilotRole = require('./common/Permission').pilotRole;
 
 module.exports = {
+  '/ideas': {
+    get: {
+      controller: 'IdeasController',
+      method: 'getOverviews',
+    },
+  },
   '/login': {
     post: {
       controller: 'UserController',
