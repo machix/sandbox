@@ -11,10 +11,18 @@ const Status = models.Status;
 // };
 function* getOverviews() {
   return yield Idea.findAll({
+    raw: true, // plain JSON object
+    attributes: [
+      'id',
+      'name',
+      'createdDate',
+      'description',
+    ],
     include: [{
       model: Status,
       required: true, // true -> INNER JOIN, false -> LEFT OUTER JOIN
-    }]
+      attributes: [['name', 'status']],
+    }],
   });
 }
 

@@ -2,11 +2,11 @@
 'use strict';
 
 const Sequelize = require('sequelize');
-const Schema = require('../../jh-common-dal/models/entity-schema').EntitySchema;
-const Configuration = require('../../jh-common-dal/models/entity-configuration').EntityConfiguration;
+const Attributes = require('../../jh-common-dal/models/entity-attributes').EntityAttributes;
+const Options = require('../../jh-common-dal/models/entity-options').EntityOptions;
 const _ = require('lodash');
 
-const StatusSchema = _.merge(Schema, {
+const StatusAttributes = _.merge(Attributes, {
   name: {
     type: Sequelize.STRING(50),
     allowNull: false,
@@ -14,11 +14,11 @@ const StatusSchema = _.merge(Schema, {
   },
 });
 
-const StatusConfiguration = _.merge(Configuration, {
+const StatusOptions = _.merge(Options, {
   tableName: 'Statuses'
 });
 
 module.exports = {
-  StatusSchema,
-  StatusConfiguration,
+  StatusAttributes,
+  StatusOptions,
 };

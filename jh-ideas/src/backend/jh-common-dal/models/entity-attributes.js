@@ -3,7 +3,7 @@
 
 const Sequelize = require('sequelize');
 
-const EntitySchema = {
+const EntityAttributes = {
   id: {
     type: Sequelize.INTEGER,
     autoIncrement: true,
@@ -13,5 +13,5 @@ const EntitySchema = {
 };
 
 module.exports = {
-  EntitySchema,
+  EntityAttributes,
 };
