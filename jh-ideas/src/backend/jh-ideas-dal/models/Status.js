@@ -2,8 +2,8 @@
 'use strict';
 
 const Sequelize = require('sequelize');
-const Attributes = require('../../jh-common-dal/models/entity-attributes').EntityAttributes;
-const Options = require('../../jh-common-dal/models/entity-options').EntityOptions;
+const Attributes = require('../../jh-common-dal/models/entity-attributes');
+const Options = require('../../jh-common-dal/models/entity-options');
 const _ = require('lodash');
 
 const StatusAttributes = _.merge(Attributes, {

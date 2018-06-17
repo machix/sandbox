@@ -12,6 +12,4 @@ const EntityAttributes = {
   },
 };
 
-module.exports = {
-  EntityAttributes,
-};
+module.exports = EntityAttributes;

@@ -57,7 +57,8 @@ BEGIN
 		(3, N'Approved'),
 		(4, N'In Development'),
 		(5, N'Complete'),
-		(6, N'Archived')
+		(6, N'Archived'),
+		(7, N'Deleted');
 						
 	SET IDENTITY_INSERT [Statuses] OFF
 END

@@ -25,6 +25,4 @@ const EntityOptions = {
   version: false,
 };
 
-module.exports = {
-  EntityOptions,
-};
+module.exports = EntityOptions;

@@ -14,7 +14,24 @@
 				{
 					"name": "{{URL}}/ideas",
 					"request": {
-						"url": "{{URL}}/ideas",
+						"url": {
+							"raw": "{{URL}}/ideas?status=Open,Approved",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"ideas"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "Open,Approved",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
 						"method": "GET",
 						"header": [],
 						"body": {},
