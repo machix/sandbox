@@ -8,6 +8,8 @@ const overviewsRequestJoi = require('../../../jh-common-services/joi/overviews/o
 const StatusEnum = require('../../../jh-ideas-dal/enums/status');
 const _ = require('lodash');
 
+const Op = Sequelize.Op;
+
 const Idea = models.Idea;
 const Status = models.Status;
 
@@ -33,6 +35,11 @@ function* getOverviews(request) {
       model: Status,
       required: true,
       attributes: [],
+      where: {
+        name: {
+          [Op.in]: request.status,
+        },
+      },
     }],
   });
 }

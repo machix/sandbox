@@ -8,7 +8,7 @@ const _ = require('lodash');
 
 const StatusAttributes = _.merge(Attributes, {
   name: {
-    type: Sequelize.STRING(50),
+    type: Sequelize.STRING(20),
     allowNull: false,
     unique: true,
   },
