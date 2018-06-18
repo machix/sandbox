@@ -28,7 +28,7 @@ function* getOverviews(request) {
   where = specifications.getByStatuses(where, request.status);
   where = specifications.getByAreas(where, request.areaIds);
 
-  return yield Idea.findAll({
+  const overviews = yield Idea.findAll({
     raw: true,
     attributes: [
       'id',
@@ -55,6 +55,13 @@ function* getOverviews(request) {
       },
     ],
     where,
+  });
+
+  return _.map(overviews, (overview) => {
+    return _.omit(overview, [
+      'areas.ideaArea.ideaId',
+      'areas.ideaArea.areaId',
+    ]);
   });
 }
 
