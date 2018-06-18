@@ -31,7 +31,7 @@ const IdeaAttributes = _.merge(Attributes, {
 });
 
 const IdeaOptions = _.merge(Options, {
-  tableName: 'Ideas'
+  tableName: 'Ideas',
 });
 
 module.exports = {

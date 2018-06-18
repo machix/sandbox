@@ -23,6 +23,34 @@
 					"response": []
 				},
 				{
+					"name": "Get ideas by keyword.",
+					"request": {
+						"url": {
+							"raw": "{{URL}}/ideas?keyword=porro",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"ideas"
+							],
+							"query": [
+								{
+									"key": "keyword",
+									"value": "porro",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
 					"name": "Get ideas by statuses.",
 					"request": {
 						"url": {
@@ -37,6 +65,34 @@
 								{
 									"key": "status",
 									"value": "In Development,In Review",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get ideas by areas.",
+					"request": {
+						"url": {
+							"raw": "{{URL}}/ideas?areaIds=1,2",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"ideas"
+							],
+							"query": [
+								{
+									"key": "areaIds",
+									"value": "1,2",
 									"equals": true,
 									"description": ""
 								}

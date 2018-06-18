@@ -6,19 +6,19 @@ const Attributes = require('../../jh-common-dal/models/entity-attributes');
 const Options = require('../../jh-common-dal/models/entity-options');
 const _ = require('lodash');
 
-const StatusAttributes = _.merge(Attributes, {
+const AreaAttributes = _.merge(Attributes, {
   name: {
-    type: Sequelize.STRING(20),
+    type: Sequelize.STRING(50),
     allowNull: false,
     unique: true,
   },
 });
 
-const StatusOptions = _.merge(Options, {
-  tableName: 'Statuses',
+const AreaOptions = _.merge(Options, {
+  tableName: 'Areas',
 });
 
 module.exports = {
-  StatusAttributes,
-  StatusOptions,
+  AreaAttributes,
+  AreaOptions,
 };

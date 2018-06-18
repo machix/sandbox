@@ -6,6 +6,7 @@ const helper = require('../../../common/helper');
 
 function* getOverviews(req, res) {
   yield helper.splitQueryToArray(req.query, 'status');
+  yield helper.splitQueryToArray(req.query, 'areaIds');
   const overviews = yield IdeasService.getOverviews(req.query);
   return res.json(overviews);
 }
